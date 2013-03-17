@@ -1,0 +1,2544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE form-validation PUBLIC "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.1.3//EN" "http://jakarta.apache.org/commons/dtds/validator_1_1_3.dtd">
+
+<form-validation >
+<global>
+  <constant>
+    <constant-name>phone</constant-name>
+    <constant-value>^\d{3,4}\-\d{7,8}$</constant-value>
+  </constant>
+</global>
+<formset>
+<!--用户管理-->
+<form name="userForm">
+    <field
+        property="useraccount"
+        depends="required,maxlength">
+        <arg0 key="user.useraccount"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+    <field
+        property="userpwd"
+        depends="required,maxlength">
+        <arg0 key="user.userpwd"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+	<field
+        property="userassociation"
+        depends="required,maxlength">
+        <arg0 key="user.userassociation"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="useracademic"
+        depends="required,maxlength">
+        <arg0 key="user.useracademic"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+    </form>
+
+<!--学会群-->
+<form name="acadgroupForm">
+    <field
+        property="assoname"
+        depends="required,maxlength">
+        <arg0 key="acadgroup.assoname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+    <field
+        property="contactperson"
+        depends="maxlength">
+        <arg0 key="acadgroup.contactperson"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+
+    </form>
+<!--学会子库基本信息-->
+<form name="academybaseinfoForm">
+<field
+        property="acadname"
+        depends="required,maxlength">
+        <arg0 key="academybaseinfo.acadname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+
+<field
+        property="acadno"
+        depends="required,maxlength">
+        <arg0 key="academybaseinfo.acadno"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+
+       <field
+        property="operationrange"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.operationrange"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>200</var-value>
+        </var>
+   </field>
+   <field
+        property="registerfund"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.registerfund"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="address1"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.address1"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="address2"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.address2"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="postcode1"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.postcode1"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="postcode2"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.postcode2"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="contactphone"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.contactphone"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="contactfax"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.contactfax"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+</form>
+<!--学会子库负责人信息-->
+<form name="academybaseinfoprincipalForm">
+<field
+        property="chargemanname"
+        depends="required,maxlength">
+        <arg0 key="academybaseinfo.chargemanname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+	<field
+        property="chargemanidentity"
+        depends="mask">
+        <arg0 key="academybaseinfo.chargemanidentity"/>
+        <msg name="mask" key="身份证号码必须为15或18位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\w{15,18}\w*$</var-value>
+        </var>
+   </field>
+   <field
+        property="chargemantelephone"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.chargemantelephone"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="chargemanmobile"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.chargemanmobile"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="chargemaninstitute"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.chargemaninstitute"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="chargemansocialduty"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.chargemansocialduty"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="chairmanname"
+        depends="required,maxlength">
+        <arg0 key="academybaseinfo.chairmanname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="chairmanidentity"
+        depends="mask">
+        <arg0 key="academybaseinfo.chairmanidentity"/>
+        <msg name="mask" key="身份证号码必须为15或18位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\w{15,18}\w*$</var-value>
+        </var>
+   </field>
+   <field
+        property="chairmantelephone"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.chairmantelephone"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="chairmanmobile"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.chairmanmobile"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="chairmaninstitute"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.chairmaninstitute"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="chairmansocialduty"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.chairmansocialduty"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="secretaryname"
+        depends="required,maxlength">
+        <arg0 key="academybaseinfo.secretaryname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="secretaryidentity"
+        depends="mask">
+        <arg0 key="academybaseinfo.secretaryidentity"/>
+        <msg name="mask" key="身份证号码必须为15或18位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\w{15,18}\w*$</var-value>
+        </var>
+   </field>
+   <field
+        property="secretarytelephone"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.secretarytelephone"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="secretarymobile"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.secretarymobile"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="secretaryinstitute"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.secretaryinstitute"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="secretarysocialduty"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.secretarysocialduty"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+</form>
+<!--学会子库理事会信息-->
+<form name="academybaseinfocouncilForm">
+<field
+        property="chargeyear"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.chargeyear"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+</form>
+<!--学会子库党建信息-->
+<form name="academybaseinfopartybuildForm">
+<field
+        property="partyperson"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.partyperson"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="partytelephon"
+        depends="maxlength">
+        <arg0 key="academybaseinfo.partytelephon"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+</form>
+<!--学会组织机构设置信息-->
+<form name="academyorganizationinfoForm">
+<field
+        property="organame"
+        depends="maxlength">
+        <arg0 key="academyorganizationinfo.organame"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="chargeman"
+        depends="maxlength">
+        <arg0 key="academyorganizationinfo.chargeman"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="contacttelephone"
+        depends="maxlength">
+        <arg0 key="academyorganizationinfo.contacttelephone"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+</form>
+<!--学会子库专业委员会信息-->
+<form name="academyspecialitycommitteeForm">
+<field
+        property="commname"
+        depends="maxlength">
+        <arg0 key="academyspecialitycommittee.commname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="commdirector"
+        depends="maxlength">
+        <arg0 key="academyspecialitycommittee.commdirector"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+</form>
+
+<!--学会子库工作委员会信息-->
+<form name="academyworkcommitteeForm">
+<field
+        property="commname"
+        depends="maxlength">
+        <arg0 key="academyworkcommittee.commname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="commdirector"
+        depends="maxlength">
+        <arg0 key="academyworkcommittee.commdirector"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+</form>
+<!--学会子库品牌建设信息-->
+<form name="academybrandconstructForm">
+<field
+        property="activename"
+        depends="maxlength">
+        <arg0 key="academybrandconstruct.activename"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="activeno"
+        depends="maxlength">
+        <arg0 key="academybrandconstruct.activeno"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="activememo"
+        depends="maxlength">
+        <arg0 key="academybrandconstruct.activememo"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>150</var-value>
+        </var>
+   </field>
+</form>
+<!--学会子库会刊建设信息-->
+<form name="academyjournalinfoForm">
+<field
+        property="journalname"
+        depends="maxlength">
+        <arg0 key="academyjournalinfo.journalname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="journalcode"
+        depends="maxlength">
+        <arg0 key="academyjournalinfo.journalcode"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="publishperiod"
+        depends="maxlength">
+        <arg0 key="academyjournalinfo.publishperiod"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="editorname"
+        depends="maxlength">
+        <arg0 key="academyjournalinfo.editorname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="contactaddress"
+        depends="maxlength">
+        <arg0 key="academyjournalinfo.contactaddress"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="contacttelephone"
+        depends="maxlength">
+        <arg0 key="academyjournalinfo.contacttelephone"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+</form>
+<!--个人会员基本信息-->
+<form name="smemberbaseinfoForm">
+<field
+        property="memname"
+        depends="required,maxlength">
+        <arg0 key="smemberbaseinfo.memname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>25</var-value>
+        </var>
+   </field>
+   <field
+        property="memidentity"
+        depends="mask">
+        <arg0 key="smemberbaseinfo.memidentity"/>
+        <msg name="mask" key="身份证号码必须为15或18位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\w{15,18}\w*$</var-value>
+        </var>
+   </field>
+   
+   <field
+        property="tempmembirthday"
+        depends="required">
+        <arg0 key="smemberbaseinfo.tempmembirthday"/>
+   </field>
+   <field
+        property="memnation_f"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.memnation_f"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>25</var-value>
+        </var>
+   </field>
+   <field
+        property="memnationality_f"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.memnationality_f"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>25</var-value>
+        </var>
+   </field>
+   <field
+        property="meminstitute"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.meminstitute"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="memdept"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.memdept"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   
+   <field
+        property="memduty"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.memduty"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="memrank_f"
+        depends="required,maxlength">
+        <arg0 key="smemberbaseinfo.memrank_f"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>25</var-value>
+        </var>
+   </field>
+   <field
+        property="memspeciality"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.memspeciality"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="foreignlanguage"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.foreignlanguage"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>150</var-value>
+        </var>
+   </field>
+   <field
+        property="interduty_f"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.interduty_f"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="nationduty_f"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.nationduty_f"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="instituteaddress"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.instituteaddress"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="institutetelephone"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.institutetelephone"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="institutepostcode"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.institutepostcode"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="homeaddress"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.homeaddress"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="hometelephone"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.hometelephone"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="homepostcode"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.homepostcode"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="useremail"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.useremail"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="usermobile"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.usermobile"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="university"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.university"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="universityspec"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.universityspec"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="seasuniversity"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.seasuniversity"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="seasuniversityspec"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.seasuniversityspec"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   
+   <field
+        property="memtype"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.memtype"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="belongcommittee1"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.belongcommittee1"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="belongcommittee2"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.belongcommittee2"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="belongcommittee3"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.belongcommittee3"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="belongcommittee4"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.belongcommittee4"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="memskill"
+        depends="maxlength">
+        <arg0 key="smemberbaseinfo.memskill"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+</form>
+<!--个人会员专利（软件著作权）信息-->
+<form name="smemberpatentinfoForm">
+<field
+        property="patentname"
+        depends="required,maxlength">
+        <arg0 key="smemberpatentinfo.patentname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="patenttype"
+        depends="maxlength">
+        <arg0 key="smemberpatentinfo.patenttype"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   
+   <field
+        property="patentvalue"
+        depends="maxlength">
+        <arg0 key="smemberpatentinfo.patentvalue"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>25</var-value>
+        </var>
+   </field>
+</form>
+<!--个人会员主要学术科普论著信息-->
+<form name="smemberacademicliteratureForm">
+<field
+        property="litename"
+        depends="required,maxlength">
+        <arg0 key="smemberacademicliterature.litename"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="litejournal"
+        depends="maxlength">
+        <arg0 key="smemberacademicliterature.litejournal"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="litehouse"
+        depends="maxlength">
+        <arg0 key="smemberacademicliterature.litehouse"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+</form>
+<!--个人会员主要科研成果信息-->
+<form name="smemberresearchproductionForm">
+<field
+        property="prodname"
+        depends="required,maxlength">
+        <arg0 key="smemberresearchproduction.prodname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="prodrewards"
+        depends="maxlength">
+        <arg0 key="smemberresearchproduction.prodrewards"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>150</var-value>
+        </var>
+   </field>
+   <field
+        property="prodapplication"
+        depends="maxlength">
+        <arg0 key="smemberresearchproduction.prodapplication"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>150</var-value>
+        </var>
+   </field>
+</form>
+<!--个人会员主要工作经历信息-->
+<form name="smemberpastjobForm">
+<field
+        property="jobinstitute"
+        depends="maxlength">
+        <arg0 key="smemberpastjob.jobinstitute"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="jobrank"
+        depends="maxlength">
+        <arg0 key="smemberpastjob.jobrank"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="jobaddress"
+        depends="maxlength">
+        <arg0 key="smemberpastjob.jobaddress"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+</form>
+<!--团体会员基本信息-->
+<form name="gmemberbaseinfoForm">
+<field
+        property="institutename"
+        depends="required,maxlength">
+        <arg0 key="gmemberbaseinfo.institutename"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="institutecode"
+        depends="maxlength">
+        <arg0 key="gmemberbaseinfo.institutecode"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="contactname"
+        depends="maxlength">
+        <arg0 key="gmemberbaseinfo.contactname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="contactaddress"
+        depends="maxlength">
+        <arg0 key="gmemberbaseinfo.contactaddress"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="contactpostcode"
+        depends="maxlength">
+        <arg0 key="gmemberbaseinfo.contactpostcode"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="contactdepartment"
+        depends="maxlength">
+        <arg0 key="gmemberbaseinfo.contactdepartment"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="contactperson"
+        depends="maxlength">
+        <arg0 key="gmemberbaseinfo.contactperson"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="contacttelephone"
+        depends="maxlength">
+        <arg0 key="gmemberbaseinfo.contacttelephone"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="contactfax"
+        depends="maxlength">
+        <arg0 key="gmemberbaseinfo.contactfax"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="contacturl"
+        depends="maxlength">
+        <arg0 key="gmemberbaseinfo.contacturl"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="contactemail"
+        depends="maxlength">
+        <arg0 key="gmemberbaseinfo.contactemail"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="contactoperationrange"
+        depends="maxlength">
+        <arg0 key="gmemberbaseinfo.contactoperationrange"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>150</var-value>
+        </var>
+   </field>
+   <field
+        property="tempjoindate"
+        depends="required">
+        <arg0 key="gmemberbaseinfo.tempjoindate"/>
+   </field>
+</form>
+<!--团体会员主要产品（科研成果）信息-->
+<form name="gmemberresearchproductionForm">
+<field
+        property="prodname"
+        depends="maxlength">
+        <arg0 key="gmemberresearchproduction.prodname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="prodrewards"
+        depends="maxlength">
+        <arg0 key="gmemberresearchproduction.prodrewards"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>150</var-value>
+        </var>
+   </field>
+   <field
+        property="prodapplication"
+        depends="maxlength">
+        <arg0 key="gmemberresearchproduction.prodapplication"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>150</var-value>
+        </var>
+   </field>
+</form>
+<!--团体会员专利、标准信息-->
+<form name="gmemberpatentinfoForm">
+<field
+        property="patentname"
+        depends="maxlength">
+        <arg0 key="gmemberpatentinfo.patentname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="patenttype"
+        depends="maxlength">
+        <arg0 key="gmemberpatentinfo.patenttype"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="patentapplication"
+        depends="maxlength">
+        <arg0 key="gmemberpatentinfo.patentapplication"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>150</var-value>
+        </var>
+   </field>
+</form>
+<!--代表，委员基本信息-->
+<form name="shadeputybaseinfoForm">
+<field
+        property="deputyname"
+        depends="required,maxlength">
+        <arg0 key="shadeputybaseinfo.deputyname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>25</var-value>
+        </var>
+   </field>
+   
+   
+   <field
+        property="tempdeputybirthday"
+        depends="required">
+        <arg0 key="shadeputybaseinfo.tempdeputybirthday"/>
+   </field>
+   <field
+        property="deputynation_f"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.deputynation_f"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>25</var-value>
+        </var>
+   </field>
+   <field
+        property="deputynationality_f"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.deputynationality_f"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>25</var-value>
+        </var>
+   </field>
+   <field
+        property="deputyinstitute"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.deputyinstitute"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="deputydept"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.deputydept"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="deputyrank_f"
+        depends="required,maxlength">
+        <arg0 key="shadeputybaseinfo.deputyrank_f"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>25</var-value>
+        </var>
+   </field>
+   <field
+        property="memduty"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.memduty"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="memspeciality"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.memspeciality"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="memskill"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.memskill"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="foreignlanguage"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.foreignlanguage"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>150</var-value>
+        </var>
+   </field>
+   <field
+        property="interduty_f"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.interduty_f"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="nationduty_f"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.nationduty_f"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="instituteaddress"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.instituteaddress"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="institutetelephone"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.institutetelephone"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="institutepostcode"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.institutepostcode"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="homeaddress"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.homeaddress"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="homepostcode"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.homepostcode"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="hometelephone"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.hometelephone"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="useremail"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.useremail"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="usermobile"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.usermobile"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="university"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.university"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="universityspec"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.universityspec"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="seasuniversity"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.seasuniversity"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="seasuniversityspec"
+        depends="maxlength">
+        <arg0 key="shadeputybaseinfo.seasuniversityspec"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+</form>
+<!--代表，委员其他信息-->
+<form name="shadeputypastjobForm">
+<field
+        property="jobinstitute"
+        depends="maxlength">
+        <arg0 key="shadeputypastjob.jobinstitute"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="jobrank"
+        depends="maxlength">
+        <arg0 key="shadeputypastjob.jobrank"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>50</var-value>
+        </var>
+   </field>
+   <field
+        property="jobaddress"
+        depends="maxlength">
+        <arg0 key="shadeputypastjob.jobaddress"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+</form>
+<form name="shadeputypatentinfoForm">
+<field
+        property="patentname"
+        depends="required,maxlength">
+        <arg0 key="shadeputypatentinfo.patentname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="patenttype"
+        depends="maxlength">
+        <arg0 key="shadeputypatentinfo.patenttype"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   
+   <field
+        property="patentvalue"
+        depends="maxlength">
+        <arg0 key="shadeputypatentinfo.patentvalue"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>25</var-value>
+        </var>
+   </field>
+</form>
+
+<form name="shadeputyacademicliteratureForm">
+<field
+        property="litename"
+        depends="required,maxlength">
+        <arg0 key="shadeputyacademicliterature.litename"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="litejournal"
+        depends="maxlength">
+        <arg0 key="shadeputyacademicliterature.litejournal"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="litehouse"
+        depends="maxlength">
+        <arg0 key="shadeputyacademicliterature.litehouse"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+</form>
+
+<form name="shadeputyresearchproductionForm">
+<field
+        property="prodname"
+        depends="required,maxlength">
+        <arg0 key="shadeputyresearchproduction.prodname"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>100</var-value>
+        </var>
+   </field>
+   <field
+        property="prodrewards"
+        depends="maxlength">
+        <arg0 key="shadeputyresearchproduction.prodrewards"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>150</var-value>
+        </var>
+   </field>
+   <field
+        property="prodapplication"
+        depends="maxlength">
+        <arg0 key="shadeputyresearchproduction.prodapplication"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>150</var-value>
+        </var>
+   </field>
+</form>
+
+<!--<form name="objparaForm">
+    <field
+        property="obj_name"
+        depends="maxlength">
+        <arg0 key="objpara.obj_name"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>8</var-value>
+        </var>
+   </field>
+    <field
+        property="obj_id"
+        depends="maxlength">
+        <arg0 key="objpara.obj_id"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>8</var-value>
+        </var>
+   </field>
+    <field
+        property="factory"
+        depends="maxlength">
+        <arg0 key="objpara.factory"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>10</var-value>
+        </var>
+   </field>
+   <field
+        property="tempmanu_date"
+        depends="required">
+        <arg0 key="objpara.tempmanu_date"/>
+   </field>
+   <field
+        property="obj_l"
+        depends="mask,float">
+        <arg0 key="objpara.obj_l"/>
+        <msg name="mask" key="试件长（m）的值必须在区间(0,10000000),小数位数最多为3位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,7}(\.\d{1,3}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="obj_b"
+        depends="mask,float">
+        <arg0 key="objpara.obj_b"/>
+        <msg name="mask" key="试件宽（m）的值必须在区间(0,10000000),小数位数最多为3位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,7}(\.\d{1,3}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="obj_h"
+        depends="mask,float">
+        <arg0 key="objpara.obj_h"/>
+        <msg name="mask" key="试件高（m）的值必须在区间(0,10000000),小数位数最多为3位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,7}(\.\d{1,3}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="obj_mass"
+        depends="mask,float">
+        <arg0 key="objpara.obj_mass"/>
+        <msg name="mask" key="试件质量（kg）的值必须在区间(0,10000000),小数位数最多为3位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,7}(\.\d{1,3}$|$)</var-value>
+        </var>
+   </field>
+    <field
+        property="manager"
+        depends="maxlength">
+        <arg0 key="objpara.manager"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>5</var-value>
+        </var>
+   </field>
+    <field
+        property="material"
+        depends="maxlength">
+        <arg0 key="objpara.material"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>5</var-value>
+        </var>
+   </field>
+</form>
+
+<form name="jstiffconForm">
+    <field
+        property="setting"
+        depends="maxlength">
+        <arg0 key="jstiffcon.setting"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>20</var-value>
+        </var>
+   </field>
+   <field
+        property="loda"
+        depends="mask,float">
+        <arg0 key="jstiffcon.loda"/>
+        <msg name="mask" key="额定负载（kg）的值必须在区间(0,100000),小数位数最多为6位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,6}(\.\d{1,6}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="distortion"
+        depends="mask,float">
+        <arg0 key="jstiffcon.distortion"/>
+        <msg name="mask" key="额定负载下变形（mm）的值必须在区间(0,100000),小数位数最多为6位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,6}(\.\d{1,6}$|$)</var-value>
+        </var>
+   </field>
+</form>
+
+<form name="curveconForm">
+    <field
+        property="setting"
+        depends="maxlength">
+        <arg0 key="curvecon.setting"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>20</var-value>
+        </var>
+   </field>
+   <field
+        property="fm"
+        depends="mask,float">
+        <arg0 key="curvecon.fm"/>
+        <msg name="mask" key="抗力（kN）的值必须在区间(0,1000000),小数位数最多为4位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,6}(\.\d{1,6}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="disp"
+        depends="mask,float">
+        <arg0 key="curvecon.disp"/>
+        <msg name="mask" key="位移（mm）的值必须在区间(0,100000),小数位数最多为6位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,6}(\.\d{1,6}$|$)</var-value>
+        </var>
+   </field>
+</form>
+
+
+<form name="mstiffconForm">
+    <field
+        property="setting"
+        depends="maxlength">
+        <arg0 key="mstiffcon.setting"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>10</var-value>
+        </var>
+   </field>
+   <field
+        property="disp"
+        depends="mask,float">
+        <arg0 key="mstiffcon.disp"/>
+        <msg name="mask" key="位移（m）的值必须在区间(0,100000),小数位数最多为6位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,6}(\.\d{1,6}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="fm"
+        depends="mask,float">
+        <arg0 key="mstiffcon.fm"/>
+        <msg name="mask" key="抗力（N）的值必须在区间(0,100000),小数位数最多为4位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,6}(\.\d{1,6}$|$)</var-value>
+        </var>
+   </field>
+</form>
+
+<form name="stiffconForm">
+    <field
+        property="setting"
+        depends="maxlength">
+        <arg0 key="stiffcon.setting"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>10</var-value>
+        </var>
+   </field>
+   <field
+        property="disp"
+        depends="mask,float">
+        <arg0 key="stiffcon.disp"/>
+        <msg name="mask" key="位移（m）的值必须在区间(0,100000),小数位数最多为6位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,6}(\.\d{1,6}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="fm"
+        depends="mask,float">
+        <arg0 key="stiffcon.fm"/>
+        <msg name="mask" key="抗力（N）的值必须在区间(0,1000000),小数位数最多为4位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,7}(\.\d{1,6}$|$)</var-value>
+        </var>
+   </field>
+</form>
+
+<form name="fmParaForm">
+    <field
+        property="setting"
+        depends="required,maxlength">
+        <arg0 key="fmpara.setting"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>5</var-value>
+        </var>
+   </field>
+   <field
+        property="fm_id"
+        depends="mask,float">
+        <arg0 key="fmpara.fm_id"/>
+        <msg name="mask" key="传感器灵敏度（mV/g）的值必须在区间(0,1000),小数位数最多为3位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,3}$|$)</var-value>
+        </var>
+   </field>
+   </form>
+
+
+<form name="stiffcurveForm">
+    <field
+        property="no_id"
+        depends="required,maxlength">
+        <arg0 key="stiffcurve.no_id"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>5</var-value>
+        </var>
+   </field>
+   <field
+        property="disp"
+        depends="mask,float">
+        <arg0 key="stiffcurve.disp"/>
+        <msg name="mask" key="位移（m）的值必须在区间(0,1000),小数位数最多为4位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="fm"
+        depends="mask,float">
+        <arg0 key="stiffcurve.fm"/>
+        <msg name="mask" key="抗力（N）的值必须在区间(0,1000),小数位数最多为4位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="delta"
+        depends="mask,float">
+        <arg0 key="stiffcurve.delta"/>
+        <msg name="mask" key="上半宽（kN）的值必须在区间(0,1000),小数位数最多为4位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="delta2"
+        depends="mask,float">
+        <arg0 key="stiffcurve.delta2"/>
+        <msg name="mask" key="下半宽（kN）的值必须在区间(0,1000),小数位数最多为4位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+</form>
+
+<form name="instrParaForm">
+    <field
+        property="trans_id"
+        depends="required,maxlength">
+        <arg0 key="instrpara.trans_id"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>20</var-value>
+        </var>
+   </field>
+    <field
+        property="trans_num"
+        depends="required,maxlength">
+        <arg0 key="instrpara.trans_num"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>20</var-value>
+        </var>
+   </field>
+   <field
+        property="line"
+        depends="mask,float">
+        <arg0 key="instrpara.line"/>
+        <msg name="mask" key="传感器灵敏度（mV/g）的值必须在区间(0,1000),小数位数最多为3位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,3}$|$)</var-value>
+        </var>
+   </field>
+   </form>
+
+<form name="collParaForm">
+    <field
+        property="coll_id"
+        depends="required,maxlength">
+        <arg0 key="collpara.coll_id"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>20</var-value>
+        </var>
+   </field>
+    <field
+        property="coll_num"
+        depends="required,maxlength">
+        <arg0 key="collpara.coll_num"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>20</var-value>
+        </var>
+   </field>
+   <field
+        property="measure"
+        depends="mask,float">
+        <arg0 key="collpara.measure"/>
+        <msg name="mask" key="传感器灵敏度（mV/g）的值必须在区间(0,10000),小数位数最多为4位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,3}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="sam_df"
+        depends="mask,float">
+        <arg0 key="collpara.sam_df"/>
+        <msg name="mask" key="传感器灵敏度（mV/g）的值必须在区间(0,1000),小数位数最多为3位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,3}$|$)</var-value>
+        </var>
+   </field>
+   </form>
+
+<form name="ampParaForm">
+    <field
+        property="amp_id"
+        depends="required,maxlength">
+        <arg0 key="amppara.amp_id"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>20</var-value>
+        </var>
+   </field>
+    <field
+        property="amp_num"
+        depends="required,maxlength">
+        <arg0 key="amppara.amp_num"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>20</var-value>
+        </var>
+   </field>
+   <field
+        property="df_h"
+        depends="mask,float">
+        <arg0 key="amppara.df_h"/>
+        <msg name="mask" key="传感器灵敏度（mV/g）的值必须在区间(0,1000),小数位数最多为3位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,3}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="df_d"
+        depends="mask,float">
+        <arg0 key="amppara.df_d"/>
+        <msg name="mask" key="传感器灵敏度（mV/g）的值必须在区间(0,1000),小数位数最多为3位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,3}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="mag_line"
+        depends="mask,float">
+        <arg0 key="amppara.mag_line"/>
+        <msg name="mask" key="传感器灵敏度（mV/g）的值必须在区间(0,1000),小数位数最多为3位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,3}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="amplify"
+        depends="mask,float">
+        <arg0 key="amppara.amplify"/>
+        <msg name="mask" key="传感器灵敏度（mV/g）的值必须在区间(0,1000),小数位数最多为3位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,3}$|$)</var-value>
+        </var>
+   </field>
+   </form>
+
+
+<form name="impactConForm">
+   <field
+        property="acmax"
+        depends="mask,float">
+        <arg0 key="impactcon.acmax"/>
+        <msg name="mask" key="最大加速度（g）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="vxmax"
+        depends="mask,float">
+        <arg0 key="impactcon.vxmax"/>
+        <msg name="mask" key="最大速度（m/s）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="delmax"
+        depends="mask,float">
+        <arg0 key="impactcon.delmax"/>
+        <msg name="mask" key="最大位移（mm）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="fmmax"
+        depends="mask,float">
+        <arg0 key="impactcon.fmmax"/>
+        <msg name="mask" key="最大抗力（kN）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="wm"
+        depends="mask,float">
+        <arg0 key="impactcon.wm"/>
+        <msg name="mask" key="冲击能量（kJ）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="wa"
+        depends="mask,float">
+        <arg0 key="impactcon.wa"/>
+        <msg name="mask" key="吸收能量（kJ）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="kp"
+        depends="mask,float">
+        <arg0 key="impactcon.kp"/>
+        <msg name="mask" key="等效刚度（kN/m）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="ke"
+        depends="mask,float">
+        <arg0 key="impactcon.ke"/>
+        <msg name="mask" key="参考刚度（kN/m）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="c"
+        depends="mask,float">
+        <arg0 key="impactcon.c"/>
+        <msg name="mask" key="阻尼系数（N.s/m）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="sf"
+        depends="mask,float">
+        <arg0 key="impactcon.sf"/>
+        <msg name="mask" key="能量吸收系数的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="n"
+        depends="mask,float">
+        <arg0 key="impactcon.n"/>
+        <msg name="mask" key="阻尼比的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="dellinit"
+        depends="mask,float">
+        <arg0 key="impactcon.dellinit"/>
+        <msg name="mask" key="极限冲击位移（mm）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="fmlimit"
+        depends="mask,float">
+        <arg0 key="impactcon.fmlimit"/>
+        <msg name="mask" key="极限冲击力（kN）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+</form>
+
+<form name="impactCharaForm">
+    <field
+        property="no_id"
+        depends="required,maxlength">
+        <arg0 key="impactchara.no_id"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>5</var-value>
+        </var>
+   </field>
+   <field
+        property="acmax"
+        depends="mask,float">
+        <arg0 key="impactchara.acmax"/>
+        <msg name="mask" key="最大加速度（g）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="vxmax"
+        depends="mask,float">
+        <arg0 key="impactchara.vxmax"/>
+        <msg name="mask" key="最大速度（m/s）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="delmax"
+        depends="mask,float">
+        <arg0 key="impactchara.delmax"/>
+        <msg name="mask" key="最大位移（mm）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="fmmax"
+        depends="mask,float">
+        <arg0 key="impactchara.fmmax"/>
+        <msg name="mask" key="最大抗力（kN）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="wm"
+        depends="mask,float">
+        <arg0 key="impactchara.wm"/>
+        <msg name="mask" key="冲击能量（kJ）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="wa"
+        depends="mask,float">
+        <arg0 key="impactchara.wa"/>
+        <msg name="mask" key="吸收能量（kJ）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="kp"
+        depends="mask,float">
+        <arg0 key="impactchara.kp"/>
+        <msg name="mask" key="等效刚度（kN/m）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="ke"
+        depends="mask,float">
+        <arg0 key="impactchara.ke"/>
+        <msg name="mask" key="参考刚度（kN/m）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="c"
+        depends="mask,float">
+        <arg0 key="impactchara.c"/>
+        <msg name="mask" key="阻尼系数（N.s/m）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="sf"
+        depends="mask,float">
+        <arg0 key="impactchara.sf"/>
+        <msg name="mask" key="能量吸收系数的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="n"
+        depends="mask,float">
+        <arg0 key="impactchara.n"/>
+        <msg name="mask" key="阻尼比的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="dellinit"
+        depends="mask,float">
+        <arg0 key="impactchara.dellinit"/>
+        <msg name="mask" key="极限冲击位移（mm）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="fmlimit"
+        depends="mask,float">
+        <arg0 key="impactchara.fmlimit"/>
+        <msg name="mask" key="极限冲击力（kN）的值必须在区间(0,100000),小数位数最多为5位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+</form>
+
+<form name="dampconForm">
+    <field
+        property="setting"
+        depends="maxlength">
+        <arg0 key="dampcon.setting"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>10</var-value>
+        </var>
+   </field>
+   <field
+        property="c"
+        depends="mask,float">
+        <arg0 key="damp.c"/>
+        <msg name="mask" key="阻尼系数（N.s/m）的值小数位数最多为4位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,4}$|$)</var-value>
+        </var>
+   </field>
+</form>
+
+<form name="testCondForm">
+    <field
+        property="t_id"
+        depends="required,maxlength">
+        <arg0 key="testcond.t_id"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>5</var-value>
+        </var>
+   </field>
+   <field
+        property="group_id"
+        depends="required,maxlength">
+        <arg0 key="testcond.group_id"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>5</var-value>
+        </var>
+   </field>
+   <field
+        property="set_dimen"
+        depends="maxlength">
+        <arg0 key="testcond.set_dimen"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>10</var-value>
+        </var>
+   </field>
+   <field
+        property="t_type"
+        depends="required,maxlength">
+        <arg0 key="testcond.t_type"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>5</var-value>
+        </var>
+   </field>
+   <field
+        property="temptdate"
+        depends="required">
+        <arg0 key="testcond.temptdate"/>
+   </field>
+   <field
+        property="trans_id"
+        depends="maxlength">
+        <arg0 key="testcond.trans_id"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>10</var-value>
+        </var>
+   </field>
+   <field
+        property="setting"
+        depends="required,maxlength">
+        <arg0 key="testcond.setting"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>10</var-value>
+        </var>
+   </field>
+   <field
+        property="set_mass"
+        depends="maxlength">
+        <arg0 key="testcond.set_mass"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>5</var-value>
+        </var>
+   </field>
+   <field
+        property="te"
+        depends="mask,float">
+        <arg0 key="testcond.te"/>
+        <msg name="mask" key="环境温度（°C）的值必须在区间(0,1000),小数位数最多为2位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,2}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="h"
+        depends="required,mask,float">
+        <arg0 key="testcond.h"/>
+        <msg name="mask" key="落锤高度（cm）的值必须在区间(0,1000),小数位数最多为2位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,3}(\.\d{1,2}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="mass"
+        depends="mask,float">
+        <arg0 key="testcond.mass"/>
+        <msg name="mask" key="锤头质量（kg）的值必须在区间(0,100000),小数位数最多为1位!" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>^\-?\d{1,5}(\.\d{1}$|$)</var-value>
+        </var>
+   </field>
+   <field
+        property="filter_id"
+        depends="maxlength">
+        <arg0 key="testcond.set_id"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>10</var-value>
+        </var>
+   </field>
+</form>
+
+<form name="dataFileForm">
+    <field
+        property="no_id"
+        depends="required,maxlength">
+        <arg0 key="datafile.no_id"/>
+        <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+        <var>
+        <var-name>maxlength</var-name>
+        <var-value>5</var-value>
+        </var>
+   </field>
+</form>
+<form name="changePWForm">
+    <field
+        property="oldusername"
+        depends="required">
+        <arg0 key="admincpasswd.oldusername"/>
+   </field>
+   <field
+        property="newusername"
+        depends="required">
+        <arg0 key="admincpasswd.newusername"/>
+   </field>
+   <field
+        property="oldpasswd"
+        depends="required">
+        <arg0 key="admincpasswd.oldpasswd"/>
+   </field>
+   <field
+        property="newpasswd"
+        depends="required">
+        <arg0 key="admincpasswd.newpasswd"/>
+   </field>
+   <field
+        property="newpasswdre"
+        depends="required">
+        <arg0 key="admincpasswd.newpasswdre"/>
+   </field>
+</form>
+<form name="userForm">
+       <field
+        property="username"
+        depends="required">
+        <arg0 key="reg.username"/>
+       </field>
+       <field
+        property="userid"
+        depends="required">
+        <arg0 key="reg.userid"/>
+       </field>
+       <field
+        property="email"
+        depends="email">
+        <arg0 key="reg.email"/>
+       </field>
+       <field
+        property="password"
+        depends="required">
+        <arg0 key="reg.password"/>
+       </field>
+          <field
+        property="oldrepassword"
+        depends="required">
+        <arg0 key="reg.repassword"/>
+       </field>
+       <field
+        property="phone"
+        depends="required,mask">
+        <arg0 key="reg.phone"/>
+        <msg name="mask" key="电话号码格式必须是'区号-号码'" resource="false"/>
+        <var>
+        <var-name>mask</var-name>
+        <var-value>${phone}</var-value>
+        </var>
+       </field>
+</form>-->
+
+</formset>
+</form-validation>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.UserLog" table="T_USERLOG">
+    <id name="no" type="java.lang.Integer" column="NO" unsaved-value="null">
+         <generator class="increment">
+        </generator>
+    </id>
+    <property name="user" type="java.lang.String" update="true" insert="true" column="USER"/>
+    <property name="operation" type="java.lang.String" update="true" insert="true" column="OPERATION"/>
+    <property name="academy" type="java.lang.String" update="true" insert="true" column="ACADEMY"/>
+    <property name="time" type="java.util.Calendar" update="true" insert="true" column="TIME"/>
+</class>
+</hibernate-mapping>

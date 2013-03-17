@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Shadeputypastjob" table="T_SHADEPUTYPASTJOB">
+    <id name="shadpj_id" type="java.lang.Integer" column="SHADPJ_ID" unsaved-value = "null">
+         <generator class="native"/>
+         </id>
+    <property name="shadbi_id" type="java.lang.Integer" update="true" insert="true" column="SHADBI_ID"/>
+    <property name="jobinstitute" type="java.lang.String" update="true" insert="true" column="JOBINSTITUTE"/>
+    <property name="jobrank" type="java.lang.String" update="true" insert="true" column="JOBRANK"/>
+    <property name="startdate" type="java.util.Date" update="true" insert="true" column="STARTDATE"/>
+    <property name="enddate" type="java.util.Date" update="true" insert="true" column="ENDDATE"/>
+    <property name="jobaddress" type="java.lang.String" update="true" insert="true" column="JOBADDRESS"/>
+    </class>
+</hibernate-mapping>

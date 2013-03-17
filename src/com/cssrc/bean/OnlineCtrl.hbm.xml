@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.OnlineCtrl" table="T_ONLINECTRL">
+    <id name="no" type="java.lang.Integer" column="NO" unsaved-value="null">
+         <generator class="native">
+        </generator>
+    </id>
+    <property name="num" type="java.lang.Integer" update="true" insert="true" column="NUM"/>
+    <property name="time" type="java.lang.Integer" update="true" insert="true" column="TIME"/>
+</class>
+</hibernate-mapping>

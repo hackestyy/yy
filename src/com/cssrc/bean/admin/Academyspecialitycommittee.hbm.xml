@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Academyspecialitycommittee" table="T_ACADEMYSPECIALITYCOMMITTEE">
+    <id name="asc_id" type="java.lang.Integer" column="ASC_ID" unsaved-value = "null">
+         <generator class="native"/>
+         </id>
+    <property name="abi_id" type="java.lang.Integer" update="true" insert="true" column="ABI_ID"/>
+    <property name="commname" type="java.lang.String" update="true" insert="true" column="COMMNAME"/>
+    <property name="commdirector" type="java.lang.String" update="true" insert="true" column="COMMDIRECTOR"/>
+    </class>
+</hibernate-mapping>

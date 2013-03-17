@@ -1,0 +1,69 @@
+[PropertyInfo]
+abi_id,Integer,false,false, , ,false,<default>
+acadname,String,false,false, , ,false,<default>
+acadno,String,false,false, , ,false,<default>
+address1,String,false,false, , ,false,<default>
+address2,String,false,false, , ,false,<default>
+admintrusteecount,Integer,false,false, , ,false,<default>
+certifyyear,java.util.Calendar,false,false, , ,false,<default>
+chairmanidentity,String,false,false, , ,false,<default>
+chairmaninstitute,String,false,false, , ,false,<default>
+chairmanisfulltime,String,false,false, , ,false,<default>
+chairmanisretire,String,false,false, , ,false,<default>
+chairmanmobile,String,false,false, , ,false,<default>
+chairmanname,String,false,false, , ,false,<default>
+chairmanparty,String,false,false, , ,false,<default>
+chairmanscholar,String,false,false, , ,false,<default>
+chairmansex,String,false,false, , ,false,<default>
+chairmansocialduty,String,false,false, , ,false,<default>
+chairmantelephone,String,false,false, , ,false,<default>
+chargemanidentity,String,false,false, , ,false,<default>
+chargemaninstitute,String,false,false, , ,false,<default>
+chargemanisfulltime,String,false,false, , ,false,<default>
+chargemanisretire,String,false,false, , ,false,<default>
+chargemanmobile,String,false,false, , ,false,<default>
+chargemanname,String,false,false, , ,false,<default>
+chargemanparty,String,false,false, , ,false,<default>
+chargemanscholar,String,false,false, , ,false,<default>
+chargemansex,String,false,false, , ,false,<default>
+chargemansocialduty,String,false,false, , ,false,<default>
+chargemantelephone,String,false,false, , ,false,<default>
+chargeyear,String,false,false, , ,false,<default>
+contactfax,String,false,false, , ,false,<default>
+contactperson,String,false,false, , ,false,<default>
+contactphone,String,false,false, , ,false,<default>
+is311,String,false,false, , ,false,<default>
+ispartygroup,String,false,false, , ,false,<default>
+operationrange,String,false,false, , ,false,<default>
+parttimecount,Integer,false,false, , ,false,<default>
+partyperson,String,false,false, , ,false,<default>
+partytelephon,String,false,false, , ,false,<default>
+partytype,String,false,false, , ,false,<default>
+postcode1,String,false,false, , ,false,<default>
+postcode2,String,false,false, , ,false,<default>
+registerdate,java.util.Calendar,false,false, , ,false,<default>
+registerfund,String,false,false, , ,false,<default>
+secretaryidentity,String,false,false, , ,false,<default>
+secretaryinstitute,String,false,false, , ,false,<default>
+secretaryisfulltime,String,false,false, , ,false,<default>
+secretaryisretire,String,false,false, , ,false,<default>
+secretarymobile,String,false,false, , ,false,<default>
+secretaryname,String,false,false, , ,false,<default>
+secretaryparty,String,false,false, , ,false,<default>
+secretaryscholar,String,false,false, , ,false,<default>
+secretarysex,String,false,false, , ,false,<default>
+secretarysocialduty,String,false,false, , ,false,<default>
+secretarytelephone,String,false,false, , ,false,<default>
+shai_id,Integer,false,false, , ,false,<default>
+socialhonor,String,false,false, , ,false,<default>
+staffcount,Integer,false,false, , ,false,<default>
+starlevel,String,false,false, , ,false,<default>
+startdate,java.util.Calendar,false,false, , ,false,<default>
+tempcertifyyear,String,false,false, , ,false,<default>
+tempregisterdate,String,false,false, , ,false,<default>
+trusteecount,Integer,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

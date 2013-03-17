@@ -1,0 +1,3387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+<tiles-definitions>
+	<!--报错 -->
+	<definition
+		name="error.delete"
+		path="/WEB-INF/jsp/error/errorDelete.jsp" />
+	<definition
+		name="error.add"
+		path="/WEB-INF/jsp/error/errorAdd.jsp" />
+	<definition
+		name="error.sys"
+		path="/WEB-INF/jsp/error/errorSys.jsp" />
+	<definition
+		name="error.memno"
+		path="/WEB-INF/jsp/error/errorMemno.jsp" />
+	<definition
+		name="error.sizefailure"
+		path="/WEB-INF/jsp/error/errorSizeFailure.jsp" />
+	<definition
+		name="error.username"
+		path="/WEB-INF/jsp/error/errorUser.jsp" />
+	<definition
+		name="error.view"
+		path="/WEB-INF/jsp/error/errorView.jsp" />
+	<definition
+		name="error.max"
+		path="/WEB-INF/jsp/error/errorMax.jsp" />
+	<definition
+		name="error.acadwarn"
+		path="/WEB-INF/jsp/error/erroracadwarn.jsp" />
+	<definition
+		name="error.academywarn"
+		path="/WEB-INF/jsp/error/erroracademywarn.jsp" />
+	<definition
+		name="existDBWY"
+		path="/WEB-INF/jsp/error/existDBWY.jsp" />
+	<!--用户登陆 -->
+	<definition
+		name="shipdb.loginagain"
+		path="/login.jsp" />
+	<definition
+		name="shipdb.leadadmin"
+		path="/WEB-INF/jsp/module/common/loginagain.jsp" />
+	<definition
+		name="shipdb.leadadmin2"
+		path="/WEB-INF/jsp/module/common/loginagain2.jsp" />
+	<definition
+		name="shsa.header"
+		path="/WEB-INF/jsp/module/common/header.jsp" />
+	<definition
+		name="shsa.body"
+		path="/WEB-INF/jsp/module/user/body.jsp" />
+	<definition
+		name="shsa.left"
+		path="/WEB-INF/jsp/module/left.jsp" />
+	<definition
+		name="login-definition"
+		path="/WEB-INF/jsp/layout/layout.jsp">
+		<put
+			name="header"
+			value="/WEB-INF/jsp/module/common/header.jsp"></put>
+		<put
+			name="left"
+			value="/WEB-INF/jsp/module/user/left.jsp"></put>
+		<put
+			name="body"
+			value="/WEB-INF/jsp/module/user/body.jsp"></put>
+	</definition>
+	<definition
+		name="login.list"
+		path="/login.jsp" />
+	<!--学会群 -->
+	<definition
+		name="acadgroup.list"
+		path="/WEB-INF/jsp/module/admin/acadgrouplist.jsp" />
+	<definition
+		name="acadgroup.modify"
+		path="/WEB-INF/jsp/module/admin/acadgroupmodify.jsp" />
+	<definition
+		name="acadgroup.view"
+		path="/WEB-INF/jsp/module/admin/acadgroupview.jsp" />
+	<definition
+		name="acadgroup.add"
+		path="/WEB-INF/jsp/module/admin/acadgroupadd.jsp" />
+	<definition
+		name="already.existacad"
+		path="/WEB-INF/jsp/error/alreadyexistacad.jsp" />
+	<!--代表、委员学会群 -->
+	<definition
+		name="shadeputybaseinfo.list"
+		path="/WEB-INF/jsp/module/admin/shadeputybaseinfolist.jsp" />
+	<definition
+		name="shadeputybaseinfoadd.list"
+		path="/WEB-INF/jsp/module/admin/shadeputybaseinfoaddlist.jsp" />
+	<definition
+		name="shadeputybaseinfomain.list"
+		path="/WEB-INF/jsp/module/admin/shadeputybaseinfomainlist.jsp" />
+	<definition
+		name="shadeputybaseinfo.add"
+		path="/WEB-INF/jsp/module/admin/shadeputybaseinfoadd.jsp" />
+	<definition
+		name="shadeputybaseinfo.modify"
+		path="/WEB-INF/jsp/module/admin/shadeputybaseinfomodify.jsp" />
+	<definition
+		name="shadeputybaseinfo.view"
+		path="/WEB-INF/jsp/module/admin/shadeputybaseinfoview.jsp" />
+	<definition
+		name="shadeputybaseinfodb.list"
+		path="/WEB-INF/jsp/module/admin/shadeputybaseinfodblist.jsp" />
+	<definition
+		name="shadeputybaseinfowy.list"
+		path="/WEB-INF/jsp/module/admin/shadeputybaseinfowylist.jsp" />
+	<definition
+		name="shadeputybaseinfocw.list"
+		path="/WEB-INF/jsp/module/admin/shadeputybaseinfocwlist.jsp" />
+	<!-- 代表、委员主要工作经历 -->
+	<definition
+		name="shadeputypastjob.modifylist"
+		path="/WEB-INF/jsp/module/admin/shadeputypastjobmodifylist.jsp" />
+	<definition
+		name="shadeputypastjob.modify"
+		path="/WEB-INF/jsp/module/admin/shadeputypastjobmodify.jsp" />
+	<definition
+		name="shadeputypastjob.view"
+		path="/WEB-INF/jsp/module/admin/shadeputypastjobview.jsp" />
+	<definition
+		name="shadeputypastjob.add"
+		path="/WEB-INF/jsp/module/admin/shadeputypastjobadd.jsp" />
+	<definition
+		name="shadeputypastjob.modifyadd"
+		path="/WEB-INF/jsp/module/admin/shadeputypastjobmodifyadd.jsp" />
+	<definition
+		name="shadeputypastjob.addlist"
+		path="/WEB-INF/jsp/module/admin/shadeputypastjobaddlist.jsp" />
+	<!-- 代表、委员主要科研成果 -->
+	<definition
+		name="shadeputyresearchproduction.modifylist"
+		path="/WEB-INF/jsp/module/admin/shadeputyresearchproductionmodifylist.jsp" />
+	<definition
+		name="shadeputyresearchproduction.modifymodify"
+		path="/WEB-INF/jsp/module/admin/shadeputyresearchproductionmodifymodify.jsp" />
+	<definition
+		name="shadeputyresearchproduction.viewlist"
+		path="/WEB-INF/jsp/module/admin/shadeputyresearchproductionviewlist.jsp" />
+	<definition
+		name="shadeputyresearchproduction.addadd"
+		path="/WEB-INF/jsp/module/admin/shadeputyresearchproductionaddadd.jsp" />
+	<definition
+		name="shadeputyresearchproduction.modifyadd"
+		path="/WEB-INF/jsp/module/admin/shadeputyresearchproductionmodifyadd.jsp" />
+	<definition
+		name="shadeputyresearchproduction.addlist"
+		path="/WEB-INF/jsp/module/admin/shadeputyresearchproductionaddlist.jsp" />
+	<!-- 代表、委员主要学术科普论著 -->
+	<definition
+		name="shadeputyacademicliterature.modifylist"
+		path="/WEB-INF/jsp/module/admin/shadeputyacademicliteraturemodifylist.jsp" />
+	<definition
+		name="shadeputyacademicliterature.modifymodify"
+		path="/WEB-INF/jsp/module/admin/shadeputyacademicliteraturemodifymodify.jsp" />
+	<definition
+		name="shadeputyacademicliterature.viewlist"
+		path="/WEB-INF/jsp/module/admin/shadeputyacademicliteratureviewlist.jsp" />
+	<definition
+		name="shadeputyacademicliterature.addadd"
+		path="/WEB-INF/jsp/module/admin/shadeputyacademicliteratureaddadd.jsp" />
+	<definition
+		name="shadeputyacademicliterature.modifyadd"
+		path="/WEB-INF/jsp/module/admin/shadeputyacademicliteraturemodifyadd.jsp" />
+	<definition
+		name="shadeputyacademicliterature.addlist"
+		path="/WEB-INF/jsp/module/admin/shadeputyacademicliteratureaddlist.jsp" />
+	<!-- 代表、委员专利（软件著作权） -->
+	<definition
+		name="shadeputypatentinfo.modifylist"
+		path="/WEB-INF/jsp/module/admin/shadeputypatentinfomodifylist.jsp" />
+	<definition
+		name="shadeputypatentinfo.modifymodify"
+		path="/WEB-INF/jsp/module/admin/shadeputypatentinfomodifymodify.jsp" />
+	<definition
+		name="shadeputypatentinfo.viewlist"
+		path="/WEB-INF/jsp/module/admin/shadeputypatentinfoviewlist.jsp" />
+	<definition
+		name="shadeputypatentinfo.addadd"
+		path="/WEB-INF/jsp/module/admin/shadeputypatentinfoaddadd.jsp" />
+	<definition
+		name="shadeputypatentinfo.modifyadd"
+		path="/WEB-INF/jsp/module/admin/shadeputypatentinfomodifyadd.jsp" />
+	<definition
+		name="shadeputypatentinfo.addlist"
+		path="/WEB-INF/jsp/module/admin/shadeputypatentinfoaddlist.jsp" />
+	<!-- 代表、委员表 -->
+	<definition
+		name="shadeputyinfo.addlist"
+		path="/WEB-INF/jsp/module/admin/shadeputyinfoaddlist.jsp" />
+	<definition
+		name="shadeputyinfo.add"
+		path="/WEB-INF/jsp/module/admin/shadeputyinfoadd.jsp" />
+	<definition
+		name="shadeputyinfo.modifylist"
+		path="/WEB-INF/jsp/module/admin/shadeputyinfomodifylist.jsp" />
+	<definition
+		name="shadeputyinfo.modify"
+		path="/WEB-INF/jsp/module/admin/shadeputyinfomodify.jsp" />
+	<definition
+		name="shadeputyinfo.view"
+		path="/WEB-INF/jsp/module/admin/shadeputyinfoview.jsp" />
+	<definition
+		name="shadeputyinfo.modifyadd"
+		path="/WEB-INF/jsp/module/admin/shadeputyinfomodifyadd.jsp" />
+	<!--学会子库 -->
+	<definition
+		name="academybaseinfo.list"
+		path="/WEB-INF/jsp/module/admin/academybaseinfolist.jsp" />
+	<definition
+		name="academybaseinfo.modify"
+		path="/WEB-INF/jsp/module/admin/academybaseinfomodify.jsp" />
+	<definition
+		name="academybaseinfo.view"
+		path="/WEB-INF/jsp/module/admin/academybaseinfoview.jsp" />
+	<definition
+		name="academybaseinfo.add"
+		path="/WEB-INF/jsp/module/admin/academybaseinfoadd.jsp" />
+	<definition
+		name="already.existacademy"
+		path="/WEB-INF/jsp/error/alreadyexistacademy.jsp" />
+	<!--学会子库负责人信息 -->
+	<definition
+		name="academybaseinfoprincipal.modify"
+		path="/WEB-INF/jsp/module/admin/academybaseinfoprincipalmodify.jsp" />
+	<definition
+		name="academybaseinfoprincipal.view"
+		path="/WEB-INF/jsp/module/admin/academybaseinfoprincipalview.jsp" />
+	<definition
+		name="academybaseinfoprincipal.add"
+		path="/WEB-INF/jsp/module/admin/academybaseinfoprincipaladd.jsp" />
+	<!--学会子库理事会情况 -->
+	<definition
+		name="academybaseinfocouncil.add"
+		path="/WEB-INF/jsp/module/admin/academybaseinfocounciladd.jsp" />
+	<definition
+		name="academybaseinfocouncil.modify"
+		path="/WEB-INF/jsp/module/admin/academybaseinfocouncilmodify.jsp" />
+	<definition
+		name="academybaseinfocouncil.view"
+		path="/WEB-INF/jsp/module/admin/academybaseinfocouncilview.jsp" />
+	<!--学会子库学会组织机构 -->
+	<definition
+		name="academyorganizationinfo.list"
+		path="/WEB-INF/jsp/module/admin/academyorganizationinfolist.jsp" />
+	<definition
+		name="academyorganizationinfo.modify"
+		path="/WEB-INF/jsp/module/admin/academyorganizationinfomodify.jsp" />
+	<definition
+		name="academyorganizationinfo.view"
+		path="/WEB-INF/jsp/module/admin/academyorganizationinfoview.jsp" />
+	<definition
+		name="academyorganizationinfo.add"
+		path="/WEB-INF/jsp/module/admin/academyorganizationinfoadd.jsp" />
+	<definition
+		name="academyorganizationinfo.modifyadd"
+		path="/WEB-INF/jsp/module/admin/academyorganizationinfomodifyadd.jsp" />
+	<definition
+		name="academyorganizationinfo.addlist"
+		path="/WEB-INF/jsp/module/admin/academyorganizationinfoaddlist.jsp" />
+	<!--学会子库专业委员会 -->
+	<definition
+		name="academyspecialitycommittee.list"
+		path="/WEB-INF/jsp/module/admin/academyspecialitycommitteelist.jsp" />
+	<definition
+		name="academyspecialitycommittee.modify"
+		path="/WEB-INF/jsp/module/admin/academyspecialitycommitteemodify.jsp" />
+	<definition
+		name="academyspecialitycommittee.view"
+		path="/WEB-INF/jsp/module/admin/academyspecialitycommitteeview.jsp" />
+	<definition
+		name="academyspecialitycommittee.add"
+		path="/WEB-INF/jsp/module/admin/academyspecialitycommitteeadd.jsp" />
+	<definition
+		name="academyspecialitycommittee.modifyadd"
+		path="/WEB-INF/jsp/module/admin/academyspecialitycommitteemodifyadd.jsp" />
+	<definition
+		name="academyspecialitycommittee.addlist"
+		path="/WEB-INF/jsp/module/admin/academyspecialitycommitteeaddlist.jsp" />
+	<!--学会子库会刊与品牌建设 -->
+	<definition
+		name="academyjournalbrandinfo.addlist"
+		path="/WEB-INF/jsp/module/admin/academyjournalbrandinfoaddlist.jsp" />
+	<definition
+		name="academyjournalbrandinfo.modifylist"
+		path="/WEB-INF/jsp/module/admin/academyjournalbrandinfomodifylist.jsp" />
+	<definition
+		name="academyjournalbrandinfo.viewlist"
+		path="/WEB-INF/jsp/module/admin/academyjournalbrandinfoviewlist.jsp" />
+	<definition
+		name="academyjournalinfo.addadd"
+		path="/WEB-INF/jsp/module/admin/academyjournalinfoaddadd.jsp" />
+	<definition
+		name="academyjournalinfo.modifyadd"
+		path="/WEB-INF/jsp/module/admin/academyjournalinfomodifyadd.jsp" />
+	<definition
+		name="academyjournalinfo.modifymodify"
+		path="/WEB-INF/jsp/module/admin/academyjournalinfomodifymodify.jsp" />
+	<definition
+		name="academybrandconstruct.addadd"
+		path="/WEB-INF/jsp/module/admin/academybrandconstructaddadd.jsp" />
+	<definition
+		name="academybrandconstruct.modifyadd"
+		path="/WEB-INF/jsp/module/admin/academybrandconstructmodifyadd.jsp" />
+	<definition
+		name="academybrandconstruct.modifymodify"
+		path="/WEB-INF/jsp/module/admin/academybrandconstructmodifymodify.jsp" />
+	<!--学会子库工作委员会 -->
+	<definition
+		name="academyworkcommittee.modifylist"
+		path="/WEB-INF/jsp/module/admin/academyworkcommitteemodifylist.jsp" />
+	<definition
+		name="academyworkcommittee.modifymodify"
+		path="/WEB-INF/jsp/module/admin/academyworkcommitteemodifymodify.jsp" />
+	<definition
+		name="academyworkcommittee.viewlist"
+		path="/WEB-INF/jsp/module/admin/academyworkcommitteeviewlist.jsp" />
+	<definition
+		name="academyworkcommittee.addadd"
+		path="/WEB-INF/jsp/module/admin/academyworkcommitteeaddadd.jsp" />
+	<definition
+		name="academyworkcommittee.modifyadd"
+		path="/WEB-INF/jsp/module/admin/academyworkcommitteemodifyadd.jsp" />
+	<definition
+		name="academyworkcommittee.addlist"
+		path="/WEB-INF/jsp/module/admin/academyworkcommitteeaddlist.jsp" />
+	<!--学会子库党建信息 -->
+	<definition
+		name="academybaseinfopartybuild.add"
+		path="/WEB-INF/jsp/module/admin/academybaseinfopartybuildadd.jsp" />
+	<definition
+		name="academybaseinfopartybuild.modify"
+		path="/WEB-INF/jsp/module/admin/academybaseinfopartybuildmodify.jsp" />
+	<definition
+		name="academybaseinfopartybuild.view"
+		path="/WEB-INF/jsp/module/admin/academybaseinfopartybuildview.jsp" />
+	<!--会员 -->
+	<definition
+		name="smemberbaseinfo.list"
+		path="/WEB-INF/jsp/module/admin/smemberbaseinfolist.jsp" />
+	<definition
+		name="smemberbaseinfomain.list"
+		path="/WEB-INF/jsp/module/admin/smemberbaseinfomainlist.jsp" />
+	<definition
+		name="smemberbaseinfo.add"
+		path="/WEB-INF/jsp/module/admin/smemberbaseinfoadd.jsp" />
+	<definition
+		name="smemberbaseinfo.add1"
+		path="/WEB-INF/jsp/module/admin/smemberbaseinfoadd1.jsp" />
+	<definition
+		name="smemberbaseinfo.modify"
+		path="/WEB-INF/jsp/module/admin/smemberbaseinfomodify.jsp" />
+	<definition
+		name="smemberbaseinfo.view"
+		path="/WEB-INF/jsp/module/admin/smemberbaseinfoview.jsp" />
+	<definition
+		name="acadesmemberbaseinfo.view"
+		path="/WEB-INF/jsp/module/search/searchacadesmemberinfoview.jsp" />
+	<definition
+		name="acadesmemberbaseinfo.view1"
+		path="/WEB-INF/jsp/module/search/searchacadesmemberlistview.jsp" />
+	<definition
+		name="smemberbaseinfopreview.modify"
+		path="/WEB-INF/jsp/module/admin/smemberbaseinfopreviewmodify.jsp" />
+	<definition
+		name="acadesmemberbaseinfo.modify"
+		path="/WEB-INF/jsp/module/admin/acadesmemberbaseinfomodify.jsp" />
+	<!--代表委员信息 -->
+	<definition
+		name="smemberdeputyinfo.modifylist"
+		path="/WEB-INF/jsp/module/admin/smemberdeputyinfomodifylist.jsp" />
+	<definition
+		name="smemberdeputyinfo1.modifylist"
+		path="/WEB-INF/jsp/module/smember/smemberdeputyinfomodifylist.jsp" />
+	<definition
+		name="smemberdeputyinfo.modify"
+		path="/WEB-INF/jsp/module/admin/smemberdeputyinfomodify.jsp" />
+	<definition
+		name="smemberdeputyinfo1.modify"
+		path="/WEB-INF/jsp/module/smember/smemberdeputyinfomodify.jsp" />
+	<definition
+		name="smemberdeputyinfo.view"
+		path="/WEB-INF/jsp/module/admin/smemberdeputyinfoview.jsp" />
+	<definition
+		name="smemberdeputyinfo.modifyadd"
+		path="/WEB-INF/jsp/module/admin/smemberdeputyinfomodifyadd.jsp" />
+	<definition
+		name="smemberdeputyinfo1.modifyadd"
+		path="/WEB-INF/jsp/module/smember/smemberdeputyinfomodifyadd.jsp" />
+	<!--会员参加学会信息 -->
+	<definition
+		name="academysmemberrelation.modifylist"
+		path="/WEB-INF/jsp/module/admin/academysmemberrelationmodifylist.jsp" />
+	<definition
+		name="academysmemberrelation1.modifylist"
+		path="/WEB-INF/jsp/module/smember/academysmemberrelationmodifylist.jsp" />
+	<definition
+		name="academysmemberrelation.viewlist"
+		path="/WEB-INF/jsp/module/admin/academysmemberrelationviewlist.jsp" />
+	<definition
+		name="academysmemberrelation.modify"
+		path="/WEB-INF/jsp/module/admin/academysmemberrelationmodify.jsp" />
+	<definition
+		name="academysmemberrelation1.modify"
+		path="/WEB-INF/jsp/module/smember/academysmemberrelationmodify.jsp" />
+	<definition
+		name="academysmemberrelation.view"
+		path="/WEB-INF/jsp/module/admin/academysmemberrelationview.jsp" />
+	<definition
+		name="academysmemberrelation.modifyadd"
+		path="/WEB-INF/jsp/module/admin/academysmemberrelationmodifyadd.jsp" />
+	<definition
+		name="academysmemberrelation1.modifyadd"
+		path="/WEB-INF/jsp/module/smember/academysmemberrelationmodifyadd.jsp" />
+	<!--会员主要工作经历 -->
+	<definition
+		name="smemberpastjob.modifylist"
+		path="/WEB-INF/jsp/module/admin/smemberpastjobmodifylist.jsp" />
+	<definition
+		name="smemberpastjob1.modifylist"
+		path="/WEB-INF/jsp/module/smember/smemberpastjobmodifylist.jsp" />
+	<definition
+		name="smemberpastjob.modify"
+		path="/WEB-INF/jsp/module/admin/smemberpastjobmodify.jsp" />
+	<definition
+		name="smemberpastjob1.modify"
+		path="/WEB-INF/jsp/module/smember/smemberpastjobmodify.jsp" />
+	<definition
+		name="smemberpastjob.view"
+		path="/WEB-INF/jsp/module/admin/smemberpastjobview.jsp" />
+	<definition
+		name="smemberpastjob.add"
+		path="/WEB-INF/jsp/module/admin/smemberpastjobadd.jsp" />
+	<definition
+		name="smemberpastjob.modifyadd"
+		path="/WEB-INF/jsp/module/admin/smemberpastjobmodifyadd.jsp" />
+	<definition
+		name="smemberpastjob1.modifyadd"
+		path="/WEB-INF/jsp/module/smember/smemberpastjobmodifyadd.jsp" />
+	<definition
+		name="smemberpastjob.addlist"
+		path="/WEB-INF/jsp/module/admin/smemberpastjobaddlist.jsp" />
+	<!--会员主要科研成果 -->
+	<definition
+		name="smemberresearchproduction.modifylist"
+		path="/WEB-INF/jsp/module/admin/smemberresearchproductionmodifylist.jsp" />
+	<definition
+		name="smemberresearchproduction1.modifylist"
+		path="/WEB-INF/jsp/module/smember/smemberresearchproductionmodifylist.jsp" />
+	<definition
+		name="smemberresearchproduction.modifymodify"
+		path="/WEB-INF/jsp/module/admin/smemberresearchproductionmodifymodify.jsp" />
+	<definition
+		name="smemberresearchproduction1.modifymodify"
+		path="/WEB-INF/jsp/module/smember/smemberresearchproductionmodifymodify.jsp" />
+	<definition
+		name="smemberresearchproduction.viewlist"
+		path="/WEB-INF/jsp/module/admin/smemberresearchproductionviewlist.jsp" />
+	<definition
+		name="smemberresearchproduction.addadd"
+		path="/WEB-INF/jsp/module/admin/smemberresearchproductionaddadd.jsp" />
+	<definition
+		name="smemberresearchproduction.modifyadd"
+		path="/WEB-INF/jsp/module/admin/smemberresearchproductionmodifyadd.jsp" />
+	<definition
+		name="smemberresearchproduction1.modifyadd"
+		path="/WEB-INF/jsp/module/smember/smemberresearchproductionmodifyadd.jsp" />
+	<definition
+		name="smemberresearchproduction.addlist"
+		path="/WEB-INF/jsp/module/admin/smemberresearchproductionaddlist.jsp" />
+	<!--会员主要学术科普论著 -->
+	<definition
+		name="smemberacademicliterature.modifylist"
+		path="/WEB-INF/jsp/module/admin/smemberacademicliteraturemodifylist.jsp" />
+	<definition
+		name="smemberacademicliterature1.modifylist"
+		path="/WEB-INF/jsp/module/smember/smemberacademicliteraturemodifylist.jsp" />
+	<definition
+		name="smemberacademicliterature.modifymodify"
+		path="/WEB-INF/jsp/module/admin/smemberacademicliteraturemodifymodify.jsp" />
+	<definition
+		name="smemberacademicliterature1.modifymodify"
+		path="/WEB-INF/jsp/module/smember/smemberacademicliteraturemodifymodify.jsp" />
+	<definition
+		name="smemberacademicliterature.viewlist"
+		path="/WEB-INF/jsp/module/admin/smemberacademicliteratureviewlist.jsp" />
+	<definition
+		name="smemberacademicliterature.addadd"
+		path="/WEB-INF/jsp/module/admin/smemberacademicliteratureaddadd.jsp" />
+	<definition
+		name="smemberacademicliterature.modifyadd"
+		path="/WEB-INF/jsp/module/admin/smemberacademicliteraturemodifyadd.jsp" />
+	<definition
+		name="smemberacademicliterature1.modifyadd"
+		path="/WEB-INF/jsp/module/smember/smemberacademicliteraturemodifyadd.jsp" />
+	<definition
+		name="smemberacademicliterature.addlist"
+		path="/WEB-INF/jsp/module/admin/smemberacademicliteratureaddlist.jsp" />
+	<!--会员专利（软件著作权）情况 -->
+	<definition
+		name="smemberpatentinfo.modifylist"
+		path="/WEB-INF/jsp/module/admin/smemberpatentinfomodifylist.jsp" />
+	<definition
+		name="smemberpatentinfo1.modifylist"
+		path="/WEB-INF/jsp/module/smember/smemberpatentinfomodifylist.jsp" />
+	<definition
+		name="smemberpatentinfo.modifymodify"
+		path="/WEB-INF/jsp/module/admin/smemberpatentinfomodifymodify.jsp" />
+	<definition
+		name="smemberpatentinfo1.modifymodify"
+		path="/WEB-INF/jsp/module/smember/smemberpatentinfomodifymodify.jsp" />
+	<definition
+		name="smemberpatentinfo.viewlist"
+		path="/WEB-INF/jsp/module/admin/smemberpatentinfoviewlist.jsp" />
+	<definition
+		name="smemberpatentinfo.addadd"
+		path="/WEB-INF/jsp/module/admin/smemberpatentinfoaddadd.jsp" />
+	<definition
+		name="smemberpatentinfo.modifyadd"
+		path="/WEB-INF/jsp/module/admin/smemberpatentinfomodifyadd.jsp" />
+	<definition
+		name="smemberpatentinfo1.modifyadd"
+		path="/WEB-INF/jsp/module/smember/smemberpatentinfomodifyadd.jsp" />
+	<definition
+		name="smemberpatentinfo.addlist"
+		path="/WEB-INF/jsp/module/admin/smemberpatentinfoaddlist.jsp" />
+	<!--团体会员 -->
+	<definition
+		name="gmemberbaseinfo.list"
+		path="/WEB-INF/jsp/module/admin/smemberbaseinfolist.jsp" />
+	<definition
+		name="gmemberbaseinfomain.list"
+		path="/WEB-INF/jsp/module/admin/gmemberbaseinfomainlist.jsp" />
+	<definition
+		name="gmemberbaseinfo.add"
+		path="/WEB-INF/jsp/module/admin/gmemberbaseinfoadd.jsp" />
+	<definition
+		name="gmemberbaseinfo.modify"
+		path="/WEB-INF/jsp/module/admin/gmemberbaseinfomodify.jsp" />
+	<definition
+		name="gmemberbaseinfo.view"
+		path="/WEB-INF/jsp/module/admin/gmemberbaseinfoview.jsp" />
+	<!--团体会员主要产品（科研成果）信息表 -->
+	<definition
+		name="gmemberresearchproduction.modifylist"
+		path="/WEB-INF/jsp/module/admin/gmemberresearchproductionmodifylist.jsp" />
+	<definition
+		name="gmemberresearchproduction.modifymodify"
+		path="/WEB-INF/jsp/module/admin/gmemberresearchproductionmodifymodify.jsp" />
+	<definition
+		name="gmemberresearchproduction.viewlist"
+		path="/WEB-INF/jsp/module/admin/gmemberresearchproductionviewlist.jsp" />
+	<definition
+		name="gmemberresearchproduction.addadd"
+		path="/WEB-INF/jsp/module/admin/gmemberresearchproductionaddadd.jsp" />
+	<definition
+		name="gmemberresearchproduction.modifyadd"
+		path="/WEB-INF/jsp/module/admin/gmemberresearchproductionmodifyadd.jsp" />
+	<definition
+		name="gmemberresearchproduction.addlist"
+		path="/WEB-INF/jsp/module/admin/gmemberresearchproductionaddlist.jsp" />
+	<!--团体会员专利、标准信息表 -->
+	<definition
+		name="gmemberpatentinfo.modifylist"
+		path="/WEB-INF/jsp/module/admin/gmemberpatentinfomodifylist.jsp" />
+	<definition
+		name="gmemberpatentinfo.modifymodify"
+		path="/WEB-INF/jsp/module/admin/gmemberpatentinfomodifymodify.jsp" />
+	<definition
+		name="gmemberpatentinfo.viewlist"
+		path="/WEB-INF/jsp/module/admin/gmemberpatentinfoviewlist.jsp" />
+	<definition
+		name="gmemberpatentinfo.addadd"
+		path="/WEB-INF/jsp/module/admin/gmemberpatentinfoaddadd.jsp" />
+	<definition
+		name="gmemberpatentinfo.modifyadd"
+		path="/WEB-INF/jsp/module/admin/gmemberpatentinfomodifyadd.jsp" />
+	<definition
+		name="gmemberpatentinfo.addlist"
+		path="/WEB-INF/jsp/module/admin/gmemberpatentinfoaddlist.jsp" />
+	<!--科协范围查询 -->
+	<definition
+		name="systemquerylist.list"
+		path="/WEB-INF/jsp/module/search/systemquerylist.jsp" />
+	<definition
+		name="systemquery.list"
+		path="/WEB-INF/jsp/module/search/systemqueryresult.jsp" />
+	<definition
+		name="searchmemberbaseinfo.list"
+		path="/WEB-INF/jsp/module/search/searchsmemberbaseinfoview.jsp" />
+	<definition
+		name="searchmemberbaseinfomodify.list"
+		path="/WEB-INF/jsp/module/search/searchsmemberbaseinfomodify.jsp" />
+	<!--科协范围查询个人会员主要科研成果 -->
+	<definition
+		name="searchsmemberresearchproduction.modifylist"
+		path="/WEB-INF/jsp/module/search/searchsmemberresearchproductionmodifylist.jsp" />
+	<definition
+		name="searchsmemberresearchproduction.modify"
+		path="/WEB-INF/jsp/module/search/searchsmemberresearchproductionmodify.jsp" />
+	<definition
+		name="searchsmemberresearchproduction.view"
+		path="/WEB-INF/jsp/module/search/searchsmemberresearchproductionview.jsp" />
+	<definition
+		name="searchsmemberresearchproduction.modifyadd"
+		path="/WEB-INF/jsp/module/search/searchsmemberresearchproductionmodifyadd.jsp" />
+	<!--科协范围查询个人会员信息 -->
+	<definition
+		name="searchacadesmemberinfo.modify"
+		path="/WEB-INF/jsp/module/search/searchacadesmemberinfomodify.jsp" />
+	<definition
+		name="searchacadesmemberinfo.view"
+		path="/WEB-INF/jsp/module/search/searchacadesmemberinfoview.jsp" />
+	<!--科协范围查询个人会员主要学术科普论著 -->
+	<definition
+		name="searchsmemberacademicliterature.modifylist"
+		path="/WEB-INF/jsp/module/search/searchsmemberacademicliteraturemodifylist.jsp" />
+	<definition
+		name="searchsmemberacademicliterature.modify"
+		path="/WEB-INF/jsp/module/search/searchsmemberacademicliteraturemodify.jsp" />
+	<definition
+		name="searchsmemberacademicliterature.view"
+		path="/WEB-INF/jsp/module/search/searchsmemberacademicliteratureview.jsp" />
+	<definition
+		name="searchsmemberacademicliterature.modifyadd"
+		path="/WEB-INF/jsp/module/search/searchsmemberacademicliteraturemodifyadd.jsp" />
+	<!--科协范围查询个人会员专利（软件著作权）情况 -->
+	<definition
+		name="searchsmemberpatentinfo.modifylist"
+		path="/WEB-INF/jsp/module/search/searchsmemberpatentinfomodifylist.jsp" />
+	<definition
+		name="searchsmemberpatentinfo.modify"
+		path="/WEB-INF/jsp/module/search/searchsmemberpatentinfomodify.jsp" />
+	<definition
+		name="searchsmemberpatentinfo.view"
+		path="/WEB-INF/jsp/module/search/searchsmemberpatentinfoview.jsp" />
+	<definition
+		name="smemberidentityexist"
+		path="/WEB-INF/jsp/module/search/searchmemberidentityexist.jsp" />
+	<definition
+		name="searchsmemberpatentinfo.modifyadd"
+		path="/WEB-INF/jsp/module/search/searchsmemberpatentinfomodifyadd.jsp" />
+	<!--科协范围查询个人会员主要工作经历 -->
+	<definition
+		name="searchsmemberpastjob.view"
+		path="/WEB-INF/jsp/module/search/searchsmemberpastjobview.jsp" />
+	<definition
+		name="searchsmemberpastjob.modifylist"
+		path="/WEB-INF/jsp/module/search/searchsmemberpastjobmodifylist.jsp" />
+	<definition
+		name="searchsmemberpastjob.modify"
+		path="/WEB-INF/jsp/module/search/searchsmemberpastjobmodify.jsp" />
+	<definition
+		name="searchsmemberpastjob.modifyadd"
+		path="/WEB-INF/jsp/module/search/searchsmemberpastjobmodifyadd.jsp" />
+	<!--科协范围查询个人会员参加学会信息 -->
+	<definition
+		name="searchacademysmemberrelation.modifylist"
+		path="/WEB-INF/jsp/module/search/searchacademysmemberrelationmodifylist.jsp" />
+	<definition
+		name="searchacademysmemberrelation.view"
+		path="/WEB-INF/jsp/module/search/searchacademysmemberrelationview.jsp" />
+	<definition
+		name="searchacademysmemberrelation.viewlist"
+		path="/WEB-INF/jsp/module/search/searchacademysmemberrelationviewlist.jsp" />
+	<definition
+		name="searchacademysmemberrelation.modify"
+		path="/WEB-INF/jsp/module/search/searchacademysmemberrelationmodify.jsp" />
+	<!--科协范围查询代表委员信息 -->
+	<definition
+		name="searchsmemberdeputyinfo.modifylist"
+		path="/WEB-INF/jsp/module/search/searchsmemberdeputyinfomodifylist.jsp" />
+	<definition
+		name="searchsmemberdeputyinfo.modify"
+		path="/WEB-INF/jsp/module/search/searchsmemberdeputyinfomodify.jsp" />
+	<definition
+		name="searchsmemberdeputyinfo.modifyadd"
+		path="/WEB-INF/jsp/module/search/searchsmemberdeputyinfomodifyadd.jsp" />
+	<definition
+		name="searchsmemberdeputyinfo.view"
+		path="/WEB-INF/jsp/module/search/searchsmemberdeputyinfoview.jsp" />
+	<definition
+		name="shadeputybaseinfoview.list"
+		path="/WEB-INF/jsp/module/search/shadeputybaseinfolistview.jsp" />
+	<definition
+		name="shadeputybaseinfodbcwwyview.list"
+		path="/WEB-INF/jsp/module/search/shadeputybaseinfolistview.jsp" />
+	<definition
+		name="shadeputybaseinfodbcwwy1view.list"
+		path="/WEB-INF/jsp/module/search/searchshadeputybaseinfoview.jsp" />
+	<definition
+		name="searchshadeputybaseinfo.view"
+		path="/WEB-INF/jsp/module/search/searchshadeputybaseinfoview.jsp" />
+	<definition
+		name="searchshadeputypastjob.view"
+		path="/WEB-INF/jsp/module/search/searchshadeputypastjobview.jsp" />
+	<definition
+		name="searchshadeputyresearchproduction.view"
+		path="/WEB-INF/jsp/module/search/searchshadeputyresearchproductionview.jsp" />
+	<definition
+		name="searchshadeputyacademicliterature.view"
+		path="/WEB-INF/jsp/module/search/searchshadeputyacademicliteratureview.jsp" />
+	<definition
+		name="searchshadeputypatentinfo.view"
+		path="/WEB-INF/jsp/module/search/searchshadeputypatentinfoview.jsp" />
+	<definition
+		name="searchshadeputyinfo.view"
+		path="/WEB-INF/jsp/module/search/searchshadeputyinfoview.jsp" />
+	<definition
+		name="searchsmembershadeputypastjob.view"
+		path="/WEB-INF/jsp/module/search/searchsmembershadeputypastjobview.jsp" />
+	<definition
+		name="searchsmembershadeputyresearchproduction.view"
+		path="/WEB-INF/jsp/module/search/searchsmembershadeputyresearchproductionview.jsp" />
+	<definition
+		name="searchsmembershadeputyacademicliterature.view"
+		path="/WEB-INF/jsp/module/search/searchsmembershadeputyacademicliteratureview.jsp" />
+	<definition
+		name="searchsmembershadeputypatentinfo.view"
+		path="/WEB-INF/jsp/module/search/searchsmembershadeputypatentinfoview.jsp" />
+	<definition
+		name="searchsmembershadeputyinfo.view"
+		path="/WEB-INF/jsp/module/search/searchsmembershadeputyinfoview.jsp" />
+	<definition
+		name="searchsmembershadeputyrelation.viewlist"
+		path="/WEB-INF/jsp/module/search/searchsmembershadeputyrelationviewlist.jsp" />
+	<definition
+		name="searchsmembershadeputyrelation.view"
+		path="/WEB-INF/jsp/module/search/searchsmembershadeputyrelationview.jsp" />
+	<!--某个学会群范围查询 -->
+	<definition
+		name="acadquerylist.list"
+		path="/WEB-INF/jsp/module/search/acadquerylist.jsp" />
+	<definition
+		name="academyquery.list"
+		path="/WEB-INF/jsp/module/search/acadqueryresult.jsp" />
+	<!--某个学会群范围查询情况修改 -->
+	<definition
+		name="academysearchacademysmemberrelation.modifylist"
+		path="/WEB-INF/jsp/module/search/academysearchacademysmemberrelationmodifylist.jsp" />
+	<definition
+		name="academysearchacademysmemberrelation.modify"
+		path="/WEB-INF/jsp/module/search/academysearchacademysmemberrelationmodify.jsp" />
+	<definition
+		name="academysearchsmemberpastjob.modifylist"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberpastjobmodifylist.jsp" />
+	<definition
+		name="academysearchsmemberpastjob.modify"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberpastjobmodify.jsp" />
+	<definition
+		name="academysearchsmemberpastjob.modifyadd"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberpastjobmodifyadd.jsp" />
+	<definition
+		name="academysearchsmemberpatentinfo.modifylist"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberpatentinfomodifylist.jsp" />
+	<definition
+		name="academysearchsmemberpatentinfo.modify"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberpatentinfomodify.jsp" />
+	<definition
+		name="academysearchsmemberpatentinfo.modifyadd"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberpatentinfomodifyadd.jsp" />
+	<definition
+		name="academysearchsmemberacademicliterature.modifylist"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberacademicliteraturemodifylist.jsp" />
+	<definition
+		name="academysearchsmemberacademicliterature.modify"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberacademicliteraturemodify.jsp" />
+	<definition
+		name="academysearchsmemberacademicliterature.modifyadd"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberacademicliteraturemodifyadd.jsp" />
+	<definition
+		name="academysearchsmemberresearchproduction.modifylist"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberresearchproductionmodifylist.jsp" />
+	<definition
+		name="academysearchsmemberresearchproduction.modify"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberresearchproductionmodify.jsp" />
+	<definition
+		name="academysearchsmemberresearchproduction.modifyadd"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberresearchproductionmodifyadd.jsp" />
+	<definition
+		name="academysearchsmemberdeputyinfo.modifylist"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberdeputyinfomodifylist.jsp" />
+	<definition
+		name="academysearchsmemberdeputyinfo.modify"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberdeputyinfomodify.jsp" />
+	<definition
+		name="academysearchsmemberdeputyinfo.modifyadd"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberdeputyinfomodifyadd.jsp" />
+	<!--某个学会子库范围查询 -->
+	<definition
+		name="smemberquerylist.list"
+		path="/WEB-INF/jsp/module/search/smemberquerylist.jsp" />
+	<definition
+		name="smemberquery.list"
+		path="/WEB-INF/jsp/module/search/smemberqueryresult.jsp" />
+	<definition
+		name="smembersearchmemberbaseinfo.list"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberbaseinfoview.jsp" />
+	<definition
+		name="smembersearchacademysmemberrelation.view"
+		path="/WEB-INF/jsp/module/search/smembersearchacademysmemberrelationview.jsp" />
+	<definition
+		name="smembersearchacademysmemberrelation.viewlist"
+		path="/WEB-INF/jsp/module/search/smembersearchacademysmemberrelationviewlist.jsp" />
+	<definition
+		name="smembersearchsmemberpastjob.view"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberpastjobview.jsp" />
+	<definition
+		name="smembersearchsmemberpatentinfo.view"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberpatentinfoview.jsp" />
+	<definition
+		name="smembersearchsmemberacademicliterature.view"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberacademiclitureview.jsp" />
+	<definition
+		name="smembersearchacadesmemberinfo.view"
+		path="/WEB-INF/jsp/module/search/smembersearchacadesmemberinfoview.jsp" />
+	<definition
+		name="smembersearchsmemberresearchproduction.view"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberresearchproductionview.jsp" />
+	<definition
+		name="smembersearchsmemberdeputyinfo.view"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberdeputyinfoview.jsp" />
+	<!--某个学会子库范围查询情况修改 -->
+	<definition
+		name="smembersearchmemberbaseinfomodify.list"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberbaseinfomodify.jsp" />
+	<definition
+		name="smembersearchsmemberresearchproduction.modifylist"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberresearchproductionmodifylist.jsp" />
+	<definition
+		name="smembersearchsmemberresearchproduction.modify"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberresearchproductionmodify.jsp" />
+	<definition
+		name="smembersearchsmemberresearchproduction.modifyadd"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberresearchproductionmodifyadd.jsp" />
+	<definition
+		name="smembersearchsmemberacademicliterature.modifylist"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberacademicliteraturemodifylist.jsp" />
+	<definition
+		name="smembersearchsmemberacademicliterature.modify"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberacademicliteraturemodify.jsp" />
+	<definition
+		name="smembersearchsmemberacademicliterature.modifyadd"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberacademicliteraturemodifyadd.jsp" />
+	<definition
+		name="smembersearchsmemberpatentinfo.modifylist"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberpatentinfomodifylist.jsp" />
+	<definition
+		name="smembersearchsmemberpatentinfo.modify"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberpatentinfomodify.jsp" />
+	<definition
+		name="smembersearchsmemberpatentinfo.modifyadd"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberpatentinfomodifyadd.jsp" />
+	<definition
+		name="smembersearchsmemberpastjob.modifylist"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberpastjobmodifylist.jsp" />
+	<definition
+		name="smembersearchsmemberpastjob.modify"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberpastjobmodify.jsp" />
+	<definition
+		name="smembersearchsmemberpastjob.modifyadd"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberpastjobmodifyadd.jsp" />
+	<definition
+		name="smembersearchacademysmemberrelation.modifylist"
+		path="/WEB-INF/jsp/module/search/smembersearchacademysmemberrelationmodifylist.jsp" />
+	<definition
+		name="smembersearchacademysmemberrelation.modify"
+		path="/WEB-INF/jsp/module/search/smembersearchacademysmemberrelationmodify.jsp" />
+	<definition
+		name="smembersearchsmemberdeputyinfo.modifylist"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberdeputyinfomodifylist.jsp" />
+	<definition
+		name="smembersearchsmemberdeputyinfo.modify"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberdeputyinfomodify.jsp" />
+	<definition
+		name="smembersearchsmemberdeputyinfo.modifyadd"
+		path="/WEB-INF/jsp/module/search/smembersearchsmemberdeputyinfomodifyadd.jsp" />
+	<!-- 系统用户管理 -->
+	<definition
+		name="systemadmin.list"
+		path="/WEB-INF/jsp/module/usermanage/systemadminlist.jsp" />
+	<definition
+		name="systemadmin.modify"
+		path="/WEB-INF/jsp/module/usermanage/systemadminmodify.jsp" />
+	<definition
+		name="systemadmin.add"
+		path="/WEB-INF/jsp/module/usermanage/systemadminadd.jsp" />
+	<!-- VIP用户管理 -->
+	<definition
+		name="vip.list"
+		path="/WEB-INF/jsp/module/usermanage/viplist.jsp" />
+	<definition
+		name="vip.modify"
+		path="/WEB-INF/jsp/module/usermanage/vipmodify.jsp" />
+	<definition
+		name="vip.add"
+		path="/WEB-INF/jsp/module/usermanage/vipadd.jsp" />
+	<!-- 在线用户管理 -->
+	<definition
+		name="onlineadminmanage.list"
+		path="/WEB-INF/jsp/module/usermanage/onlineadminmanage.jsp" />
+	<definition
+		name="onlineadminmanage.modify"
+		path="/WEB-INF/jsp/module/usermanage/onlineadminmanagemodify.jsp" />
+	<definition
+		name="onlineadminmanage.updata"
+		path="/WEB-INF/jsp/module/usermanage/onlineadminmanage.jsp" />
+	<!-- 在线用户管理 -->
+	<definition
+		name="userlog.list"
+		path="/WEB-INF/jsp/module/usermanage/userloglist.jsp" />
+	<!-- 学会用户管理 -->
+	<definition
+		name="academyadmin.list"
+		path="/WEB-INF/jsp/module/usermanage/academyadminlist.jsp" />
+	<definition
+		name="academyadmin.modify"
+		path="/WEB-INF/jsp/module/usermanage/academyadminmodify.jsp" />
+	<definition
+		name="academyadmin.add"
+		path="/WEB-INF/jsp/module/usermanage/academyadminadd.jsp" />
+	<!-- 会员用户管理 -->
+	<definition
+		name="smember.list"
+		path="/WEB-INF/jsp/module/usermanage/smemberlist.jsp" />
+	<definition
+		name="smember.modify"
+		path="/WEB-INF/jsp/module/usermanage/smembermodify.jsp" />
+	<definition
+		name="smember.add"
+		path="/WEB-INF/jsp/module/usermanage/smemberadd.jsp" />
+	<definition
+		name="smember.add2"
+		path="/WEB-INF/jsp/module/usermanage/smemberadd2.jsp" />
+	<!--学会管理员 修改密码 -->
+	<definition
+		name="academyadminchange.pwd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminchangepwd.jsp" />
+	<!--学会管理员 会员用户管理 -->
+	<definition
+		name="academyadminsmember.list"
+		path="/WEB-INF/jsp/module/usermanage/academyadminsmemberlist.jsp" />
+	<definition
+		name="academyadminsmember.modify"
+		path="/WEB-INF/jsp/module/usermanage/academyadminsmembermodify.jsp" />
+	<definition
+		name="academyadminsmember.add"
+		path="/WEB-INF/jsp/module/usermanage/academyadminsmemberadd.jsp" />
+	<definition
+		name="academyadminsmember.add2"
+		path="/WEB-INF/jsp/module/usermanage/academyadminsmemberadd2.jsp" />
+	<!-- -->
+	<definition
+		name="exist1"
+		path="/WEB-INF/jsp/module/common/exist1.jsp" />
+	<definition
+		name="exist2"
+		path="/WEB-INF/jsp/module/common/exist2.jsp" />
+	<!-- VIP用户界面 -->
+	<definition
+		name="vipacadgroup.list"
+		path="/WEB-INF/jsp/module/vip/vipacadgrouplist.jsp" />
+	<definition
+		name="vipacademybaseinfo.list"
+		path="/WEB-INF/jsp/module/vip/vipacademybaseinfolist.jsp" />
+	<definition
+		name="vipacademybaseinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipacademybaseinfoview.jsp" />
+	<definition
+		name="vipshadeputybaseinfo.list"
+		path="/WEB-INF/jsp/module/vip/vipshadeputybaseinfolist.jsp" />
+	<definition
+		name="vipacademybaseinfoprincipal.view"
+		path="/WEB-INF/jsp/module/vip/vipacademybaseinfoprincipalview.jsp" />
+	<definition
+		name="vipacademybaseinfocouncil.view"
+		path="/WEB-INF/jsp/module/vip/vipacademybaseinfocouncilview.jsp" />
+	<definition
+		name="vipacademyorganizationinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipacademyorganizationinfoview.jsp" />
+	<definition
+		name="vipacademyspecialitycommittee.view"
+		path="/WEB-INF/jsp/module/vip/vipacademyspecialitycommitteeview.jsp" />
+	<definition
+		name="vipacademyjournalbrandinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipacademyjournalbrandinfoview.jsp" />
+	<definition
+		name="vipacademyworkcommittee.view"
+		path="/WEB-INF/jsp/module/vip/vipacademyworkcommitteeview.jsp" />
+	<definition
+		name="vipacademybaseinfopartybuild.view"
+		path="/WEB-INF/jsp/module/vip/vipacademybaseinfopartybuildview.jsp" />
+	<definition
+		name="vipsmemberbaseinfo.list"
+		path="/WEB-INF/jsp/module/vip/vipsmemberbaseinfolist.jsp" />
+	<definition
+		name="vipsmemberbaseinfomain.list"
+		path="/WEB-INF/jsp/module/vip/vipsmemberbaseinfomainlist.jsp" />
+	<definition
+		name="vipsmemberbaseinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsmemberbaseinfoview.jsp" />
+	<definition
+		name="vipsmemberdeputyinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsmemberdeputyinfoview.jsp" />
+	<definition
+		name="vipacademysmemberrelation.viewlist"
+		path="/WEB-INF/jsp/module/vip/vipacademysmemberrelationviewlist.jsp" />
+	<definition
+		name="vipacademysmemberrelation.view"
+		path="/WEB-INF/jsp/module/vip/vipacademysmemberrelationview.jsp" />
+	<definition
+		name="vipsmemberpastjob.view"
+		path="/WEB-INF/jsp/module/vip/vipsmemberpastjobview.jsp" />
+	<definition
+		name="vipsmemberresearchproduction.view"
+		path="/WEB-INF/jsp/module/vip/vipsmemberresearchproductionview.jsp" />
+	<definition
+		name="vipsmemberacademicliterature.view"
+		path="/WEB-INF/jsp/module/vip/vipsmemberacademicliteratureview.jsp" />
+	<definition
+		name="vipsmemberpatentinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsmemberpatentinfoview.jsp" />
+	<!--vip团体会员基本信息 -->
+	<definition
+		name="vipgmemberbaseinfo.list"
+		path="/WEB-INF/jsp/module/vip/vipsmemberbaseinfolist.jsp" />
+	<definition
+		name="vipgmemberbaseinfomain.list"
+		path="/WEB-INF/jsp/module/vip/vipgmemberbaseinfomainlist.jsp" />
+	<definition
+		name="vipgmemberbaseinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipgmemberbaseinfoview.jsp" />
+	<!--vip团体会员主要科研成果 -->
+	<definition
+		name="vipgmemberresearchproduction.view"
+		path="/WEB-INF/jsp/module/vip/vipgmemberresearchproductionview.jsp" />
+	<!--VIP团体会员专利、标准信息表 -->
+	<definition
+		name="vipgmemberpatentinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipgmemberpatentinfoview.jsp" />
+	<!-- VIP代表、委员 -->
+	<definition
+		name="vipshadeputybaseinfoview.list"
+		path="/WEB-INF/jsp/module/vip/vipshadeputybaseinfolistview.jsp" />
+	<definition
+		name="vipshadeputybaseinfo.list"
+		path="/WEB-INF/jsp/module/vip/vipshadeputybaseinfolist.jsp" />
+	<definition
+		name="vipshadeputybaseinfomain.list"
+		path="/WEB-INF/jsp/module/vip/vipshadeputybaseinfomainlist.jsp" />
+	<definition
+		name="vipshadeputybaseinfodb.list"
+		path="/WEB-INF/jsp/module/vip/vipshadeputybaseinfodblist.jsp" />
+	<definition
+		name="vipshadeputybaseinfowy.list"
+		path="/WEB-INF/jsp/module/vip/vipshadeputybaseinfowylist.jsp" />
+	<definition
+		name="vipshadeputybaseinfocw.list"
+		path="/WEB-INF/jsp/module/vip/vipshadeputybaseinfocwlist.jsp" />
+	<definition
+		name="vipshadeputybaseinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipshadeputybaseinfoview.jsp" />
+	<definition
+		name="vipshadeputyinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipshadeputyinfoview.jsp" />
+	<definition
+		name="vipshadeputypastjob.view"
+		path="/WEB-INF/jsp/module/vip/vipshadeputypastjobview.jsp" />
+	<definition
+		name="vipshadeputyresearchproduction.view"
+		path="/WEB-INF/jsp/module/vip/vipshadeputyresearchproductionview.jsp" />
+	<definition
+		name="vipshadeputyacademicliterature.view"
+		path="/WEB-INF/jsp/module/vip/vipshadeputyacademicliteratureview.jsp" />
+	<definition
+		name="vipshadeputypatentinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipshadeputypatentinfoview.jsp" />
+	<definition
+		name="vipsearchsmembershadeputypastjob.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchsmembershadeputypastjobview.jsp" />
+	<definition
+		name="vipsearchsmembershadeputyresearchproduction.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchsmembershadeputyresearchproductionview.jsp" />
+	<definition
+		name="vipsearchsmembershadeputyacademicliterature.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchsmembershadeputyacademicliteratureview.jsp" />
+	<definition
+		name="vipsearchsmembershadeputypatentinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchsmembershadeputypatentinfoview.jsp" />
+	<definition
+		name="vipsearchsmembershadeputyinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchsmembershadeputyinfoview.jsp" />
+	<definition
+		name="vipsearchsmembershadeputyacademyrelation.viewlist"
+		path="/WEB-INF/jsp/module/vip/vipsearchsmembershadeputyacademyrelationviewlist.jsp" />
+	<definition
+		name="vipsearchsmembershadeputyacademyrelation.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchsmembershadeputyacademyrelationview.jsp" />
+	<definition
+		name="vipshadeputybaseinfodbcwwyview.list"
+		path="/WEB-INF/jsp/module/vip/vipshadeputybaseinfolistview.jsp" />
+	<definition
+		name="vipshadeputybaseinfodbcwwy1view.list"
+		path="/WEB-INF/jsp/module/vip/vipsearchshadeputybaseinfoview.jsp" />
+	<definition
+		name="vipsearchshadeputybaseinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchshadeputybaseinfoview.jsp" />
+	<!--VIP科协范围查询 -->
+	<definition
+		name="vipsystemquerylist.list"
+		path="/WEB-INF/jsp/module/vip/vipsystemquerylist.jsp" />
+	<definition
+		name="vipsystemquery.list"
+		path="/WEB-INF/jsp/module/vip/vipsystemqueryresult.jsp" />
+	<definition
+		name="vipsearchmemberbaseinfo.list"
+		path="/WEB-INF/jsp/module/vip/vipsearchsmemberbaseinfoview.jsp" />
+	<definition
+		name="vipsearchacadesmemberinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchacadesmemberinfoview.jsp" />
+	<definition
+		name="vipsearchsmemberresearchproduction.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchsmemberresearchproductionview.jsp" />
+	<definition
+		name="vipsearchsmemberacademicliterature.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchsmemberacademicliteratureview.jsp" />
+	<definition
+		name="vipsearchsmemberpatentinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchsmemberpatentinfoview.jsp" />
+	<definition
+		name="vipsearchsmemberpastjob.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchsmemberpastjobview.jsp" />
+	<definition
+		name="vipsearchsmemberdeputyinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchsmemberdeputyinfoview.jsp" />
+	<definition
+		name="vipsearchacademysmemberrelation.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchacademysmemberrelationview.jsp" />
+	<definition
+		name="vipsearchacademysmemberrelation.viewlist"
+		path="/WEB-INF/jsp/module/vip/vipsearchacademysmemberrelationviewlist.jsp" />
+	<definition
+		name="vipsearchshadeputyinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchshadeputyinfoview.jsp" />
+	<definition
+		name="vipsearchshadeputypastjob.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchshadeputypastjobview.jsp" />
+	<definition
+		name="vipsearchshadeputyresearchproduction.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchshadeputyresearchproductionview.jsp" />
+	<definition
+		name="vipsearchshadeputyacademicliterature.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchshadeputyacademicliteratureview.jsp" />
+	<definition
+		name="vipsearchshadeputypatentinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchshadeputypatentinfoview.jsp" />
+	<!--VIP某个学会群范围查询 -->
+	<definition
+		name="vipacadquerylist.list"
+		path="/WEB-INF/jsp/module/vip/vipacadquerylist.jsp" />
+	<definition
+		name="vipacadquery.list"
+		path="/WEB-INF/jsp/module/vip/vipacadqueryresult.jsp" />
+	<!--VIP某个学会子库范围查询 -->
+	<definition
+		name="vipsmemberquerylist.list"
+		path="/WEB-INF/jsp/module/vip/vipsmemberquerylist.jsp" />
+	<definition
+		name="vipsmemberquery.list"
+		path="/WEB-INF/jsp/module/vip/vipsmemberqueryresult.jsp" />
+	<definition
+		name="vipacadesmemberbaseinfo.view"
+		path="/WEB-INF/jsp/module/search/vipsearchacadesmemberinfoview.jsp" />
+	<!-- 学会范围查询个人会员详细信息 -->
+	<definition
+		name="academysearchsmemberdeputyinfo.view"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberdeputyinfoview.jsp" />
+	<definition
+		name="academysearchacademysmemberrelation.view"
+		path="/WEB-INF/jsp/module/search/academysearchacademysmemberrelationview.jsp" />
+	<definition
+		name="academysearchacademysmemberrelation.viewlist"
+		path="/WEB-INF/jsp/module/search/academysearchacademysmemberrelationviewlist.jsp" />
+	<definition
+		name="academysearchsmemberpastjob.view"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberpastjobview.jsp" />
+	<definition
+		name="academysearchsmemberresearchproduction.view"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberresearchproductionview.jsp" />
+	<definition
+		name="academysearchsmemberacademicliterature.view"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberacademicliteratureview.jsp" />
+	<definition
+		name="academysearchsmemberpatentinfo.view"
+		path="/WEB-INF/jsp/module/search/academysearchsmemberpatentinfoview.jsp" />
+	<!-- VIP学会范围查询个人会员详细信息 -->
+	<definition
+		name="vipacademysearchsmemberdeputyinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchsmemberdeputyinfoview.jsp" />
+	<definition
+		name="vipacademysearchsmemberpastjob.view"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchsmemberpastjobview.jsp" />
+	<definition
+		name="vipacademysearchsmemberrelation.viewlist"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchsmemberrelationviewlist.jsp" />
+	<definition
+		name="vipacademysearchsmemberrelation.view"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchsmemberrelationview.jsp" />
+	<definition
+		name="vipacademysearchsmemberresearchproduction.view"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchsmemberresearchproductionview.jsp" />
+	<definition
+		name="vipacademysearchsmemberacademicliterature.view"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchsmemberacademicliteratureview.jsp" />
+	<definition
+		name="vipacademysearchsmemberpatentinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchsmemberpatentinfoview.jsp" />
+	<!--VIP某个学会子库范围查询 -->
+	<definition
+		name="vipsmembersearchmemberbaseinfo.list"
+		path="/WEB-INF/jsp/module/vip/vipsmembersearchsmemberbaseinfoview.jsp" />
+	<definition
+		name="vipsmembersearchacademysmemberrelation.view"
+		path="/WEB-INF/jsp/module/vip/vipsmembersearchacademysmemberrelationview.jsp" />
+	<definition
+		name="vipsmembersearchacademysmemberrelation.viewlist"
+		path="/WEB-INF/jsp/module/vip/vipsmembersearchacademysmemberrelationviewlist.jsp" />
+	<definition
+		name="vipsmembersearchsmemberpastjob.view"
+		path="/WEB-INF/jsp/module/vip/vipsmembersearchsmemberpastjobview.jsp" />
+	<definition
+		name="vipsmembersearchsmemberpatentinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsmembersearchsmemberpatentinfoview.jsp" />
+	<definition
+		name="vipsmembersearchsmemberacademicliterature.view"
+		path="/WEB-INF/jsp/module/vip/vipsmembersearchsmemberacademicliteratureview.jsp" />
+	<definition
+		name="vipsmembersearchacadesmemberinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsmembersearchacadesmemberinfoview.jsp" />
+	<definition
+		name="vipsmembersearchsmemberresearchproduction.view"
+		path="/WEB-INF/jsp/module/vip/vipsmembersearchsmemberresearchproductionview.jsp" />
+	<definition
+		name="vipsmembersearchsmemberdeputyinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsmembersearchsmemberdeputyinfoview.jsp" />
+	<!-- VIP统计 -->
+	<definition
+		name="vipsysmemberstat.list"
+		path="/WEB-INF/jsp/module/vip/vipmembershipstatlist.jsp" />
+	<definition
+		name="vipacadstat.list"
+		path="/WEB-INF/jsp/module/vip/vipacadstatlist.jsp" />
+	<!-- VIP信息汇总统计 -->
+	<definition
+		name="vipsysgatherinfolist"
+		path="/WEB-INF/jsp/module/vip/vipallacadgatherlist.jsp" />
+	<definition
+		name="vipacadgatherinfolist"
+		path="/WEB-INF/jsp/module/vip/vipacadgatherlist.jsp" />
+	<definition
+		name="vipacademygatherinfolist"
+		path="/WEB-INF/jsp/module/vip/vipacademygatherlist.jsp" />
+	<!-- vip 性别统计 -->
+	<definition
+		name="vipsyssexstatlist"
+		path="/WEB-INF/jsp/module/vip/vipallacadmembersexstatlist.jsp" />
+	<definition
+		name="vipacadsexstatlist"
+		path="/WEB-INF/jsp/module/vip/vipacadmembersexstatlist.jsp" />
+	<definition
+		name="vipacademysexstatlist"
+		path="/WEB-INF/jsp/module/vip/vipacademymembersexstatlist.jsp" />
+	<!-- vip 年龄统计 -->
+	<definition
+		name="vipsysagestatlist"
+		path="/WEB-INF/jsp/module/vip/vipallacadagelist.jsp" />
+	<definition
+		name="vipacadagestatlist"
+		path="/WEB-INF/jsp/module/vip/vipacadagelist.jsp" />
+	<definition
+		name="vipacademyagestatlist"
+		path="/WEB-INF/jsp/module/vip/vipacademyagelist.jsp" />
+	<!-- vip 学历统计 -->
+	<definition
+		name="vipsysscholarstatlist"
+		path="/WEB-INF/jsp/module/vip/vipallacadscholarlist.jsp" />
+	<definition
+		name="vipacadscholarstatlist"
+		path="/WEB-INF/jsp/module/vip/vipacadscholarlist.jsp" />
+	<definition
+		name="vipacademyscholarstatlist"
+		path="/WEB-INF/jsp/module/vip/vipacademyscholarlist.jsp" />
+	<!--vip partystat统计 -->
+	<definition
+		name="vippartystatlist"
+		path="/WEB-INF/jsp/module/vip/vipallacadpartylist.jsp" />
+	<definition
+		name="vipacadpartystatlist"
+		path="/WEB-INF/jsp/module/vip/vipacadpartylist.jsp" />
+	<definition
+		name="vipacademypartystatlist"
+		path="/WEB-INF/jsp/module/vip/vipacademypartylist.jsp" />
+	<!--vip rankstat统计 -->
+	<definition
+		name="viprankstatlist"
+		path="/WEB-INF/jsp/module/vip/vipallacadranklist.jsp" />
+	<definition
+		name="vipacadrankstatlist"
+		path="/WEB-INF/jsp/module/vip/vipacadranklist.jsp" />
+	<definition
+		name="vipacademyrankstatlist"
+		path="/WEB-INF/jsp/module/vip/vipacademyranklist.jsp" />
+	<!--vip peoplenumcount统计 -->
+	<definition
+		name="vippeoplenumcount"
+		path="/WEB-INF/jsp/module/vip/vipv_peoplenumcount.jsp" />
+	<definition
+		name="vipacadpeoplenumcount"
+		path="/WEB-INF/jsp/module/vip/vipv_acadpeoplenumcount.jsp" />
+	<definition
+		name="vipacademypeoplenumcount"
+		path="/WEB-INF/jsp/module/vip/vipv_academypeoplenumcount.jsp" />
+	<!--vip nationnumcount统计 -->
+	<definition
+		name="vipsysnationstatlist"
+		path="/WEB-INF/jsp/module/vip/vipnantionstatlist.jsp" />
+	<definition
+		name="vipacadnationstatlist"
+		path="/WEB-INF/jsp/module/vip/vipacadnationstatlist.jsp" />
+	<definition
+		name="vipacademynationstatlist"
+		path="/WEB-INF/jsp/module/vip/vipacademynationstatlist.jsp" />
+	<!--vip nationalitynumcount统计 -->
+	<definition
+		name="vipsysnationalitystatlist"
+		path="/WEB-INF/jsp/module/vip/vipnantionalitystatlist.jsp" />
+	<definition
+		name="vipacadnationalitystatlist"
+		path="/WEB-INF/jsp/module/vip/vipacadnationalityststlist.jsp" />
+	<definition
+		name="vipacademynationalitystatlist"
+		path="/WEB-INF/jsp/module/vip/vipacademynationalitystatlist.jsp" />
+	<!-- VIP 修改密码 -->
+	<definition
+		name="vip.changepsw"
+		path="/WEB-INF/jsp/module/vip/vipchangepsw.jsp" />
+	<!-- 学会管理员登陆界面 -->
+	<definition
+		name="academyadminacadgroup.list"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacadgrouplist.jsp" />
+	<!-- 学会管理员**学会信息管理 -->
+	<definition
+		name="academyadminacademybaseinfo.list"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademybaseinfolist.jsp" />
+	<definition
+		name="academyadminacademybaseinfo.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademybaseinfomodify.jsp" />
+	<definition
+		name="academyadminacademybaseinfo.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademybaseinfoview.jsp" />
+	<!--学会管理员**学会子库负责人信息 -->
+	<definition
+		name="academyadminacademybaseinfoprincipal.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademybaseinfoprincipalview.jsp" />
+	<definition
+		name="academyadminacademybaseinfoprincipal.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademybaseinfoprincipalmodify.jsp" />
+	<!--学会管理员**学会子库理事会信息 -->
+	<definition
+		name="academyadminacademybaseinfocouncil.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademybaseinfocouncilview.jsp" />
+	<definition
+		name="academyadminacademybaseinfocouncil.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademybaseinfocouncilmodify.jsp" />
+	<!--学会管理员**学会子库党建信息 -->
+	<definition
+		name="academyadminacademybaseinfopartybuild.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademybaseinfopartybuildview.jsp" />
+	<definition
+		name="academyadminacademybaseinfopartybuild.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademybaseinfopartybuildmodify.jsp" />
+	<!--学会管理员**学会子库工作委员会 -->
+	<definition
+		name="academyadminacademyworkcommittee.viewlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyworkcommitteeviewlist.jsp" />
+	<definition
+		name="academyadminacademyworkcommittee.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyworkcommitteemodifylist.jsp" />
+	<definition
+		name="academyadminacademyworkcommittee.modifymodify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyworkcommitteemodifymodify.jsp" />
+	<definition
+		name="academyadminacademyworkcommittee.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyworkcommitteemodifyadd.jsp" />
+	<!--学会管理员**学会子库品牌建设 -->
+	<definition
+		name="academyadminacademyjournalbrandinfo.viewlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyjournalbrandinfoviewlist.jsp" />
+	<definition
+		name="academyadminacademybrandconstruct.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademybrandconstructmodifyadd.jsp" />
+	<definition
+		name="academyadminacademybrandconstruct.modifymodify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademybrandconstructmodifymodify.jsp" />
+	<!--学会管理员**学会子库会刊 -->
+	<definition
+		name="academyadminacademyjournalinfo.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyjournalinfomodifyadd.jsp" />
+	<definition
+		name="academyadminacademyjournalinfo.modifymodify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyjournalinfomodifymodify.jsp" />
+	<!--学会管理员**学会子库会刊与品牌建设 公用List -->
+	<definition
+		name="academyadminacademyjournalbrandinfo.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyjournalbrandinfomodifylist.jsp" />
+	<!--学会管理员**学会子库专业委员会 -->
+	<definition
+		name="academyadminacademyspecialitycommittee.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyspecialitycommitteeview.jsp" />
+	<definition
+		name="academyadminacademyspecialitycommittee.list"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyspecialitycommitteelist.jsp" />
+	<definition
+		name="academyadminacademyspecialitycommittee.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyspecialitycommitteemodify.jsp" />
+	<definition
+		name="academyadminacademyspecialitycommittee.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyspecialitycommitteemodifyadd.jsp" />
+	<!--学会管理员**学会子库学会组织机构 -->
+	<definition
+		name="academyadminacademyorganizationinfo.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyorganizationinfoview.jsp" />
+	<definition
+		name="academyadminacademyorganizationinfo.list"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyorganizationinfolist.jsp" />
+	<definition
+		name="academyadminacademyorganizationinfo.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyorganizationinfomodify.jsp" />
+	<definition
+		name="academyadminacademyorganizationinfo.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademyorganizationinfomodifyadd.jsp" />
+	<!--学会管理员**会员 -->
+	<definition
+		name="academyadminsmemberbaseinfo.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberbaseinfoview.jsp" />
+	<definition
+		name="academyadminsmemberbaseinfo.list"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberbaseinfolist.jsp" />
+	<definition
+		name="academyadminsmemberbaseinfomain.list"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberbaseinfomainlist.jsp" />
+	<definition
+		name="academyadminsmemberbaseinfo.add"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberbaseinfoadd.jsp" />
+	<definition
+		name="academyadminsmemberbaseinfo.add1"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberbaseinfoadd1.jsp" />
+	<definition
+		name="academyadminsmemberbaseinfo.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberbaseinfomodify.jsp" />
+	<definition
+		name="academyadminsmemberbaseinfopreview.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberbaseinfopreviewmodify.jsp" />
+	<definition
+		name="exist3"
+		path="/WEB-INF/jsp/module/common/exist3.jsp" />
+	<definition
+		name="exist4"
+		path="/WEB-INF/jsp/module/common/exist4.jsp" />
+	<!--学会管理员**会员代表委员信息 -->
+	<definition
+		name="academyadminsmemberdeputyinfo.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberdeputyinfoview.jsp" />
+	<definition
+		name="academyadminsmemberdeputyinfo.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberdeputyinfomodifylist.jsp" />
+	<definition
+		name="academyadminsmemberdeputyinfo.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberdeputyinfomodify.jsp" />
+	<definition
+		name="academyadminsmemberdeputyinfo.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberdeputyinfomodifyadd.jsp" />
+	<!--学会管理员**会员参加学会信息 -->
+	<definition
+		name="academyadminacademysmemberrelation.viewlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademysmemberrelationviewlist.jsp" />
+	<definition
+		name="academyadminacademysmemberrelation.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademysmemberrelationview.jsp" />
+	<definition
+		name="academyadminacademysmemberrelation.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademysmemberrelationmodifylist.jsp" />
+	<!--学会管理员**会员主要工作经历 -->
+	<definition
+		name="academyadminsmemberpastjob.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberpastjobview.jsp" />
+	<definition
+		name="academyadminsmemberpastjob.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberpastjobmodifylist.jsp" />
+	<definition
+		name="academyadminsmemberpastjob.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberpastjobmodify.jsp" />
+	<definition
+		name="academyadminsmemberpastjob.add"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberpastjobadd.jsp" />
+	<definition
+		name="academyadminsmemberpastjob.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberpastjobmodifyadd.jsp" />
+	<definition
+		name="academyadminsmemberpastjob.addlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberpastjobaddlist.jsp" />
+	<!--学会管理员**会员主要科研成果 -->
+	<definition
+		name="academyadminsmemberresearchproduction.viewlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberresearchproductionviewlist.jsp" />
+	<definition
+		name="academyadminsmemberresearchproduction.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberresearchproductionmodifylist.jsp" />
+	<definition
+		name="academyadminsmemberresearchproduction.modifymodify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberresearchproductionmodifymodify.jsp" />
+	<definition
+		name="academyadminsmemberresearchproduction.addadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberresearchproductionaddadd.jsp" />
+	<definition
+		name="academyadminsmemberresearchproduction.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberresearchproductionmodifyadd.jsp" />
+	<definition
+		name="academyadminsmemberresearchproduction.addlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberresearchproductionaddlist.jsp" />
+	<!--学会管理员**会员主要学术科普论著 -->
+	<definition
+		name="academyadminsmemberacademicliterature.viewlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberacademicliteratureviewlist.jsp" />
+	<definition
+		name="academyadminsmemberacademicliterature.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberacademicliteraturemodifylist.jsp" />
+	<definition
+		name="academyadminsmemberacademicliterature.modifymodify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberacademicliteraturemodifymodify.jsp" />
+	<definition
+		name="academyadminsmemberacademicliterature.addadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberacademicliteratureaddadd.jsp" />
+	<definition
+		name="academyadminsmemberacademicliterature.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberacademicliteraturemodifyadd.jsp" />
+	<definition
+		name="academyadminsmemberacademicliterature.addlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberacademicliteratureaddlist.jsp" />
+	<!--学会管理员**会员专利（软件著作权）情况 -->
+	<definition
+		name="academyadminsmemberpatentinfo.viewlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberpatentinfoviewlist.jsp" />
+	<definition
+		name="academyadminsmemberpatentinfo.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberpatentinfomodifylist.jsp" />
+	<definition
+		name="academyadminsmemberpatentinfo.modifymodify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberpatentinfomodifymodify.jsp" />
+	<definition
+		name="academyadminsmemberpatentinfo.addadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberpatentinfoaddadd.jsp" />
+	<definition
+		name="academyadminsmemberpatentinfo.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberpatentinfomodifyadd.jsp" />
+	<definition
+		name="academyadminsmemberpatentinfo.addlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberpatentinfoaddlist.jsp" />
+	<!--学会管理员**团体会员基本信息 -->
+	<definition
+		name="academyadmingmemberbaseinfomain.list"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberbaseinfomainlist.jsp" />
+	<definition
+		name="academyadmingmemberbaseinfo.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberbaseinfomodify.jsp" />
+	<definition
+		name="academyadmingmemberbaseinfo.add"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberbaseinfoadd.jsp" />
+	<definition
+		name="academyadmingmemberbaseinfo.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberbaseinfoview.jsp" />
+	<!--学会管理员**团体会员科研成果 -->
+	<definition
+		name="academyadmingmemberresearchproduction.addlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberresearchproductionaddlist.jsp" />
+	<definition
+		name="academyadmingmemberresearchproduction.addadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberresearchproductionaddadd.jsp" />
+	<definition
+		name="academyadmingmemberresearchproduction.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberresearchproductionmodifylist.jsp" />
+	<definition
+		name="academyadmingmemberresearchproduction.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberresearchproductionmodifyadd.jsp" />
+	<definition
+		name="academyadmingmemberresearchproduction.modifymodify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberresearchproductionmodifymodify.jsp" />
+	<definition
+		name="academyadmingmemberresearchproduction.viewlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberresearchproductionviewlist.jsp" />
+	<!--学会管理员**团体会员专利标准 -->
+	<definition
+		name="academyadmingmemberpatentinfo.addlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberpatentinfoaddlist.jsp" />
+	<definition
+		name="academyadmingmemberpatentinfo.addadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberpatentinfoaddadd.jsp" />
+	<definition
+		name="academyadmingmemberpatentinfo.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberpatentinfomodifylist.jsp" />
+	<definition
+		name="academyadmingmemberpatentinfo.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberpatentinfomodifyadd.jsp" />
+	<definition
+		name="academyadmingmemberpatentinfo.modifymodify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberpatentinfomodifymodify.jsp" />
+	<definition
+		name="academyadmingmemberpatentinfo.viewlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadmingmemberpatentinfoviewlist.jsp" />
+	<!--学会管理员 某个学会子库范围查询 -->
+	<definition
+		name="academyadminsmemberquerylist.list"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberquerylist.jsp" />
+	<definition
+		name="academyadminsmemberquery.list"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmemberqueryresult.jsp" />
+	<definition
+		name="academyadminsmembersearchmemberbaseinfo.list"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberbaseinfoview.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberdeputyinfo.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberdeputyinfoview.jsp" />
+	<definition
+		name="academyadminsmembersearchacademysmemberrelation.viewlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchacademysmemberrelationviewlist.jsp" />
+	<definition
+		name="academyadminsmembersearchacademysmemberrelation.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchacademysmemberrelationview.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberpastjob.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberpastjobview.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberresearchproduction.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberresearchproductionview.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberacademicliterature.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberacademiclitureview.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberpatentinfo.view"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberpatentinfoview.jsp" />
+	<!--学会管理员 某个学会子库范围查询情况 修改部分 -->
+	<definition
+		name="academyadminsmembersearchmemberbaseinfomodify.list"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberbaseinfomodify.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberdeputyinfo.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberdeputyinfomodifylist.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberdeputyinfo.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberdeputyinfomodify.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberdeputyinfo.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberdeputyinfomodifyadd.jsp" />
+	<definition
+		name="academyadminsmembersearchacademysmemberrelation.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchacademysmemberrelationmodifylist.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberpastjob.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberpastjobmodifylist.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberpastjob.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberpastjobmodify.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberpastjob.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberpastjobmodifyadd.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberresearchproduction.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberresearchproductionmodifylist.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberresearchproduction.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberresearchproductionmodify.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberresearchproduction.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberresearchproductionmodifyadd.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberacademicliterature.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberacademicliteraturemodifylist.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberacademicliterature.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberacademicliteraturemodify.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberacademicliterature.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberacademicliteraturemodifyadd.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberpatentinfo.modifylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberpatentinfomodifylist.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberpatentinfo.modify"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberpatentinfomodify.jsp" />
+	<definition
+		name="academyadminsmembersearchsmemberpatentinfo.modifyadd"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsmembersearchsmemberpatentinfomodifyadd.jsp" />
+	<!-- 统计 -->
+	<definition
+		name="membershipstat.list"
+		path="/WEB-INF/jsp/module/stat/membershipstatlist.jsp" />
+	<definition
+		name="acadmembershipstat.list"
+		path="/WEB-INF/jsp/module/stat/acadmembershipstatlist.jsp" />
+	<definition
+		name="sysgatherinfolist"
+		path="/WEB-INF/jsp/module/stat/allacadgatherlist.jsp" />
+	<definition
+		name="acadgatherinfolist"
+		path="/WEB-INF/jsp/module/stat/acadgatherlist.jsp" />
+	<definition
+		name="academygatherinfolist"
+		path="/WEB-INF/jsp/module/stat/academygatherlist.jsp" />
+	<definition
+		name="acadstat.list"
+		path="/WEB-INF/jsp/module/stat/acadstatlist.jsp" />
+	<definition
+		name="membershipstatgender.list"
+		path="/WEB-INF/jsp/module/stat/membershipstatgenderlist.jsp" />
+	<definition
+		name="syssexstatlist"
+		path="/WEB-INF/jsp/module/stat/allacadmembersexstatlist.jsp" />
+	<definition
+		name="acadsexstatlist"
+		path="/WEB-INF/jsp/module/stat/acadmembersexstatlist.jsp" />
+	<definition
+		name="academysexstatlist"
+		path="/WEB-INF/jsp/module/stat/academymembersexstatlist.jsp" />
+	<definition
+		name="sysagestatlist"
+		path="/WEB-INF/jsp/module/stat/allacadagelist.jsp" />
+	<definition
+		name="acadagestatlist"
+		path="/WEB-INF/jsp/module/stat/acadagelist.jsp" />
+	<definition
+		name="academyagestatlist"
+		path="/WEB-INF/jsp/module/stat/academyagelist.jsp" />
+	<definition
+		name="sysscholarstatlist"
+		path="/WEB-INF/jsp/module/stat/allacadscholarlist.jsp" />
+	<definition
+		name="acadscholarstatlist"
+		path="/WEB-INF/jsp/module/stat/acadscholarlist.jsp" />
+	<definition
+		name="academyscholarstatlist"
+		path="/WEB-INF/jsp/module/stat/academyscholarlist.jsp" />
+	<definition
+		name="sysnationstatlist"
+		path="/WEB-INF/jsp/module/stat/sysnationstatlist.jsp" />
+	<definition
+		name="acadnationstatlist"
+		path="/WEB-INF/jsp/module/stat/acadnationstatlist.jsp" />
+	<definition
+		name="academynationstatlist"
+		path="/WEB-INF/jsp/module/stat/academynationstatlist.jsp" />
+	<definition
+		name="sysnationalitystatlist"
+		path="/WEB-INF/jsp/module/stat/sysnationalitystatlist.jsp" />
+	<definition
+		name="acadnationalitystatlist"
+		path="/WEB-INF/jsp/module/stat/acadnationalitystatlist.jsp" />
+	<definition
+		name="academynationalitystatlist"
+		path="/WEB-INF/jsp/module/stat/academynationalitystatlist.jsp" />
+	<definition
+		name="partystatlist"
+		path="/WEB-INF/jsp/module/stat/allacadpartylist.jsp" />
+	<definition
+		name="acadpartystatlist"
+		path="/WEB-INF/jsp/module/stat/acadpartylist.jsp" />
+	<definition
+		name="academypartystatlist"
+		path="/WEB-INF/jsp/module/stat/academypartylist.jsp" />
+	<definition
+		name="rankstatlist"
+		path="/WEB-INF/jsp/module/stat/allacadranklist.jsp" />
+	<definition
+		name="acadrankstatlist"
+		path="/WEB-INF/jsp/module/stat/acadranklist.jsp" />
+	<definition
+		name="academyrankstatlist"
+		path="/WEB-INF/jsp/module/stat/academyranklist.jsp" />
+	<!--个人会员登录管理 -->
+	<definition
+		name="smemberacadgroup.list"
+		path="/WEB-INF/jsp/module/smember/smemberacadgrouplist.jsp" />
+	<definition
+		name="smemberacademybaseinfo.list"
+		path="/WEB-INF/jsp/module/smember/smemberacademybaseinfolist.jsp" />
+	<definition
+		name="smembersmemberbaseinfo.list"
+		path="/WEB-INF/jsp/module/smember/smembersmemberbaseinfolist.jsp" />
+	<definition
+		name="smembersmemberbaseinfomain.list"
+		path="/WEB-INF/jsp/module/smember/smembersmemberbaseinfolist.jsp" />
+	<definition
+		name="smembergmemberbaseinfomain.list"
+		path="/WEB-INF/jsp/module/smember/smembergmemberbaseinfolist.jsp" />
+	<definition
+		name="smember.view"
+		path="/WEB-INF/jsp/module/smember/smemberview.jsp" />
+	<definition
+		name="changeinfo.modify"
+		path="/WEB-INF/jsp/module/smember/smembermodify.jsp" />
+	<definition
+		name="smembersmemberdeputyinfo.view"
+		path="/WEB-INF/jsp/module/smember/smembersmemberdeputyinfoview.jsp" />
+	<definition
+		name="smemberacademysmemberrelation.viewlist"
+		path="/WEB-INF/jsp/module/smember/smemberacademysmemberrelationviewlist.jsp" />
+	<definition
+		name="smemberacademysmemberrelation.view"
+		path="/WEB-INF/jsp/module/smember/smemberacademysmemberrelationview.jsp" />
+	<definition
+		name="smembersmemberpastjob.view"
+		path="/WEB-INF/jsp/module/smember/smembersmemberpastjobview.jsp" />
+	<definition
+		name="smembersmemberresearchproduction.viewlist"
+		path="/WEB-INF/jsp/module/smember/smembersmemberresearchproductionviewlist.jsp" />
+	<definition
+		name="smembersmemberacademicliterature.viewlist"
+		path="/WEB-INF/jsp/module/smember/smembersmemberacademicliteratureviewlist.jsp" />
+	<definition
+		name="smembersmemberpatentinfo.viewlist"
+		path="/WEB-INF/jsp/module/smember/smembersmemberpatentinfoviewlist.jsp" />
+	<!-- 视图 -->
+	<definition
+		name="peoplenumcount"
+		path="/WEB-INF/jsp/module/view/v_peoplenumcount.jsp" />
+	<definition
+		name="acadpeoplenumcount"
+		path="/WEB-INF/jsp/module/view/v_acadpeoplenumcount.jsp" />
+	<definition
+		name="academypeoplenumcount"
+		path="/WEB-INF/jsp/module/view/v_academypeoplenumcount.jsp" />
+	<!-- 视图结束 -->
+	<!--学会管理员 统计 -->
+	<definition
+		name="academyadminacademygatherinfolist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminacademygatherinfo.jsp" />
+	<definition
+		name="academyadminsexlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminsexlist.jsp" />
+	<definition
+		name="academyadminagelist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminagelist.jsp" />
+	<definition
+		name="academyadminscholarlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminscholarlist.jsp" />
+	<definition
+		name="academyadminnationlist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminnationlist.jsp" />
+	<definition
+		name="academyadminnationalitylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminnationalitylist.jsp" />
+	<definition
+		name="academyadminpartylist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminpartylist.jsp" />
+	<definition
+		name="academyadminranklist"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminranklist.jsp" />
+	<definition
+		name="academyadminpeoplenumcount"
+		path="/WEB-INF/jsp/module/academyadmin/academyadminpeoplenumcount.jsp" />
+	<!-- 团体会员统计 -->
+	<definition
+		name="groupstatlist"
+		path="/WEB-INF/jsp/module/academyadmin/groupstatlist.jsp" />
+	<definition
+		name="acadegroupstatlist"
+		path="/WEB-INF/jsp/module/admin/groupstatlist.jsp" />
+	<definition
+		name="academygroupstatlist"
+		path="/WEB-INF/jsp/module/admin/acadegroupstatlist.jsp" />
+	<definition
+		name="sysgroupstatlist"
+		path="/WEB-INF/jsp/module/admin/sysgroupstatlist.jsp" />
+	<definition
+		name="vipacadegroupstatlist"
+		path="/WEB-INF/jsp/module/vip/groupstatlist.jsp" />
+	<definition
+		name="vipacademygroupstatlist"
+		path="/WEB-INF/jsp/module/vip/acadegroupstatlist.jsp" />
+	<definition
+		name="vipsysgroupstatlist"
+		path="/WEB-INF/jsp/module/vip/sysgroupstatlist.jsp" />
+	<!--数据库备份与恢复 -->
+	<definition
+		name="backup.list"
+		path="/WEB-INF/jsp/module/user/backuplist.jsp" />
+	<definition
+		name="recovery.list"
+		path="/WEB-INF/jsp/module/user/recoverylist.jsp" />
+	<definition
+		name="backupsuccess"
+		path="/WEB-INF/jsp/error/backupsuccess.jsp" />
+	<definition
+		name="recoverysuccess"
+		path="/WEB-INF/jsp/error/recoverysuccess.jsp" />
+	<!--普通用户 密码 -->
+	<definition
+		name="change.pwd"
+		path="/WEB-INF/jsp/module/smember/changepwd.jsp" />
+	<definition
+		name="pwd.modified"
+		path="/WEB-INF/jsp/error/pwdmodified.jsp" />
+	<definition
+		name="pwd.failure"
+		path="/WEB-INF/jsp/error/pwdfailure.jsp" />
+	<definition
+		name="change.countname"
+		path="/WEB-INF/jsp/module/smember/changecountname.jsp" />
+	<definition
+		name="exist.count"
+		path="/WEB-INF/jsp/error/countfailure.jsp" />
+	<definition
+		name="count.modified"
+		path="/WEB-INF/jsp/error/countmodified.jsp" />
+	<!-- 团体会员查询 -->
+	<definition
+		name="systemgmemquery.list"
+		path="/WEB-INF/jsp/module/search/searchsysgmemlist.jsp" />
+	<definition
+		name="searchsysgmembaseinfo.view"
+		path="/WEB-INF/jsp/module/search/searchsysgmembaseinfo.jsp" />
+	<definition
+		name="searchsysgmemrespro.list"
+		path="/WEB-INF/jsp/module/search/searchgmemsysresprolist.jsp" />
+	<definition
+		name="searchsysgmempatent.list"
+		path="/WEB-INF/jsp/module/search/searchsysgmempatentlist.jsp" />
+	<definition
+		name="searchsysgmembaseinfo.modify"
+		path="/WEB-INF/jsp/module/search/searchsysgmembaseinfomod.jsp" />
+	<definition
+		name="searchsysgmemrespro.modlist"
+		path="/WEB-INF/jsp/module/search/searchsysgmemrespromodlist.jsp" />
+	<definition
+		name="searchsysgmemrespro.modadd"
+		path="/WEB-INF/jsp/module/search/searchsysgmemrespromodadd.jsp" />
+	<definition
+		name="searchsysgmemrespro.modmod"
+		path="/WEB-INF/jsp/module/search/searchsysgmemseapromodmod.jsp" />
+	<definition
+		name="searchsysgmempatent.modlist"
+		path="/WEB-INF/jsp/module/search/searchsysgmempatentmodlist.jsp" />
+	<definition
+		name="searchsysgmempatent.modadd"
+		path="/WEB-INF/jsp/module/search/searchsysgmempatentmodadd.jsp" />
+	<definition
+		name="searchsysgmempatent.modmod"
+		path="/WEB-INF/jsp/module/search/searchsysgmempatentmodmod.jsp" />
+	<!-- 学会群 团体会员查询 -->
+	<definition
+		name="academygmemquery.list"
+		path="/WEB-INF/jsp/module/search/searchacadgmemlist.jsp" />
+	<definition
+		name="searchacadgmembaseinfo.view"
+		path="/WEB-INF/jsp/module/search/searchacadgmembaseinfo.jsp" />
+	<definition
+		name="searchacadgmemrespro.list"
+		path="/WEB-INF/jsp/module/search/searchacadgmemresproviewlist.jsp" />
+	<definition
+		name="searchacadgmempatent.list"
+		path="/WEB-INF/jsp/module/search/searchacadgmempatentlist.jsp" />
+	<definition
+		name="searchacadgmembaseinfo.modify"
+		path="/WEB-INF/jsp/module/search/searchacadgmembaseinfomod.jsp" />
+	<definition
+		name="searchacadgmemrespro.modlist"
+		path="/WEB-INF/jsp/module/search/searchacadgmemrespromodlist.jsp" />
+	<definition
+		name="searchacadgmemrespro.modadd"
+		path="/WEB-INF/jsp/module/search/searchacadgmemrespromodadd.jsp" />
+	<definition
+		name="searchacadgmemrespro.modmod"
+		path="/WEB-INF/jsp/module/search/searchacadgmemrespromodmod.jsp" />
+	<definition
+		name="searchacadgmempatent.modlist"
+		path="/WEB-INF/jsp/module/search/searchacadgmempatentmodlist.jsp" />
+	<definition
+		name="searchacadgmempatentinfo.modadd"
+		path="/WEB-INF/jsp/module/search/searchacadgmempatentinfomodadd.jsp" />
+	<definition
+		name="searchacadgmempatentinfo.modmod"
+		path="/WEB-INF/jsp/module/search/searchacadgmempatentinfomodmod.jsp" />
+	<!-- 学会 团体会员查询 -->
+	<definition
+		name="smembergmemquery.list"
+		path="/WEB-INF/jsp/module/search/searchsmembergmemlist.jsp" />
+	<definition
+		name="searchsmembergmembaseinfo.modify"
+		path="/WEB-INF/jsp/module/search/searchsmembergmembaseinfomod.jsp" />
+	<definition
+		name="searchsmembergmemrespro.modlist"
+		path="/WEB-INF/jsp/module/search/searchsmembergmemrespromodlist.jsp" />
+	<definition
+		name="searchsmembergmemrespro.modadd"
+		path="/WEB-INF/jsp/module/search/searchsmembergmemrespromodadd.jsp" />
+	<definition
+		name="searchsmembergmemrespro.modmod"
+		path="/WEB-INF/jsp/module/search/searchsmembergmemrespromodmod.jsp" />
+	<definition
+		name="searchsmembergmempatent.modlist"
+		path="/WEB-INF/jsp/module/search/searchsmembergmempatentmodlist.jsp" />
+	<definition
+		name="searchsmembergmempatentinfo.modadd"
+		path="/WEB-INF/jsp/module/search/searchsmembergmempatentinfomodadd.jsp" />
+	<definition
+		name="searchsmembergmempatentinfo.modmod"
+		path="/WEB-INF/jsp/module/search/searchsmembergmempatentinfomodmod.jsp" />
+	<definition
+		name="searchsmembergmembaseinfo.view"
+		path="/WEB-INF/jsp/module/search/searchsmembergmembaseinfoview.jsp" />
+	<definition
+		name="searchsmembergmemrespro.list"
+		path="/WEB-INF/jsp/module/search/searchsmembergmemresprolist.jsp" />
+	<definition
+		name="searchsmembergmempatent.list"
+		path="/WEB-INF/jsp/module/search/searchsmembergmempatentlist.jsp" />
+	<!-- 学会管理员 团体会员信息查询 -->
+	<definition
+		name="academyadmingmemquery.list"
+		path="/WEB-INF/jsp/module/search/searchacadadmingmemquerylist.jsp" />
+	<definition
+		name="searchacadadmingmembaseinfo.mod"
+		path="/WEB-INF/jsp/module/search/searchacadadmingmembaseinfomod.jsp" />
+	<definition
+		name="searchacadadmingmemrespro.modlist"
+		path="/WEB-INF/jsp/module/search/searchacadadmingmemrespromodlist.jsp" />
+	<definition
+		name="searchacadadmingmemrespro.modadd"
+		path="/WEB-INF/jsp/module/search/searchacadadmingmemrespromodadd.jsp" />
+	<definition
+		name="searchacadadmingmemrespro.modmod"
+		path="/WEB-INF/jsp/module/search/searchacadadmingmemrespromodmod.jsp" />
+	<definition
+		name="searchacadadmingmempatent.modlist"
+		path="/WEB-INF/jsp/module/search/searchacadadmingmempatentmodlist.jsp" />
+	<definition
+		name="searchacadadmingmempatentinfo.modadd"
+		path="/WEB-INF/jsp/module/search/searchacadadmingmempatentinfomodadd.jsp" />
+	<definition
+		name="searchacadadmingmempatentinfo.modmod"
+		path="/WEB-INF/jsp/module/search/searchacadadmingmempatentinfomodmod.jsp" />
+	<definition
+		name="searchacadadmingmembaseinfo.view"
+		path="/WEB-INF/jsp/module/search/searchacadadmingmembaseinfoview.jsp" />
+	<definition
+		name="searchacadadmingmemrespro.list"
+		path="/WEB-INF/jsp/module/search/searchacadadmingmemresprolist.jsp" />
+	<definition
+		name="searchacadadmingmempatent.list"
+		path="/WEB-INF/jsp/module/search/searchacadadmingmempatentlist.jsp" />
+	<!-- VIP 团体会员查询 -->
+	<!-- SYS -->
+	<definition
+		name="vipsysgmemquery.list"
+		path="/WEB-INF/jsp/module/search/vipsysgmemquerylist.jsp" />
+	<definition
+		name="searchvipsysgmembaseinfo.view"
+		path="/WEB-INF/jsp/module/search/searchvipsysgmembaseinfoview.jsp" />
+	<definition
+		name="searchvipsysgmemrespro.list"
+		path="/WEB-INF/jsp/module/search/searchvipsysgmemresprolist.jsp" />
+	<definition
+		name="searchvipsysgmempatent.list"
+		path="/WEB-INF/jsp/module/search/searchvipsysgmempatentlist.jsp" />
+	<!-- ACAD -->
+	<definition
+		name="vipacademygmemquery.list"
+		path="/WEB-INF/jsp/module/search/vipacademygmemquerylist.jsp" />
+	<definition
+		name="searchvipacadgmembaseinfo.view"
+		path="/WEB-INF/jsp/module/search/searchvipacadgmembaseinfoview.jsp" />
+	<definition
+		name="searchvipacadgmemrespro.list"
+		path="/WEB-INF/jsp/module/search/searchvipacadgmemresprolist.jsp" />
+	<definition
+		name="searchvipacadgmempatent.list"
+		path="/WEB-INF/jsp/module/search/searchvipacadgmempatentlist.jsp" />
+	<!-- ACADEMY -->
+	<definition
+		name="vipstubgmemquery.list"
+		path="/WEB-INF/jsp/module/search/vipstubgmemquerylist.jsp" />
+	<definition
+		name="searchvipacademygmembaseinfo.view"
+		path="/WEB-INF/jsp/module/search/searchvipacademygmembaseinfoview.jsp" />
+	<definition
+		name="searchvipacademygmemrespro.list"
+		path="/WEB-INF/jsp/module/search/searchvipacademygmemresprolist.jsp" />
+	<definition
+		name="searchvipacademygmempatent.list"
+		path="/WEB-INF/jsp/module/search/searchvipacademygmempatentlist.jsp" />
+	<!-- 学会信息查询 -->
+	<definition
+		name="systemacademysearch.list"
+		path="/WEB-INF/jsp/module/search/systemacademysearchlist.jsp" />
+	<definition
+		name="systemacademysearch.modify"
+		path="/WEB-INF/jsp/module/search/systemacademysearchmodify.jsp" />
+	<definition
+		name="systemacademysearch.view"
+		path="/WEB-INF/jsp/module/search/systemacademysearchview.jsp" />
+	<definition
+		name="systemacademysearchprincipal.modify"
+		path="/WEB-INF/jsp/module/search/systemacademysearchprincipalmodify.jsp" />
+	<definition
+		name="systemacademysearchprincipal.view"
+		path="/WEB-INF/jsp/module/search/systemacademysearchprincipalview.jsp" />
+	<definition
+		name="systemacademysearchcouncil.modify"
+		path="/WEB-INF/jsp/module/search/systemacademysearchcouncilmodify.jsp" />
+	<definition
+		name="systemacademysearchcouncil.view"
+		path="/WEB-INF/jsp/module/search/systemacademysearchcouncilview.jsp" />
+	<definition
+		name="systemacademysearchorganizationinfo.modifylist"
+		path="/WEB-INF/jsp/module/search/systemacademysearchorganizationinfomodifylist.jsp" />
+	<definition
+		name="systemacademysearchorganizationinfo.modify"
+		path="/WEB-INF/jsp/module/search/systemacademysearchorganizationinfomodify.jsp" />
+	<definition
+		name="systemacademysearchorganizationinfo.view"
+		path="/WEB-INF/jsp/module/search/systemacademysearchorganizationinfoview.jsp" />
+	<definition
+		name="systemacademysearchorganizationinfo.modifyadd"
+		path="/WEB-INF/jsp/module/search/systemacademysearchorganizationinfomodifyadd.jsp" />
+	<definition
+		name="systemacademysearchspecialitycommittee.modifylist"
+		path="/WEB-INF/jsp/module/search/systemacademysearchspecialitycommitteemodifylist.jsp" />
+	<definition
+		name="systemacademysearchspecialitycommittee.modify"
+		path="/WEB-INF/jsp/module/search/systemacademysearchspecialitycommitteemodify.jsp" />
+	<definition
+		name="systemacademysearchspecialitycommittee.view"
+		path="/WEB-INF/jsp/module/search/systemacademysearchspecialitycommitteeview.jsp" />
+	<definition
+		name="systemacademysearchspecialitycommittee.modifyadd"
+		path="/WEB-INF/jsp/module/search/systemacademysearchspecialitycommitteemodifyadd.jsp" />
+	<definition
+		name="systemacademysearchjournalbrandinfo.modifylist"
+		path="/WEB-INF/jsp/module/search/systemacademysearchjournalbrandinfomodifylist.jsp" />
+	<definition
+		name="systemacademysearchjournalbrandinfo.viewlist"
+		path="/WEB-INF/jsp/module/search/systemacademysearchjournalbrandinfoviewlist.jsp" />
+	<definition
+		name="systemacademysearchjournalinfo.modifyadd"
+		path="/WEB-INF/jsp/module/search/systemacademysearchjournalinfomodifyadd.jsp" />
+	<definition
+		name="systemacademysearchjournalinfo.modifymodify"
+		path="/WEB-INF/jsp/module/search/systemacademysearchjournalinfomodify.jsp" />
+	<definition
+		name="systemacademysearchbrandconstruct.modifyadd"
+		path="/WEB-INF/jsp/module/search/systemacademysearchbrandconstructmodifyadd.jsp" />
+	<definition
+		name="systemacademysearchbrandconstruct.modifymodify"
+		path="/WEB-INF/jsp/module/search/systemacademysearchbrandconstructmodify.jsp" />
+	<definition
+		name="systemacademysearchworkcommittee.modifylist"
+		path="/WEB-INF/jsp/module/search/systemacademysearchworkcommitteemodifylist.jsp" />
+	<definition
+		name="systemacademysearchworkcommittee.modifymodify"
+		path="/WEB-INF/jsp/module/search/systemacademysearchworkcommitteemodify.jsp" />
+	<definition
+		name="systemacademysearchworkcommittee.viewlist"
+		path="/WEB-INF/jsp/module/search/systemacademysearchworkcommitteeviewlist.jsp" />
+	<definition
+		name="systemacademysearchworkcommittee.modifyadd"
+		path="/WEB-INF/jsp/module/search/systemacademysearchworkcommitteemodifyadd.jsp" />
+	<definition
+		name="systemacademysearchpartybuild.modify"
+		path="/WEB-INF/jsp/module/search/systemacademysearchpartybuildmodify.jsp" />
+	<definition
+		name="systemacademysearchpartybuild.view"
+		path="/WEB-INF/jsp/module/search/systemacademysearchpartybuildview.jsp" />
+	<!-- acad学会信息查询 -->
+	<definition
+		name="academysearch.list"
+		path="/WEB-INF/jsp/module/search/academysearchlist.jsp" />
+	<definition
+		name="academysearch.modify"
+		path="/WEB-INF/jsp/module/search/academysearchmodify.jsp" />
+	<definition
+		name="academysearch.view"
+		path="/WEB-INF/jsp/module/search/academysearchview.jsp" />
+	<definition
+		name="academysearchprincipal.modify"
+		path="/WEB-INF/jsp/module/search/academysearchprincipalmodify.jsp" />
+	<definition
+		name="academysearchprincipal.view"
+		path="/WEB-INF/jsp/module/search/academysearchprincipalview.jsp" />
+	<definition
+		name="academysearchcouncil.modify"
+		path="/WEB-INF/jsp/module/search/academysearchcouncilmodify.jsp" />
+	<definition
+		name="academysearchcouncil.view"
+		path="/WEB-INF/jsp/module/search/academysearchcouncilview.jsp" />
+	<definition
+		name="academysearchorganizationinfo.modifylist"
+		path="/WEB-INF/jsp/module/search/academysearchorganizationinfomodifylist.jsp" />
+	<definition
+		name="academysearchorganizationinfo.modify"
+		path="/WEB-INF/jsp/module/search/academysearchorganizationinfomodify.jsp" />
+	<definition
+		name="academysearchorganizationinfo.view"
+		path="/WEB-INF/jsp/module/search/academysearchorganizationinfoview.jsp" />
+	<definition
+		name="academysearchorganizationinfo.modifyadd"
+		path="/WEB-INF/jsp/module/search/academysearchorganizationinfomodifyadd.jsp" />
+	<definition
+		name="academysearchspecialitycommittee.modifylist"
+		path="/WEB-INF/jsp/module/search/academysearchspecialitycommitteemodifylist.jsp" />
+	<definition
+		name="academysearchspecialitycommittee.modify"
+		path="/WEB-INF/jsp/module/search/academysearchspecialitycommitteemodify.jsp" />
+	<definition
+		name="academysearchspecialitycommittee.view"
+		path="/WEB-INF/jsp/module/search/academysearchspecialitycommitteeview.jsp" />
+	<definition
+		name="academysearchspecialitycommittee.modifyadd"
+		path="/WEB-INF/jsp/module/search/academysearchspecialitycommitteemodifyadd.jsp" />
+	<definition
+		name="academysearchjournalbrandinfo.modifylist"
+		path="/WEB-INF/jsp/module/search/academysearchjournalbrandinfomodifylist.jsp" />
+	<definition
+		name="academysearchjournalbrandinfo.viewlist"
+		path="/WEB-INF/jsp/module/search/academysearchjournalbrandinfoviewlist.jsp" />
+	<definition
+		name="academysearchjournalinfo.modifyadd"
+		path="/WEB-INF/jsp/module/search/academysearchjournalinfomodifyadd.jsp" />
+	<definition
+		name="academysearchjournalinfo.modifymodify"
+		path="/WEB-INF/jsp/module/search/academysearchjournalinfomodify.jsp" />
+	<definition
+		name="academysearchbrandconstruct.modifyadd"
+		path="/WEB-INF/jsp/module/search/academysearchbrandconstructmodifyadd.jsp" />
+	<definition
+		name="academysearchbrandconstruct.modifymodify"
+		path="/WEB-INF/jsp/module/search/academysearchbrandconstructmodify.jsp" />
+	<definition
+		name="academysearchworkcommittee.modifylist"
+		path="/WEB-INF/jsp/module/search/academysearchworkcommitteemodifylist.jsp" />
+	<definition
+		name="academysearchworkcommittee.modifymodify"
+		path="/WEB-INF/jsp/module/search/academysearchworkcommitteemodify.jsp" />
+	<definition
+		name="academysearchworkcommittee.viewlist"
+		path="/WEB-INF/jsp/module/search/academysearchworkcommitteeviewlist.jsp" />
+	<definition
+		name="academysearchworkcommittee.modifyadd"
+		path="/WEB-INF/jsp/module/search/academysearchworkcommitteemodifyadd.jsp" />
+	<definition
+		name="academysearchpartybuild.modify"
+		path="/WEB-INF/jsp/module/search/academysearchpartybuildmodify.jsp" />
+	<definition
+		name="academysearchpartybuild.view"
+		path="/WEB-INF/jsp/module/search/academysearchpartybuildview.jsp" />
+	<!-- vip学会信息查询 -->
+	<definition
+		name="vipsystemacademysearch.list"
+		path="/WEB-INF/jsp/module/vip/vipsystemacademysearchlist.jsp" />
+	<definition
+		name="vipsystemacademysearch.view"
+		path="/WEB-INF/jsp/module/vip/vipsystemacademysearchview.jsp" />
+	<definition
+		name="vipsystemacademysearchprincipal.view"
+		path="/WEB-INF/jsp/module/vip/vipsystemacademysearchprincipalview.jsp" />
+	<definition
+		name="vipsystemacademysearchcouncil.view"
+		path="/WEB-INF/jsp/module/vip/vipsystemacademysearchcouncilview.jsp" />
+	<definition
+		name="vipsystemacademysearchorganizationinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsystemacademysearchorganizationinfoview.jsp" />
+	<definition
+		name="vipsystemacademysearchspecialitycommittee.view"
+		path="/WEB-INF/jsp/module/vip/vipsystemacademysearchspecialitycommitteeview.jsp" />
+	<definition
+		name="vipsystemacademysearchjournalbrandinfo.viewlist"
+		path="/WEB-INF/jsp/module/vip/vipsystemacademysearchjournalbrandinfoviewlist.jsp" />
+	<definition
+		name="vipsystemacademysearchworkcommittee.viewlist"
+		path="/WEB-INF/jsp/module/vip/vipsystemacademysearchworkcommitteeviewlist.jsp" />
+	<definition
+		name="vipsystemacademysearchpartybuild.view"
+		path="/WEB-INF/jsp/module/vip/vipsystemacademysearchpartybuildview.jsp" />
+	<!-- vip acad学会信息查询 -->
+	<definition
+		name="vipacademysearch.list"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchlist.jsp" />
+	<definition
+		name="vipacademysearch.view"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchview.jsp" />
+	<definition
+		name="vipacademysearchprincipal.view"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchprincipalview.jsp" />
+	<definition
+		name="vipacademysearchcouncil.view"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchcouncilview.jsp" />
+	<definition
+		name="vipacademysearchorganizationinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchorganizationinfoview.jsp" />
+	<definition
+		name="vipacademysearchspecialitycommittee.view"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchspecialitycommitteeview.jsp" />
+	<definition
+		name="vipacademysearchjournalbrandinfo.viewlist"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchjournalbrandinfoviewlist.jsp" />
+	<definition
+		name="vipacademysearchworkcommittee.viewlist"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchworkcommitteeviewlist.jsp" />
+	<definition
+		name="vipacademysearchpartybuild.view"
+		path="/WEB-INF/jsp/module/vip/vipacademysearchpartybuildview.jsp" />
+	<!-- 代表委员查询 -->
+	<definition
+		name="dbwyquery.list"
+		path="/WEB-INF/jsp/module/search/dbwyquerylist.jsp" />
+	<!-- 会员 代表委员查询 -->
+	<definition
+		name="searchdbwybaseinfo.view1"
+		path="/WEB-INF/jsp/module/search/dbwybaseinfoview1.jsp" />
+	<definition
+		name="searchdbwydeputyinfo.view1"
+		path="/WEB-INF/jsp/module/search/searchdbwydeputyinfoview1.jsp" />
+	<definition
+		name="searchdbwyacademyrelation.viewlist1"
+		path="/WEB-INF/jsp/module/search/searchdbwyacademyrelationviewlist1.jsp" />
+	<definition
+		name="searchdbwyacademyrelation.view"
+		path="/WEB-INF/jsp/module/search/searchdbwyacademyrelationview.jsp" />
+	<definition
+		name="searchdbwypastjob.view1"
+		path="/WEB-INF/jsp/module/search/searchdbwypastjobview1.jsp" />
+	<definition
+		name="searchdbwyresearchproduction.view1"
+		path="/WEB-INF/jsp/module/search/searchdbwyresearchproductionview1.jsp" />
+	<definition
+		name="searchdbwyacademicliterature.view1"
+		path="/WEB-INF/jsp/module/search/searchdbwyacademicliteratureview1.jsp" />
+	<definition
+		name="searchdbwypatentinfo.view1"
+		path="/WEB-INF/jsp/module/search/searchdbwypatentinfoview1.jsp" />
+	<!-- 会员 代表委员查询后修改 -->
+	<definition
+		name="searchdbwybaseinfo.mod1"
+		path="/WEB-INF/jsp/module/search/searchalldbwybaseinfomod1.jsp" />
+	<definition
+		name="searchalldbwydeputyinfomod.list1"
+		path="/WEB-INF/jsp/module/search/searchalldbwydeputyinfomodlist1.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modify1"
+		path="/WEB-INF/jsp/module/search/searchalldbwydeputyinfomodify1.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modifyadd1"
+		path="/WEB-INF/jsp/module/search/searchalldbwydeputyinfomodifyadd1.jsp" />
+	<definition
+		name="searchalldbwyacademysmemberrelation.modlist1"
+		path="/WEB-INF/jsp/module/search/searchalldbwyacademysmemberrelationmodlist1.jsp" />
+	<definition
+		name="searchalldbwyacademysmemberrelation.mod1"
+		path="/WEB-INF/jsp/module/search/searchalldbwyacademysmemberrelationmod1.jsp" />
+	<definition
+		name="searchalldbwyacademysmemberrelation.modview1"
+		path="/WEB-INF/jsp/module/search/searchalldbwyacademysmemberrelationmodview1.jsp" />
+	<definition
+		name="searchalldbwypastjob.modlist1"
+		path="/WEB-INF/jsp/module/search/searchalldbwypastjobmodlist1.jsp" />
+	<definition
+		name="searchalldbwypastjob.mod1"
+		path="/WEB-INF/jsp/module/search/searchalldbwypastjobmod1.jsp" />
+	<definition
+		name="searchalldbwypastjob.modadd1"
+		path="/WEB-INF/jsp/module/search/searchalldbwypastjobmodadd1.jsp" />
+	<definition
+		name="searchalldbwyrespro.modlist1"
+		path="/WEB-INF/jsp/module/search/searchalldbwyrespromodlist1.jsp" />
+	<definition
+		name="searchalldbwyrespro.mod1"
+		path="/WEB-INF/jsp/module/search/searchalldbwyrespromod1.jsp" />
+	<definition
+		name="searchalldbwyrespro.modadd1"
+		path="/WEB-INF/jsp/module/search/searchalldbwyrespromodadd1.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifylist1"
+		path="/WEB-INF/jsp/module/search/searchalldbwyacademicliteraturemodifylist1.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modify1"
+		path="/WEB-INF/jsp/module/search/searchalldbwyacademicliteraturemodify1.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifyadd1"
+		path="/WEB-INF/jsp/module/search/searchalldbwyacademicliteraturemodifyadd1.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modlist1"
+		path="/WEB-INF/jsp/module/search/searchalldbwypatentinfomodlist1.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modify1"
+		path="/WEB-INF/jsp/module/search/searchalldbwypatentinfomodify1.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modifyadd1"
+		path="/WEB-INF/jsp/module/search/searchalldbwypatentinfomodifyadd1.jsp" />
+	<!-- 纯代表委员查询 -->
+	<definition
+		name="searchdbwybaseinfo.view2"
+		path="/WEB-INF/jsp/module/search/dbwybaseinfoview2.jsp" />
+	<definition
+		name="searchallshadeputybaseinfo.view"
+		path="/WEB-INF/jsp/module/search/dbwybaseinfoview2.jsp" />
+	<definition
+		name="searchallshadeputyinfo.view"
+		path="/WEB-INF/jsp/module/search/searchallshadeputyinfoview.jsp" />
+	<definition
+		name="searchallshadeputypastjob.view"
+		path="/WEB-INF/jsp/module/search/searchallshadeputypastjobview.jsp" />
+	<definition
+		name="searchallshadeputyresearchproduction.view"
+		path="/WEB-INF/jsp/module/search/searchallshadeputyresearchproductionview.jsp" />
+	<definition
+		name="searchallshadeputyacademicliterature.view"
+		path="/WEB-INF/jsp/module/search/searchallshadeputyacademicliteratureview.jsp" />
+	<definition
+		name="searchallshadeputypatentinfo.view"
+		path="/WEB-INF/jsp/module/search/searchallshadeputypatentinfoview.jsp" />
+	<!-- 纯代表、委员查询后修改信息 -->
+	<definition
+		name="searchdbwybaseinfo.mod2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchdbwybaseinfomod2.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modlist2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwydeputyinfomodlist2.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modadd2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwydeputyinfomodadd2.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.mod2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwydeputyinfomod2.jsp" />
+	<definition
+		name="searchalldbwypastjob.modlist2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwypastjobmodlist2.jsp" />
+	<definition
+		name="searchalldbwypastjob.modadd2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwypastjobmodadd2.jsp" />
+	<definition
+		name="searchalldbwypastjob.mod2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwypastjobmod2.jsp" />
+	<definition
+		name="searchalldbwyrespro.modlist2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwyrespromodlist2.jsp" />
+	<definition
+		name="searchalldbwyrespro.modadd2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwyrespromodadd2.jsp" />
+	<definition
+		name="searchalldbwyrespro.modmod2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwyrespromodmod2.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifylist2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwyacademicliteraturemodifylist2.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifyadd2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwyacademicliteraturemodifyadd2.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifymodify2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwyacademicliteraturemodifymodify2.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modlist2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwypatentinfomodlist2.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modadd2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwypatentinfomodadd2.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modmod2"
+		path="/WEB-INF/jsp/module/search/allsimpledbwymodify/searchalldbwypatentinfomodmod2.jsp" />
+	<!-- vip代表委员查询 -->
+	<definition
+		name="vipdbwyquery.list"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylist.jsp" />
+	<!-- vip会员 代表委员查询 -->
+	<definition
+		name="vipsearchdbwybaseinfo.view1"
+		path="/WEB-INF/jsp/module/vip/vipdbwybaseinfoview1.jsp" />
+	<definition
+		name="vipsearchdbwydeputyinfo.view1"
+		path="/WEB-INF/jsp/module/vip/vipsearchdbwydeputyinfoview1.jsp" />
+	<definition
+		name="vipsearchdbwyacademyrelation.viewlist1"
+		path="/WEB-INF/jsp/module/vip/vipsearchdbwyacademyrelationviewlist1.jsp" />
+	<definition
+		name="vipsearchdbwyacademyrelation.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchdbwyacademyrelationview.jsp" />
+	<definition
+		name="vipsearchdbwypastjob.view1"
+		path="/WEB-INF/jsp/module/vip/vipsearchdbwypastjobview1.jsp" />
+	<definition
+		name="vipsearchdbwyresearchproduction.view1"
+		path="/WEB-INF/jsp/module/vip/vipsearchdbwyresearchproductionview1.jsp" />
+	<definition
+		name="vipsearchdbwyacademicliterature.view1"
+		path="/WEB-INF/jsp/module/vip/vipsearchdbwyacademiclitertureview1.jsp" />
+	<definition
+		name="vipsearchdbwypatentinfo.view1"
+		path="/WEB-INF/jsp/module/vip/vipsearchdbwypatentinfoview1.jsp" />
+	<definition
+		name="vipsearchdbwybaseinfo.view2"
+		path="/WEB-INF/jsp/module/vip/vipdbwybaseinfoview2.jsp" />
+	<definition
+		name="vipsearchallshadeputybaseinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipdbwybaseinfoview2.jsp" />
+	<definition
+		name="vipsearchallshadeputyinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchallshadeputyinfoview.jsp" />
+	<definition
+		name="vipsearchallshadeputypastjob.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchallshadeputypastjobview.jsp" />
+	<definition
+		name="vipsearchallshadeputyresearchproduction.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchallshadeputyresearchproductionview.jsp" />
+	<definition
+		name="vipsearchallshadeputyacademicliterature.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchallshadeputyacademicliteratureview.jsp" />
+	<definition
+		name="vipsearchallshadeputypatentinfo.view"
+		path="/WEB-INF/jsp/module/vip/vipsearchallshadeputypatentinfoview.jsp" />
+	<!-- DBWY按照届次查询jc -->
+	<definition
+		name="dbwyquery.listJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/dbwyquerylist.jsp" />
+	<definition
+		name="wyquery.listJC"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/wyquerylist.jsp" />
+	<definition
+		name="cwquery.listJC"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/cwquerylist.jsp" />
+	<!-- 会员 代表委员查询jc -->
+	<definition
+		name="searchdbwybaseinfo.view1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/dbwybaseinfoview1.jsp" />
+	<definition
+		name="searchdbwybaseinfo.view1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/dbwybaseinfoview1.jsp" />
+	<definition
+		name="searchdbwybaseinfo.view1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/dbwybaseinfoview1.jsp" />
+	<definition
+		name="searchdbwydeputyinfo.view1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchdbwydeputyinfoview1.jsp" />
+	<definition
+		name="searchdbwydeputyinfo.view1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchdbwydeputyinfoview1.jsp" />
+	<definition
+		name="searchdbwydeputyinfo.view1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchdbwydeputyinfoview1.jsp" />
+	<definition
+		name="searchdbwyacademyrelation.viewlist1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchdbwyacademyrelationviewlist1.jsp" />
+	<definition
+		name="searchdbwyacademyrelation.viewlist1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchdbwyacademyrelationviewlist1.jsp" />
+	<definition
+		name="searchdbwyacademyrelation.viewlist1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchdbwyacademyrelationviewlist1.jsp" />
+	<definition
+		name="searchdbwyacademyrelation.viewbyJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchdbwyacademyrelationview.jsp" />
+	<definition
+		name="searchdbwypastjob.view1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchdbwypastjobview1.jsp" />
+	<definition
+		name="searchdbwypastjob.view1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchdbwypastjobview1.jsp" />
+	<definition
+		name="searchdbwypastjob.view1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchdbwypastjobview1.jsp" />
+	<definition
+		name="searchdbwyresearchproduction.view1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchdbwyresearchproductionview1.jsp" />
+	<definition
+		name="searchdbwyresearchproduction.view1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchdbwyresearchproductionview1.jsp" />
+	<definition
+		name="searchdbwyresearchproduction.view1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchdbwyresearchproductionview1.jsp" />
+	<definition
+		name="searchdbwyacademicliterature.view1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchdbwyacademicliteratureview1.jsp" />
+	<definition
+		name="searchdbwyacademicliterature.view1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchdbwyacademicliteratureview1.jsp" />
+	<definition
+		name="searchdbwyacademicliterature.view1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchdbwyacademicliteratureview1.jsp" />
+	<definition
+		name="searchdbwypatentinfo.view1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchdbwypatentinfoview1.jsp" />
+	<definition
+		name="searchdbwypatentinfo.view1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchdbwypatentinfoview1.jsp" />
+	<definition
+		name="searchdbwypatentinfo.view1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchdbwypatentinfoview1.jsp" />
+	<!-- 会员 代表委员查询后修改信息jc -->
+	<definition
+		name="searchdbwybaseinfo.mod1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwybaseinfomod1.jsp" />
+	<definition
+		name="searchdbwybaseinfo.mod1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwybaseinfomod1.jsp" />
+	<definition
+		name="searchdbwybaseinfo.mod1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwybaseinfomod1.jsp" />
+	<definition
+		name="searchalldbwydeputyinfomod.list1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwydeputyinfomodlist1.jsp" />
+	<definition
+		name="searchalldbwydeputyinfomod.list1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwydeputyinfomodlist1.jsp" />
+	<definition
+		name="searchalldbwydeputyinfomod.list1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwydeputyinfomodlist1.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modifyadd1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwydeputyinfomodifyadd1.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modifyadd1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwydeputyinfomodifyadd1.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modifyadd1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwydeputyinfomodifyadd1.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modify1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwydeputyinfomodify1.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modify1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwydeputyinfomodify1.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modify1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwydeputyinfomodify1.jsp" />
+	<definition
+		name="searchalldbwyacademysmemberrelation.modlist1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyacademysmemberrelationmodlist1.jsp" />
+	<definition
+		name="searchalldbwyacademysmemberrelation.modlist1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyacademysmemberrelationmodlist1.jsp" />
+	<definition
+		name="searchalldbwyacademysmemberrelation.modlist1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyacademysmemberrelationmodlist1.jsp" />
+	<definition
+		name="searchalldbwyacademysmemberrelation.mod1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyacademysmemberrelationmod1.jsp" />
+	<definition
+		name="searchalldbwyacademysmemberrelation.mod1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyacademysmemberrelationmod1.jsp" />
+	<definition
+		name="searchalldbwyacademysmemberrelation.mod1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyacademysmemberrelationmod1.jsp" />
+	<definition
+		name="searchalldbwyacademysmemberrelation.modview1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyacademysmemberrelationmodview1.jsp" />
+	<definition
+		name="searchalldbwyacademysmemberrelation.modview1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyacademysmemberrelationmodview1.jsp" />
+	<definition
+		name="searchalldbwyacademysmemberrelation.modview1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyacademysmemberrelationmodview1.jsp" />
+	<definition
+		name="searchalldbwypastjob.modlist1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwypastjobmodlist1.jsp" />
+	<definition
+		name="searchalldbwypastjob.modlist1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwypastjobmodlist1.jsp" />
+	<definition
+		name="searchalldbwypastjob.modlist1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwypastjobmodlist1.jsp" />
+	<definition
+		name="searchalldbwypastjob.modadd1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwypastjobmodadd1.jsp" />
+	<definition
+		name="searchalldbwypastjob.modadd1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwypastjobmodadd1.jsp" />
+	<definition
+		name="searchalldbwypastjob.modadd1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwypastjobmodadd1.jsp" />
+	<definition
+		name="searchalldbwypastjob.mod1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwypastjobmod1.jsp" />
+	<definition
+		name="searchalldbwypastjob.mod1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwypastjobmod1.jsp" />
+	<definition
+		name="searchalldbwypastjob.mod1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwypastjobmod1.jsp" />
+	<definition
+		name="searchalldbwyrespro.modlist1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyrespromodlist1.jsp" />
+	<definition
+		name="searchalldbwyrespro.modlist1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyrespromodlist1.jsp" />
+	<definition
+		name="searchalldbwyrespro.modlist1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyrespromodlist1.jsp" />
+	<definition
+		name="searchalldbwyrespro.mod1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyrespromod1.jsp" />
+	<definition
+		name="searchalldbwyrespro.mod1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyrespromod1.jsp" />
+	<definition
+		name="searchalldbwyrespro.mod1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyrespromod1.jsp" />
+	<definition
+		name="searchalldbwyrespro.modadd1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyrespromodadd1.jsp" />
+	<definition
+		name="searchalldbwyrespro.modadd1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyrespromodadd1.jsp" />
+	<definition
+		name="searchalldbwyrespro.modadd1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyrespromodadd1.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifylist1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyacademicliteraturemodifylist1.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifylist1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyacademicliteraturemodifylist1.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifylist1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyacademicliteraturemodifylist1.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modify1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyacademicliteraturemodify1.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modify1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyacademicliteraturemodify1.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modify1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyacademicliteraturemodify1.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifyadd1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyacademicliteraturemodifyadd1.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifyadd1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyacademicliteraturemodifyadd1.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifyadd1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyacademicliteraturemodifyadd1.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modlist1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwypatentinfomodlist1.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modlist1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwypatentinfomodlist1.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modlist1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwypatentinfomodlist1.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modify1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwypatentinfomodify1.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modify1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwypatentinfomodify1.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modify1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwypatentinfomodify1.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modifyadd1byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwypatentinfomodifyadd1.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modifyadd1byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwypatentinfomodifyadd1.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modifyadd1byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwypatentinfomodifyadd1.jsp" />
+	<!-- 纯代表委员查询jc -->
+	<definition
+		name="searchdbwybaseinfo.view2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/dbwybaseinfoview2.jsp" />
+	<definition
+		name="searchdbwybaseinfo.view2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/dbwybaseinfoview2.jsp" />
+	<definition
+		name="searchdbwybaseinfo.view2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/dbwybaseinfoview2.jsp" />
+	<definition
+		name="searchallshadeputybaseinfo.viewbyJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/dbwybaseinfoview2.jsp" />
+	<definition
+		name="searchallshadeputybaseinfo.viewbyJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/dbwybaseinfoview2.jsp" />
+	<definition
+		name="searchallshadeputybaseinfo.viewbyJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/dbwybaseinfoview2.jsp" />
+	<definition
+		name="searchallshadeputyinfo.viewbyJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchallshadeputyinfoview.jsp" />
+	<definition
+		name="searchallshadeputyinfo.viewbyJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchallshadeputyinfoview.jsp" />
+	<definition
+		name="searchallshadeputyinfo.viewbyJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchallshadeputyinfoview.jsp" />
+	<definition
+		name="searchallshadeputypastjob.viewbyJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchallshadeputypastjobview.jsp" />
+	<definition
+		name="searchallshadeputypastjob.viewbyJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchallshadeputypastjobview.jsp" />
+	<definition
+		name="searchallshadeputypastjob.viewbyJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchallshadeputypastjobview.jsp" />
+	<definition
+		name="searchallshadeputyresearchproduction.viewbyJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchallshadeputyresearchproductionview.jsp" />
+	<definition
+		name="searchallshadeputyresearchproduction.viewbyJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchallshadeputyresearchproductionview.jsp" />
+	<definition
+		name="searchallshadeputyresearchproduction.viewbyJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchallshadeputyresearchproductionview.jsp" />
+	<definition
+		name="searchallshadeputyacademicliterature.viewbyJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchallshadeputyacademicliteratureview.jsp" />
+	<definition
+		name="searchallshadeputyacademicliterature.viewbyJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchallshadeputyacademicliteratureview.jsp" />
+	<definition
+		name="searchallshadeputyacademicliterature.viewbyJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchallshadeputyacademicliteratureview.jsp" />
+	<definition
+		name="searchallshadeputypatentinfo.viewbyJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchallshadeputypatentinfoview.jsp" />
+	<definition
+		name="searchallshadeputypatentinfo.viewbyJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchallshadeputypatentinfoview.jsp" />
+	<definition
+		name="searchallshadeputypatentinfo.viewbyJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchallshadeputypatentinfoview.jsp" />
+	<!-- 纯代表委员查询后修改信息jc -->
+	<definition
+		name="searchdbwybaseinfo.mod2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchdbwybaseinfomod2.jsp" />
+	<definition
+		name="searchdbwybaseinfo.mod2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchdbwybaseinfomod2.jsp" />
+	<definition
+		name="searchdbwybaseinfo.mod2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchdbwybaseinfomod2.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modlist2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwydeputyinfomodlist2.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modlist2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwydeputyinfomodlist2.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modlist2byJCCW"
+		path="/WEB-INF/jsp/module/search/CWquerylistbyJC/searchalldbwydeputyinfomodlist2.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modadd2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwydeputyinfomodadd2.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modadd2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwydeputyinfomodadd2.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.modadd2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwydeputyinfomodadd2.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.mod2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwydeputyinfomod2.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.mod2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwydeputyinfomod2.jsp" />
+	<definition
+		name="searchalldbwydeputyinfo.mod2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwydeputyinfomod2.jsp" />
+	<definition
+		name="searchalldbwypastjob.modlist2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwypastjobmodlist2.jsp" />
+	<definition
+		name="searchalldbwypastjob.modlist2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwypastjobmodlist2.jsp" />
+	<definition
+		name="searchalldbwypastjob.modlist2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwypastjobmodlist2.jsp" />
+	<definition
+		name="searchalldbwypastjob.modadd2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwypastjobmodadd2.jsp" />
+	<definition
+		name="searchalldbwypastjob.modadd2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwypastjobmodadd2.jsp" />
+	<definition
+		name="searchalldbwypastjob.modadd2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwypastjobmodadd2.jsp" />
+	<definition
+		name="searchalldbwypastjob.mod2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwypastjobmod2.jsp" />
+	<definition
+		name="searchalldbwypastjob.mod2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwypastjobmod2.jsp" />
+	<definition
+		name="searchalldbwypastjob.mod2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwypastjobmod2.jsp" />
+	<definition
+		name="searchalldbwyrespro.modlist2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyrespromodlist2.jsp" />
+	<definition
+		name="searchalldbwyrespro.modlist2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyrespromodlist2.jsp" />
+	<definition
+		name="searchalldbwyrespro.modlist2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyrespromodlist2.jsp" />
+	<definition
+		name="searchalldbwyrespro.modadd2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyrespromodadd2.jsp" />
+	<definition
+		name="searchalldbwyrespro.modadd2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyrespromodadd2.jsp" />
+	<definition
+		name="searchalldbwyrespro.modadd2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyrespromodadd2.jsp" />
+	<definition
+		name="searchalldbwyrespro.modmod2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyrespromodmod2.jsp" />
+	<definition
+		name="searchalldbwyrespro.modmod2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyrespromodmod2.jsp" />
+	<definition
+		name="searchalldbwyrespro.modmod2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyrespromodmod2.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifylist2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyacademicliteraturemodifylist2.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifylist2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyacademicliteraturemodifylist2.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifylist2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyacademicliteraturemodifylist2.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifyadd2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyacademicliteraturemodifyadd2.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifyadd2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyacademicliteraturemodifyadd2.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifyadd2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyacademicliteraturemodifyadd2.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifymodify2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwyacademicliteraturemodifymodify2.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifymodify2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwyacademicliteraturemodifymodify2.jsp" />
+	<definition
+		name="searchalldbwyacademicliterature.modifymodify2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwyacademicliteraturemodifymodify2.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modlist2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwypatentinfomodlist2.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modlist2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwypatentinfomodlist2.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modlist2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwypatentinfomodlist2.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modadd2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwypatentinfomodadd2.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modadd2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwypatentinfomodadd2.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modadd2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwypatentinfomodadd2.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modmod2byJC"
+		path="/WEB-INF/jsp/module/search/dbwyquerylistbyJC/searchalldbwypatentinfomodmod2.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modmod2byJCWY"
+		path="/WEB-INF/jsp/module/search/wyquerylistbyJC/searchalldbwypatentinfomodmod2.jsp" />
+	<definition
+		name="searchalldbwypatentinfo.modmod2byJCCW"
+		path="/WEB-INF/jsp/module/search/cwquerylistbyJC/searchalldbwypatentinfomodmod2.jsp" />
+	<!--vip DBWY按照届次查询jc -->
+	<definition
+		name="vipdbwyquery.listJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipdbwyquerylist.jsp" />
+	<definition
+		name="vipdbwyquery.listJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipdbwyquerylist.jsp" />
+	<definition
+		name="vipdbwyquery.listJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipdbwyquerylist.jsp" />
+	<!--vip 会员 代表委员查询jc -->
+	<definition
+		name="vipsearchdbwybaseinfo.view1byJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipdbwybaseinfoview1.jsp" />
+	<definition
+		name="vipsearchdbwybaseinfo.view1byJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipdbwybaseinfoview1.jsp" />
+	<definition
+		name="vipsearchdbwybaseinfo.view1byJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipdbwybaseinfoview1.jsp" />
+	<definition
+		name="vipsearchdbwydeputyinfo.view1byJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipsearchdbwydeputyinfoview1.jsp" />
+	<definition
+		name="vipsearchdbwydeputyinfo.view1byJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipsearchdbwydeputyinfoview1.jsp" />
+	<definition
+		name="vipsearchdbwydeputyinfo.view1byJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipsearchdbwydeputyinfoview1.jsp" />
+	<definition
+		name="vipsearchdbwyacademyrelation.viewlist1byJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipsearchdbwyacademyrelationviewlist1.jsp" />
+	<definition
+		name="vipsearchdbwyacademyrelation.viewlist1byJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipsearchdbwyacademyrelationviewlist1.jsp" />
+	<definition
+		name="vipsearchdbwyacademyrelation.viewlist1byJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipsearchdbwyacademyrelationviewlist1.jsp" />
+	<definition
+		name="vipsearchdbwyacademyrelation.viewbyJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipsearchdbwyacademyrelationview.jsp" />
+	<definition
+		name="vipsearchdbwyacademyrelation.viewbyJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipsearchdbwyacademyrelationview.jsp" />
+	<definition
+		name="vipsearchdbwyacademyrelation.viewbyJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipsearchdbwyacademyrelationview.jsp" />
+	<definition
+		name="vipsearchdbwypastjob.view1byJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipsearchdbwypastjobview1.jsp" />
+	<definition
+		name="vipsearchdbwypastjob.view1byJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipsearchdbwypastjobview1.jsp" />
+	<definition
+		name="vipsearchdbwypastjob.view1byJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipsearchdbwypastjobview1.jsp" />
+	<definition
+		name="vipsearchdbwyresearchproduction.view1byJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipsearchdbwyresearchproductionview1.jsp" />
+	<definition
+		name="vipsearchdbwyresearchproduction.view1byJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipsearchdbwyresearchproductionview1.jsp" />
+	<definition
+		name="vipsearchdbwyresearchproduction.view1byJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipsearchdbwyresearchproductionview1.jsp" />
+	<definition
+		name="vipsearchdbwyacademicliterature.view1byJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipsearchdbwyacademicliteratureview1.jsp" />
+	<definition
+		name="vipsearchdbwyacademicliterature.view1byJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipsearchdbwyacademicliteratureview1.jsp" />
+	<definition
+		name="vipsearchdbwyacademicliterature.view1byJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipsearchdbwyacademicliteratureview1.jsp" />
+	<definition
+		name="vipsearchdbwypatentinfo.view1byJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipsearchdbwypatentinfoview1.jsp" />
+	<definition
+		name="vipsearchdbwypatentinfo.view1byJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipsearchdbwypatentinfoview1.jsp" />
+	<definition
+		name="vipsearchdbwypatentinfo.view1byJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipsearchdbwypatentinfoview1.jsp" />
+	<!--vip 纯代表委员查询jc -->
+	<definition
+		name="vipsearchdbwybaseinfo.view2byJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipdbwybaseinfoview2.jsp" />
+	<definition
+		name="vipsearchdbwybaseinfo.view2byJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipdbwybaseinfoview2.jsp" />
+	<definition
+		name="vipsearchdbwybaseinfo.view2byJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipdbwybaseinfoview2.jsp" />
+	<definition
+		name="vipsearchallshadeputybaseinfo.viewbyJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipdbwybaseinfoview2.jsp" />
+	<definition
+		name="vipsearchallshadeputybaseinfo.viewbyJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipdbwybaseinfoview2.jsp" />
+	<definition
+		name="vipsearchallshadeputybaseinfo.viewbyJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipdbwybaseinfoview2.jsp" />
+	<definition
+		name="vipsearchallshadeputyinfo.viewbyJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipsearchallshadeputyinfoview.jsp" />
+	<definition
+		name="vipsearchallshadeputyinfo.viewbyJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipsearchallshadeputyinfoview.jsp" />
+	<definition
+		name="vipsearchallshadeputyinfo.viewbyJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipsearchallshadeputyinfoview.jsp" />
+	<definition
+		name="vipsearchallshadeputypastjob.viewbyJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipsearchallshadeputypastjobview.jsp" />
+	<definition
+		name="vipsearchallshadeputypastjob.viewbyJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipsearchallshadeputypastjobview.jsp" />
+	<definition
+		name="vipsearchallshadeputypastjob.viewbyJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipsearchallshadeputypastjobview.jsp" />
+	<definition
+		name="vipsearchallshadeputyresearchproduction.viewbyJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipsearchallshadeputyresearchproductionview.jsp" />
+	<definition
+		name="vipsearchallshadeputyresearchproduction.viewbyJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipsearchallshadeputyresearchproductionview.jsp" />
+	<definition
+		name="vipsearchallshadeputyresearchproduction.viewbyJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipsearchallshadeputyresearchproductionview.jsp" />
+	<definition
+		name="vipsearchallshadeputyacademicliterature.viewbyJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipsearchallshadeputyacademicliteratureview.jsp" />
+	<definition
+		name="vipsearchallshadeputyacademicliterature.viewbyJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipsearchallshadeputyacademicliteratureview.jsp" />
+	<definition
+		name="vipsearchallshadeputyacademicliterature.viewbyJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipsearchallshadeputyacademicliteratureview.jsp" />
+	<definition
+		name="vipsearchallshadeputypatentinfo.viewbyJC"
+		path="/WEB-INF/jsp/module/vip/vipdbwyquerylistbyJC/vipsearchallshadeputypatentinfoview.jsp" />
+	<definition
+		name="vipsearchallshadeputypatentinfo.viewbyJCWY"
+		path="/WEB-INF/jsp/module/vip/vipwyquerylistbyJC/vipsearchallshadeputypatentinfoview.jsp" />
+	<definition
+		name="vipsearchallshadeputypatentinfo.viewbyJCCW"
+		path="/WEB-INF/jsp/module/vip/vipcwquerylistbyJC/vipsearchallshadeputypatentinfoview.jsp" />
+	<!-- 代表、委员统计 -->
+	<definition
+		name="allpeoplenumberstat"
+		path="/WEB-INF/jsp/module/stat/dbwy/allpeoplenum.jsp" />
+	<definition
+		name="peoplenumberstatdb"
+		path="/WEB-INF/jsp/module/stat/dbwy/peoplenumdb.jsp" />
+	<definition
+		name="peoplenumberstatwy"
+		path="/WEB-INF/jsp/module/stat/dbwy/peoplenumwy.jsp" />
+	<definition
+		name="peoplenumberstatcw"
+		path="/WEB-INF/jsp/module/stat/dbwy/peoplenumcw.jsp" />
+	<definition
+		name="alldbwysexstat"
+		path="/WEB-INF/jsp/module/stat/dbwy/alldbwysexstat.jsp" />
+	<definition
+		name="dbwysexstatdb"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwysexstatdb.jsp" />
+	<definition
+		name="dbwysexstatwy"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwysexstatwy.jsp" />
+	<definition
+		name="dbwysexstatcw"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwysexstatcw.jsp" />
+	<definition
+		name="alldbwyagestat"
+		path="/WEB-INF/jsp/module/stat/dbwy/alldbwyagestat.jsp" />
+	<definition
+		name="dbwyagestatdb"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwyagestatdb.jsp" />
+	<definition
+		name="dbwyagestatwy"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwyagestatwy.jsp" />
+	<definition
+		name="dbwyagestatcw"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwyagestatcw.jsp" />
+	<definition
+		name="alldbwynationstat"
+		path="/WEB-INF/jsp/module/stat/dbwy/alldbwynationstat.jsp" />
+	<definition
+		name="dbwynationstatdb"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwynationstatdb.jsp" />
+	<definition
+		name="dbwynationstatwy"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwynationstatwy.jsp" />
+	<definition
+		name="dbwynationstatcw"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwynationstatcw.jsp" />
+	<definition
+		name="alldbwynationalitystat"
+		path="/WEB-INF/jsp/module/stat/dbwy/alldbwynationalitystat.jsp" />
+	<definition
+		name="dbwynationalitystatdb"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwynationalitystatdb.jsp" />
+	<definition
+		name="dbwynationalitystatwy"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwynationalitystatwy.jsp" />
+	<definition
+		name="dbwynationalitystatcw"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwynationalitystatcw.jsp" />
+	<definition
+		name="alldbwypartystat"
+		path="/WEB-INF/jsp/module/stat/dbwy/alldbwypartystat.jsp" />
+	<definition
+		name="dbwypartystatdb"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwypartystatdb.jsp" />
+	<definition
+		name="dbwypartystatwy"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwypartystatwy.jsp" />
+	<definition
+		name="dbwypartystatcw"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwypartystatcw.jsp" />
+	<definition
+		name="alldbwygatherinfostat"
+		path="/WEB-INF/jsp/module/stat/dbwy/alldbwygatherinfostat.jsp" />
+	<definition
+		name="dbwygatherinfostatdb"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwygatherinfostatdb.jsp" />
+	<definition
+		name="dbwygatherinfostatwy"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwygatherinfostatwy.jsp" />
+	<definition
+		name="dbwygatherinfostatcw"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwygatherinfostatcw.jsp" />
+	<definition
+		name="alldbwyrankstat"
+		path="/WEB-INF/jsp/module/stat/dbwy/alldbwyrankstat.jsp" />
+	<definition
+		name="dbwyrankstatdb"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwyrankstatdb.jsp" />
+	<definition
+		name="dbwyrankstatwy"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwyrankstatwy.jsp" />
+	<definition
+		name="dbwyrankstatcw"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwyrankstatcw.jsp" />
+	<definition
+		name="alldbwyscholarstat"
+		path="/WEB-INF/jsp/module/stat/dbwy/alldbwyscholarstat.jsp" />
+	<definition
+		name="dbwyscholarstatdb"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwyscholarstatdb.jsp" />
+	<definition
+		name="dbwyscholarstatwy"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwyscholarstatwy.jsp" />
+	<definition
+		name="dbwyscholarstatcw"
+		path="/WEB-INF/jsp/module/stat/dbwy/dbwyscholarstatcw.jsp" />
+	<!--vip dbwy统计 -->
+	<definition
+		name="vipalldbwynationstat"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipalldbwynationstat.jsp" />
+	<definition
+		name="vipdbwynationstatdb"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipdbwynationstatdb.jsp" />
+	<definition
+		name="vipdbwynationstatwy"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipdbwynationstatwy.jsp" />
+	<definition
+		name="vipdbwynationstatcw"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipdbwynationstatcw.jsp" />
+	<definition
+		name="vipalldbwynationalitystat"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipalldbwynationalitystat.jsp" />
+	<definition
+		name="vipdbwynationalitystatdb"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipdbwynationalitystatdb.jsp" />
+	<definition
+		name="vipdbwynationalitystatwy"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipdbwynationalitystatwy.jsp" />
+	<definition
+		name="vipdbwynationalitystatcw"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipdbwynationalitystatcw.jsp" />
+	<definition
+		name="vipalldbwyrankstat"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipalldbwyrankstat.jsp" />
+	<definition
+		name="vipdbwyrankstatdb"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipdbwyrankstatdb.jsp" />
+	<definition
+		name="vipdbwyrankstatwy"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipdbwyrankstatwy.jsp" />
+	<definition
+		name="vipdbwyrankstatcw"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipdbwyrankstatcw.jsp" />
+	<definition
+		name="vipalldbwyscholarstat"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipalldbwyscholarstat.jsp" />
+	<definition
+		name="vipdbwyscholarstatdb"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipdbwyscholarstatdb.jsp" />
+	<definition
+		name="vipdbwyscholarstatwy"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipdbwyscholarstatwy.jsp" />
+	<definition
+		name="vipdbwyscholarstatcw"
+		path="/WEB-INF/jsp/module/vip/dbwystat/vipdbwyscholarstatcw.jsp" />
+	<!-- vip dbwy 信息汇总统计 -->
+	<definition
+		name="vipalldbwygatherinfostat"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipalldbwygatherinfostat.jsp" />
+	<definition
+		name="vipdbwygatherinfostatdb"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipdbwygatherinfostatdb.jsp" />
+	<definition
+		name="vipdbwygatherinfostatwy"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipdbwygatherinfostatwy.jsp" />
+	<definition
+		name="vipdbwygatherinfostatcw"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipdbwygatherinfostatcw.jsp" />
+	<!-- VIP DBWY人数分类统计 -->
+	<definition
+		name="vipallpeoplenumberstat"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipallpeoplenum.jsp" />
+	<definition
+		name="vippeoplenumberstatdb"
+		path="/WEB-INF/jsp/module/stat/dbwy/vippeoplenumdb.jsp" />
+	<definition
+		name="vippeoplenumberstatwy"
+		path="/WEB-INF/jsp/module/stat/dbwy/vippeoplenumwy.jsp" />
+	<definition
+		name="vippeoplenumberstatcw"
+		path="/WEB-INF/jsp/module/stat/dbwy/vippeoplenumcw.jsp" />
+	<!-- VIP DBWY性别统计 -->
+	<definition
+		name="vipalldbwysexstat"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipalldbwysexstat.jsp" />
+	<definition
+		name="vipdbwysexstatdb"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipdbwysexstatdb.jsp" />
+	<definition
+		name="vipdbwysexstatwy"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipdbwysexstatwy.jsp" />
+	<definition
+		name="vipdbwysexstatcw"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipdbwysexstatcw.jsp" />
+	<!-- VIP DBWY 年龄统计 -->
+	<definition
+		name="vipalldbwyagestat"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipalldbwyagestat.jsp" />
+	<definition
+		name="vipdbwyagestatdb"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipdbwyagestatdb.jsp" />
+	<definition
+		name="vipdbwyagestatwy"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipdbwyagestatwy.jsp" />
+	<definition
+		name="vipdbwyagestatcw"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipdbwyagestatcw.jsp" />
+	<!-- VIP DBWY 政治面貌统计 -->
+	<definition
+		name="vipalldbwypartystat"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipalldbwypartystat.jsp" />
+	<definition
+		name="vipdbwypartystatdb"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipdbwypartystatdb.jsp" />
+	<definition
+		name="vipdbwypartystatwy"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipdbwypartystatwy.jsp" />
+	<definition
+		name="vipdbwypartystatcw"
+		path="/WEB-INF/jsp/module/stat/dbwy/vipdbwypartystatcw.jsp" />
+	<!-- 新增其他功能 -->
+	<definition
+		name="email.list"
+		path="/WEB-INF/jsp/module/email/email.jsp" />
+	<definition
+		name="send.email"
+		path="/WEB-INF/jsp/module/email/sendemail.jsp" />
+	<definition
+		name="note.list"
+		path="/WEB-INF/jsp/module/note/note.jsp" />
+	<definition
+		name="envelopnote.list"
+		path="/WEB-INF/jsp/error/build.jsp" />
+	<definition
+		name="acadecustom.list"
+		path="/WEB-INF/jsp/module/academyadmin/acadecustomname.jsp" />
+	<definition
+		name="stemp.list"
+		path="/WEB-INF/jsp/module/email/stemp.jsp" />
+	<definition
+		name="sysstemp.list"
+		path="/WEB-INF/jsp/module/email/sysstemp.jsp" />
+	<definition
+		name="notecharge.list"
+		path="/WEB-INF/jsp/module/note/notecharge.jsp" />
+</tiles-definitions>

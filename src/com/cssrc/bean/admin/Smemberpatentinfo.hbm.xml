@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Smemberpatentinfo" table="T_SMEMBERPATENTINFO">
+    <id name="smpi_id" type="java.lang.Integer" column="SMPI_ID" unsaved-value = "null">
+         <generator class="native"/>
+         </id>
+    <property name="smbi_id" type="java.lang.Integer" update="true" insert="true" column="SMBI_ID"/>
+    <property name="patentname" type="java.lang.String" update="true" insert="true" column="PATENTNAME"/>
+    <property name="patentdate" type="java.util.Date" update="true" insert="true" column="PATENTDATE"/>
+    <property name="patenttype" type="java.lang.String" update="true" insert="true" column="PATENTTYPE"/>
+    <property name="patentisindustrialized" type="java.lang.String" update="true" insert="true" column="PATENTISINDUSTRIALIZED"/>
+    <property name="patentvalue" type="java.lang.String" update="true" insert="true" column="PATENTVALUE"/>
+    </class>
+</hibernate-mapping>

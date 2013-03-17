@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Academyorganizationinfo" table="T_ACADEMYORGANIZATIONINFO">
+    <id name="aoi_id" type="java.lang.Integer" column="AOI_ID" unsaved-value = "null">
+         <generator class="native"/>
+         </id>
+    <property name="abi_id" type="java.lang.Integer" update="true" insert="true" column="ABI_ID"/>
+    <property name="organame" type="java.lang.String" update="true" insert="true" column="ORGANAME"/>
+    <property name="chargeman" type="java.lang.String" update="true" insert="true" column="CHARGEMAN"/>
+    <property name="staffcount" type="java.lang.Integer" update="true" insert="true" column="STAFFCOUNT"/>
+    <property name="contacttelephone" type="java.lang.String" update="true" insert="true" column="CONTACTTELEPHONE"/>
+    </class>
+</hibernate-mapping>

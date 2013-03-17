@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Acadecustom" table="T_ACADECUSTOM">
+    <id name="no" type="java.lang.Integer" column="NO" unsaved-value = "null">
+    	<generator class="native"/>
+    </id>
+    <property name="content1" type="java.lang.String" update="true" insert="true" column="CONTENT1"/>
+    <property name="content2" type="java.lang.String" update="true" insert="true" column="CONTENT2"/>
+    <property name="content3" type="java.lang.String" update="true" insert="true" column="CONTENT3"/>
+    <property name="content4" type="java.lang.String" update="true" insert="true" column="CONTENT4"/>
+    <property name="content5" type="java.lang.String" update="true" insert="true" column="CONTENT5"/>
+    <property name="content6" type="java.lang.String" update="true" insert="true" column="CONTENT6"/>
+    <property name="smbi_id" type="java.lang.Integer" update="true" insert="true" column="SMBI_ID"/>
+    <property name="abi_id" type="java.lang.Integer" update="true" insert="true" column="ABI_ID"/>
+    <property name="abino" type="java.lang.String" update="true" insert="true" column="ABINO"/>
+</class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Academygmemberrelation" table="T_ACADEMYGMEMBERRELATION">
+    <id name="agmr_id" type="java.lang.Integer" column="AGMR_ID" unsaved-value = "null">
+         <generator class="native"/>
+         </id>
+    <property name="abi_id" type="java.lang.Integer" update="true" insert="true" column="ABI_ID"/>
+    <property name="gmbi_id" type="java.lang.Integer" update="true" insert="true" column="GMBI_ID"/>
+    <property name="joindate" type="java.util.Calendar" update="true" insert="true" column="JOINDATE"/>
+    <property name="memtype" type="java.lang.String" update="true" insert="true" column="MEMTYPE"/>
+    <property name="isannualregister" type="java.lang.String" update="true" insert="true" column="ISANNUALREGISTER"/>
+    <property name="isdelete" type="java.lang.String" update="true" insert="true" column="ISDELETE"/>
+    <property name="deletedate" type="java.lang.String" update="true" insert="true" column="DELETEDATE"/>
+    </class>
+</hibernate-mapping>

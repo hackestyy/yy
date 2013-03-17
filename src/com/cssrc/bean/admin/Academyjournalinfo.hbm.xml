@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Academyjournalinfo" table="T_AcademyJOURNALINFO">
+    <id name="aji_id" type="java.lang.Integer" column="AJI_ID" unsaved-value = "null">
+         <generator class="native"/>
+         </id>
+    <property name="abi_id" type="java.lang.Integer" update="true" insert="true" column="ABI_ID"/>
+    <property name="journalname" type="java.lang.String" update="true" insert="true" column="JOURNALNAME"/>
+    <property name="journalcode" type="java.lang.String" update="true" insert="true" column="JOURNALCODE"/>
+    <property name="publishperiod" type="java.lang.String" update="true" insert="true" column="PUBLISHPERIOD"/>
+    <property name="publishcount" type="java.lang.Integer" update="true" insert="true" column="PUBLISHCOUNT"/>
+    <property name="editorname" type="java.lang.String" update="true" insert="true" column="EDITORNAME"/>
+    <property name="contactaddress" type="java.lang.String" update="true" insert="true" column="CONTACTADDRESS"/>
+    <property name="contacttelephone" type="java.lang.String" update="true" insert="true" column="CONTACTTELEPHONE"/>
+    <property name="isself" type="java.lang.String" update="true" insert="true" column="ISSELF"/>
+    </class>
+</hibernate-mapping>

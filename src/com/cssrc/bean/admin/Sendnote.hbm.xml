@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Sendnote" table="T_SENDNOTE">
+    <id name="id" type="java.lang.Integer" column="ID" unsaved-value = "null">
+    	<generator class="native"/>
+    </id>
+    <property name="url" type="java.lang.String" update="true" insert="true" column="URL"/>
+    <property name="tablename" type="java.lang.String" update="true" insert="true" column="TABLENAME"/>
+    <property name="username" type="java.lang.String" update="true" insert="true" column="USERNAME"/>
+    <property name="userpsw" type="java.lang.String" update="true" insert="true" column="USERPSW"/>
+    <property name="phone" type="java.lang.String" update="true" insert="true" column="PHONE"/>
+    
+</class>
+</hibernate-mapping>

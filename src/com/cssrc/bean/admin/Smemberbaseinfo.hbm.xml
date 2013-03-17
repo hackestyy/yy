@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Smemberbaseinfo" table="T_SMEMBERBASEINFO">
+    <id name="smbi_id" type="java.lang.Integer" column="SMBI_ID" unsaved-value = "null">
+         <generator class="native"/>
+         </id>
+    <property name="memno" type="java.lang.String" update="true" insert="true" column="MEMNO"/>
+    <property name="memname" type="java.lang.String" update="true" insert="true" column="MEMNAME"/>
+    <property name="memidentity" type="java.lang.String" update="true" insert="true" column="MEMIDENTITY"/>
+    <property name="memsex" type="java.lang.String" update="true" insert="true" column="MEMSEX"/>
+    <property name="membirthday" type="java.util.Calendar" update="true" insert="true" column="MEMBIRTHDAY"/>
+    <property name="memnation_s" type="java.lang.String" update="true" insert="true" column="MEMNATION_S"/>
+    <property name="memnation_f" type="java.lang.String" update="true" insert="true" column="MEMNATION_F"/>
+    <property name="memparty_s" type="java.lang.String" update="true" insert="true" column="MEMPARTY_S"/>
+    <property name="memparty_f" type="java.lang.String" update="true" insert="true" column="MEMPARTY_F"/>
+    <property name="memnationality_s" type="java.lang.String" update="true" insert="true" column="MEMNATIONALITY_S"/>
+    <property name="memnationality_f" type="java.lang.String" update="true" insert="true" column="MEMNATIONALITY_F"/>
+    <property name="memdegree" type="java.lang.String" update="true" insert="true" column="MEMDEGREE"/>
+    <property name="memscholar" type="java.lang.String" update="true" insert="true" column="MEMSCHOLAR"/>
+    <property name="memrank_s" type="java.lang.String" update="true" insert="true" column="MEMRANK_S"/>
+    <property name="memrank_f" type="java.lang.String" update="true" insert="true" column="MEMRANK_F"/>
+    <property name="memphoto" type="java.sql.Blob" lazy="true" column="MEMPHOTO"/>
+    <property name="meminstitute" type="java.lang.String" update="true" insert="true" column="MEMINSTITUTE"/>
+    <property name="memdept" type="java.lang.String" update="true" insert="true" column="MEMDEPT"/>
+    <property name="isemployee" type="java.lang.String" update="true" insert="true" column="ISEMPLOYEE"/>
+    <property name="memduty" type="java.lang.String" update="true" insert="true" column="MEMDUTY"/>
+    <property name="memspeciality" type="java.lang.String" update="true" insert="true" column="MEMSPECIALITY"/>
+    <property name="memskill" type="java.lang.String" update="true" insert="true" column="MEMSKILL"/>
+    <property name="foreignlanguage" type="java.lang.String" update="true" insert="true" column="FOREIGNLANGUAGE"/>
+    <property name="assoduty_s" type="java.lang.String" update="true" insert="true" column="ASSODUTY_S"/>
+    <property name="assoduty_f" type="java.lang.String" update="true" insert="true" column="ASSODUTY_F"/>
+    <property name="socialduty1" type="java.lang.String" update="true" insert="true" column="SOCIALDUTY1"/>
+    <property name="socialduty2" type="java.lang.String" update="true" insert="true" column="SOCIALDUTY2"/>
+    <property name="socialduty3" type="java.lang.String" update="true" insert="true" column="SOCIALDUTY3"/>
+    <property name="socialduty4" type="java.lang.String" update="true" insert="true" column="SOCIALDUTY4"/>
+    <property name="socialduty5" type="java.lang.String" update="true" insert="true" column="SOCIALDUTY5"/>
+    <property name="socialduty6" type="java.lang.String" update="true" insert="true" column="SOCIALDUTY6"/>
+    <property name="socialduty7" type="java.lang.String" update="true" insert="true" column="SOCIALDUTY7"/>
+    <property name="socialduty8" type="java.lang.String" update="true" insert="true" column="SOCIALDUTY8"/>
+    <property name="socialhonour1" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR1"/>
+    <property name="socialhonour2" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR2"/>
+    <property name="socialhonour3" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR3"/>
+    <property name="socialhonour4" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR4"/>
+    <property name="socialhonour5" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR5"/>
+    <property name="socialhonour6" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR6"/>
+    <property name="socialhonour7" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR7"/>
+    <property name="socialhonour8" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR8"/>
+    <property name="socialhonour9" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR9"/>
+    <property name="socialhonour10" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR10"/>
+    <property name="socialhonour11" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR11"/>
+    <property name="socialhonour12" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR12"/>
+    <property name="socialhonour13" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR13"/>
+    <property name="socialhonour14" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR14"/>
+    <property name="socialhonour15" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR15"/>
+    <property name="socialhonour16" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR16"/>
+    <property name="socialhonour17" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR17"/>
+    <property name="socialhonour18" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR18"/>
+    <property name="socialhonour19" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR19"/>
+    <property name="socialhonour20" type="java.lang.String" update="true" insert="true" column="SOCIALHONOUR20"/>
+    <property name="sports1" type="java.lang.String" update="true" insert="true" column="SPORTS1"/>
+    <property name="sports2" type="java.lang.String" update="true" insert="true" column="SPORTS2"/>
+    <property name="sports3" type="java.lang.String" update="true" insert="true" column="SPORTS3"/>
+    <property name="sports4" type="java.lang.String" update="true" insert="true" column="SPORTS4"/>
+    <property name="sports5" type="java.lang.String" update="true" insert="true" column="SPORTS5"/>
+    <property name="sports6" type="java.lang.String" update="true" insert="true" column="SPORTS6"/>
+    <property name="sports7" type="java.lang.String" update="true" insert="true" column="SPORTS7"/>
+    <property name="sports8" type="java.lang.String" update="true" insert="true" column="SPORTS8"/>
+    <property name="interduty_s" type="java.lang.String" update="true" insert="true" column="INTERDUTY_S"/>
+    <property name="interduty_f" type="java.lang.String" update="true" insert="true" column="INTERDUTY_F"/>
+    <property name="nationduty_s" type="java.lang.String" update="true" insert="true" column="NATIONDUTY_S"/>
+    <property name="nationduty_f" type="java.lang.String" update="true" insert="true" column="NATIONDUTY_F"/>
+    <property name="instituteaddress" type="java.lang.String" update="true" insert="true" column="INSTITUTEADDRESS"/>
+    <property name="institutetelephone" type="java.lang.String" update="true" insert="true" column="INSTITUTETELEPHONE"/>
+    <property name="institutepostcode" type="java.lang.String" update="true" insert="true" column="INSTITUTEPOSTCODE"/>
+     <property name="homeaddress" type="java.lang.String" update="true" insert="true" column="HOMEADDRESS"/>
+    <property name="hometelephone" type="java.lang.String" update="true" insert="true" column="HOMETELEPHONE"/>
+    <property name="homepostcode" type="java.lang.String" update="true" insert="true" column="HOMEPOSTCODE"/>
+    <property name="useremail" type="java.lang.String" update="true" insert="true" column="USEREMAIL"/>
+    <property name="usermobile" type="java.lang.String" update="true" insert="true" column="USERMOBILE"/>
+    <property name="university" type="java.lang.String" update="true" insert="true" column="UNIVERSITY"/>
+    <property name="universityspec" type="java.lang.String" update="true" insert="true" column="UNIVERSITYSPEC"/>
+    <property name="universitystartdate" type="java.util.Calendar" update="true" insert="true" column="UNIVERSITYSTARTDATE"/>
+    <property name="universityenddate" type="java.util.Calendar" update="true" insert="true" column="UNIVERSITYENDDATE"/>
+    <property name="seasuniversity" type="java.lang.String" update="true" insert="true" column="SEASUNIVERSITY"/>
+    <property name="seasuniversityspec" type="java.lang.String" update="true" insert="true" column="SEASUNIVERSITYSPEC"/>
+    <property name="seasuniversitystartdate" type="java.util.Calendar" update="true" insert="true" column="SEASUNIVERSITYSTARTDATE"/>
+    <property name="seasuniversityenddate" type="java.util.Calendar" update="true" insert="true" column="SEASUNIVERSITYENDDATE"/>
+    <property name="password" type="java.lang.String" update="true" insert="true" column="PASSWORD"/>
+    </class>
+</hibernate-mapping>
+

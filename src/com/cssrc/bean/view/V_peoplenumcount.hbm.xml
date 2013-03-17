@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+<class name="com.cssrc.bean.view.V_peoplenumcount" table="v_peoplenumcount" >
+    <composite-id name="v_peoplenumcountId" class="com.cssrc.bean.view.V_peoplenumcountId">
+    <key-property name="shai_id" type="java.lang.Integer">
+          <column name="SHAI_ID"  />
+    </key-property>
+    <key-property name="assoname" type="java.lang.String">
+         <column name="ASSONAME"/>
+    </key-property>
+    <key-property name="abi_id" type="java.lang.Integer">
+         <column name="ABI_ID"  />
+    </key-property>
+    <key-property name="acadname" type="java.lang.String">
+          <column name="ACADNAME"  />
+    </key-property>
+    <key-property name="acadno" type="java.lang.String">
+          <column name="ACADNO"  />
+    </key-property>
+    
+    <key-property name="smbi_id" type="java.lang.Integer" >
+              <column name="SMBI_ID"  />
+    </key-property>
+    <key-property name="isdelete" type="java.lang.String">
+         <column name="ISDELETE" />
+    </key-property>
+    </composite-id>
+</class>
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Academysmemberrelation" table="T_ACADEMYSMEMBERRELATION">
+    <id name="asmr_id" type="java.lang.Integer" column="ASMR_ID" unsaved-value = "null">
+         <generator class="native"/>
+         </id>
+    <property name="smbi_id" type="java.lang.Integer" update="true" insert="true" column="SMBI_ID"/>
+    <property name="abi_id" type="java.lang.Integer" update="true" insert="true" column="ABI_ID"/>
+    <property name="joindate" type="java.util.Date" update="true" insert="true" column="JOINDATE"/>
+    <property name="memtype" type="java.lang.String" update="true" insert="true" column="MEMTYPE"/>
+    <property name="isannualregister" type="java.lang.String" update="true" insert="true" column="ISANNUALREGISTER"/>
+    <property name="belongcommittee1" type="java.lang.String" update="true" insert="true" column="BELONGCOMMITTEE1"/>
+    <property name="belongcommittee2" type="java.lang.String" update="true" insert="true" column="BELONGCOMMITTEE2"/>
+    <property name="belongcommittee3" type="java.lang.String" update="true" insert="true" column="BELONGCOMMITTEE3"/>
+    <property name="belongcommittee4" type="java.lang.String" update="true" insert="true" column="BELONGCOMMITTEE4"/>
+    <property name="academyduty1" type="java.lang.String" update="true" insert="true" column="ACADEMYDUTY1"/>
+    <property name="academyduty2" type="java.lang.String" update="true" insert="true" column="ACADEMYDUTY2"/>
+    <property name="academyduty3" type="java.lang.String" update="true" insert="true" column="ACADEMYDUTY3"/>
+    <property name="academyduty4" type="java.lang.String" update="true" insert="true" column="ACADEMYDUTY4"/>
+    <property name="academyduty5" type="java.lang.String" update="true" insert="true" column="ACADEMYDUTY5"/>
+    <property name="academyduty6" type="java.lang.String" update="true" insert="true" column="ACADEMYDUTY6"/>
+    <property name="academyduty7" type="java.lang.String" update="true" insert="true" column="ACADEMYDUTY7"/>
+    <property name="academyduty8" type="java.lang.String" update="true" insert="true" column="ACADEMYDUTY8"/>
+    <property name="academyduty9" type="java.lang.String" update="true" insert="true" column="ACADEMYDUTY9"/>
+    <property name="academyduty10" type="java.lang.String" update="true" insert="true" column="ACADEMYDUTY10"/>
+    <property name="academyduty11" type="java.lang.String" update="true" insert="true" column="ACADEMYDUTY11"/>
+    <property name="isdelete" type="java.lang.String" update="true" insert="true" column="ISDELETE"/>
+    <property name="deletedate" type="java.lang.String" update="true" insert="true" column="DELETEDATE"/>
+    </class>
+</hibernate-mapping>

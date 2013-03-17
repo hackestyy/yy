@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Notecharge" table="T_NOTE_CHARGE">
+    <id name="id" type="java.lang.Integer" column="ID" unsaved-value = "null">
+    	<generator class="native"/>
+    </id>
+    <property name="num" type="java.lang.Integer" update="true" insert="true" column="NUM"/>
+    <property name="abi_id" type="java.lang.Integer" update="true" insert="true" column="ABI_ID"/>
+    <property name="data" type="java.lang.String" update="true" insert="true" column="DATA"/>
+</class>
+</hibernate-mapping>

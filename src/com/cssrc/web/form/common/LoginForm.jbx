@@ -1,0 +1,14 @@
+[PropertyInfo]
+ui_id,Integer,false,false, , ,false,<default>
+useracademic,String,false,false, , ,false,<default>
+useraccount,String,false,false, , ,false,<default>
+userassociation,String,false,false, , ,false,<default>
+userno,String,false,false, , ,false,<default>
+userpwd,String,false,false, , ,false,<default>
+userpwdmd5,String,false,false, , ,false,<default>
+userrole,String,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

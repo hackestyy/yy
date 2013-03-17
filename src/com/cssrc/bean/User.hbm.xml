@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.User" table="T_USERINFO">
+    <id name="ui_id" type="java.lang.Integer" column="UI_ID" unsaved-value="null">
+         <generator class="native">
+        </generator>
+    </id>
+    <property name="useraccount" type="java.lang.String" update="true" insert="true" column="USERACCOUNT"/>
+    <property name="userpwd" type="java.lang.String" update="true" insert="true" column="USERPWD"/>
+    <property name="userpwdmd5" type="java.lang.String" update="true" insert="true" column="USERPWDMD5"/>
+     <property name="userrole" type="java.lang.String" update="true" insert="true" column="USERROLE"/>
+    <property name="userassociation" type="java.lang.String" update="true" insert="true" column="USERASSOCIATION"/>
+    <property name="useracademic" type="java.lang.String" update="true" insert="true" column="USERACADEMIC"/>
+     <property name="userno" type="java.lang.String" update="true" insert="true" column="USERNO"/>
+</class>
+</hibernate-mapping>

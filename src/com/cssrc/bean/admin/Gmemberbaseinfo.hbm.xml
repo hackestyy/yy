@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Gmemberbaseinfo" table="T_GMEMBERBASEINFO">
+    <id name="gmbi_id" type="java.lang.Integer" column="GMBI_ID" unsaved-value = "null">
+         <generator class="native"/>
+         </id>
+    <property name="memno" type="java.lang.String" update="true" insert="true" column="MEMNO"/>
+    <property name="institutename" type="java.lang.String" update="true" insert="true" column="INSTITUTENAME"/>
+    <property name="institutecode" type="java.lang.String" update="true" insert="true" column="INSTITUTECODE"/>
+    <property name="contactname" type="java.lang.String" update="true" insert="true" column="CONTACTNAME"/>
+    <property name="contactduty" type="java.lang.String" update="true" insert="true" column="CONTACTDUTY"/>
+    <property name="contactrank" type="java.lang.String" update="true" insert="true" column="CONTACTRANK"/>
+    <property name="institutetype" type="java.lang.String" update="true" insert="true" column="INSTITUTETYPE"/>
+    <property name="contactaddress" type="java.lang.String" update="true" insert="true" column="CONTACTADDRESS"/>
+    <property name="contactpostcode" type="java.lang.String" update="true" insert="true" column="CONTACTPOSTCODE"/>
+    <property name="contactdepartment" type="java.lang.String" update="true" insert="true" column="CONTACTDEPARTMENT"/>
+    <property name="contactperson" type="java.lang.String" update="true" insert="true" column="CONTACTPERSON"/>
+    <property name="contacttelephone" type="java.lang.String" update="true" insert="true" column="CONTACTTELEPHONE"/>
+    <property name="contactfax" type="java.lang.String" update="true" insert="true" column="CONTACTFAX"/>
+    <property name="contacturl" type="java.lang.String" update="true" insert="true" column="CONTACTURL"/>
+    <property name="contactemail" type="java.lang.String" update="true" insert="true" column="CONTACTEMAIL"/>
+    <property name="contactstaffcount" type="java.lang.Integer" update="true" insert="true" column="CONTACTSTAFFCOUNT"/>
+    <property name="contacthigherstaffcount" type="java.lang.Integer" update="true" insert="true" column="CONTACTHIGHERSTAFFCOUNT"/>
+    <property name="contactoperationrange" type="java.lang.String" update="true" insert="true" column="CONTACTOPERATIONRANGE"/>
+    <property name="otherproperty" type="java.lang.String" update="true" insert="true" column="OTHERPROPERTY"/>
+    </class>
+</hibernate-mapping>

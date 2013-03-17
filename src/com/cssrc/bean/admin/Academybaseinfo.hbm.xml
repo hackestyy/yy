@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Academybaseinfo" table="T_ACADEMYBASEINFO">
+    <id name="abi_id" type="java.lang.Integer" column="ABI_ID" unsaved-value = "null">
+         <generator class="native"/>
+    </id>
+    <property name="shai_id" type="java.lang.Integer" update="true" insert="true" column="SHAI_ID"/>
+    <property name="acadname" type="java.lang.String" update="true" insert="true" column="ACADNAME"/>
+    <property name="acadno" type="java.lang.String" update="true" insert="true" column="ACADNO"/>
+    <property name="registerdate" type="java.util.Calendar" update="true" insert="true" column="REGISTERDATE"/>
+    <property name="registerfund" type="java.lang.String" update="true" insert="true" column="REGISTERFUND"/>
+   <property name="address1" type="java.lang.String" update="true" insert="true" column="ADDRESS1"/>
+   <property name="postcode1" type="java.lang.String" update="true" insert="true" column="POSTCODE1"/>
+   <property name="address2" type="java.lang.String" update="true" insert="true" column="ADDRESS2"/>
+   <property name="postcode2" type="java.lang.String" update="true" insert="true" column="POSTCODE2"/>
+     <property name="contactperson" type="java.lang.String" update="true" insert="true" column="CONTACTPERSON"/>
+   <property name="contactphone" type="java.lang.String" update="true" insert="true" column="CONTACTPHONE"/>
+   <property name="contactfax" type="java.lang.String" update="true" insert="true" column="CONTACTFAX"/>
+   <property name="starlevel" type="java.lang.String" update="true" insert="true" column="STARLEVEL"/>
+     <property name="is311" type="java.lang.String" update="true" insert="true" column="IS311"/>
+   <property name="socialhonor" type="java.lang.String" update="true" insert="true" column="SOCIALHONOR"/>
+   <property name="operationrange" type="java.lang.String" update="true" insert="true" column="OPERATIONRANGE"/>
+   <property name="staffcount" type="java.lang.Integer" update="true" insert="true" column="STAFFCOUNT"/>
+     <property name="parttimecount" type="java.lang.Integer" update="true" insert="true" column="PARTTIMECOUNT"/>
+   <property name="chargemanname" type="java.lang.String" update="true" insert="true" column="CHARGEMANNAME"/>
+   <property name="chargemanparty" type="java.lang.String" update="true" insert="true" column="chargemanparty"/>
+   <property name="chargemansex" type="java.lang.String" update="true" insert="true" column="CHARGEMANSEX"/>
+     <property name="chargemanscholar" type="java.lang.String" update="true" insert="true" column="CHARGEMANSCHOLAR"/>
+   <property name="chargemanisretire" type="java.lang.String" update="true" insert="true" column="CHARGEMANISRETIRE"/>
+     <property name="chargemanidentity" type="java.lang.String" update="true" insert="true" column="CHARGEMANIDENTITY"/>
+   <property name="chargemanisfulltime" type="java.lang.String" update="true" insert="true" column="CHARGEMANISFULLTIME"/>
+   <property name="chargemantelephone" type="java.lang.String" update="true" insert="true" column="CHARGEMANTELEPHONE"/>
+     <property name="chargemanmobile" type="java.lang.String" update="true" insert="true" column="CHARGEMANMOBILE"/>
+   <property name="chargemaninstitute" type="java.lang.String" update="true" insert="true" column="CHARGEMANINSTITUTE"/>
+   <property name="chargemansocialduty" type="java.lang.String" update="true" insert="true" column="CHARGEMANSOCIALDUTY"/>
+     <property name="chairmanname" type="java.lang.String" update="true" insert="true" column="CHAIRMANNAME"/>
+   <property name="chairmanparty" type="java.lang.String" update="true" insert="true" column="CHAIRMANPARTY"/>
+   <property name="chairmansex" type="java.lang.String" update="true" insert="true" column="CHAIRMANSEX"/>
+   <property name="chairmanscholar" type="java.lang.String" update="true" insert="true" column="CHAIRMANSCHOLAR"/>
+     <property name="chairmanisretire" type="java.lang.String" update="true" insert="true" column="CHAIRMANISRETIRE"/>
+   <property name="chairmanidentity" type="java.lang.String" update="true" insert="true" column="CHAIRMANIDENTITY"/>
+    <property name="chairmanisfulltime" type="java.lang.String" update="true" insert="true" column="CHAIRMANISFULLTIME"/>
+   <property name="chairmantelephone" type="java.lang.String" update="true" insert="true" column="CHAIRMANTELEPHONE"/>
+   <property name="chairmanmobile" type="java.lang.String" update="true" insert="true" column="CHAIRMANMOBILE"/>
+   <property name="chairmaninstitute" type="java.lang.String" update="true" insert="true" column="CHAIRMANINSTITUTE"/>
+     <property name="chairmansocialduty" type="java.lang.String" update="true" insert="true" column="CHAIRMANSOCIALDUTY"/>
+   <property name="secretaryname" type="java.lang.String" update="true" insert="true" column="SECRETARYNAME"/>
+    <property name="secretaryparty" type="java.lang.String" update="true" insert="true" column="SECRETARYPARTY"/>
+   <property name="secretarysex" type="java.lang.String" update="true" insert="true" column="SECRETARYSEX"/>
+   <property name="secretaryscholar" type="java.lang.String" update="true" insert="true" column="SECRETARYSCHOLAR"/>
+   <property name="secretaryisretire" type="java.lang.String" update="true" insert="true" column="SECRETARYISRETIRE"/>
+     <property name="secretaryidentity" type="java.lang.String" update="true" insert="true" column="SECRETARYIDENTITY"/>
+   <property name="secretaryisfulltime" type="java.lang.String" update="true" insert="true" column="SECRETARYISFULLTIME"/>
+    <property name="secretarytelephone" type="java.lang.String" update="true" insert="true" column="SECRETARYTELEPHONE"/>
+   <property name="secretarymobile" type="java.lang.String" update="true" insert="true" column="SECRETARYMOBILE"/>
+   <property name="secretaryinstitute" type="java.lang.String" update="true" insert="true" column="SECRETARYINSTITUTE"/>
+   <property name="secretarysocialduty" type="java.lang.String" update="true" insert="true" column="SECRETARYSOCIALDUTY"/>
+     <property name="startdate" type="java.util.Calendar" update="true" insert="true" column="STARTDATE"/>
+   <property name="chargeyear" type="java.lang.String" update="true" insert="true" column="CHARGEYEAR"/>
+    <property name="trusteecount" type="java.lang.Integer" update="true" insert="true" column="TRUSTEECOUNT"/>
+   <property name="admintrusteecount" type="java.lang.Integer" update="true" insert="true" column="ADMINTRUSTEECOUNT"/>
+     <property name="certifyyear" type="java.util.Calendar" update="true" insert="true" column="CERTIFYYEAR"/>
+   <property name="partytype" type="java.lang.String" update="true" insert="true" column="PARTYTYPE"/>
+    <property name="ispartygroup" type="java.lang.String" update="true" insert="true" column="ISPARTYGROUP"/>
+   <property name="partyperson" type="java.lang.String" update="true" insert="true" column="PARTYPERSON"/>
+     <property name="partytelephon" type="java.lang.String" update="true" insert="true" column="PARTYTELEPHON"/>
+</class>
+</hibernate-mapping>

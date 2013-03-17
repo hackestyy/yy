@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Shadeputyacademicliterature" table="T_SHADEPUTYACADEMICLITERATURE">
+    <id name="shadal_id" type="java.lang.Integer" column="SHADAL_ID" unsaved-value = "null">
+         <generator class="native"/>
+         </id>
+    <property name="shadbi_id" type="java.lang.Integer" update="true" insert="true" column="SHADBI_ID"/>
+    <property name="litename" type="java.lang.String" update="true" insert="true" column="LITENAME"/>
+    <property name="litedate" type="java.util.Date" update="true" insert="true" column="LITEDATE"/>
+    <property name="litejournal" type="java.lang.String" update="true" insert="true" column="LITEJOURNAL"/>
+    <property name="litehouse" type="java.lang.String" update="true" insert="true" column="LITEHOUSE"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+
+	/*-- Portal Layout ----*/
+	.portal-banner { background-color: #3D7AB8; color: #ffc444; }
+	.portal-index { background-color: #dddddd; }
+	.portal-content { background-color: #FFFFFF; border-left: 1px solid #999999}
+	.portal-topics { background-color: #fbfbfd; }
+	.portal-banner div.title { color: #FFFFFF; font-family: Verdana, helvetica, Arial Black; font-size: 14pt; font-weight: normal }
+	.portal-banner div.watermark { color: #a4a4a4; font-family: Arial Black, Verdana, helvetica; font-size: 40px; font-weight: bold }
+
+	/*-- Tree View, etc. ----*/
+	.tree-node a { color: #FFFFFF; }
+
+	/*-- Common Components ----*/
+	.index .header { background-color: #6699CC; font-size : 12px; font-weight : normal; color: #FFFFFF; padding-left: 4px; border-style: none; }
+	.index .border { border-bottom: 1px solid #8f8f8f; }
+  	.index .content { border-bottom: 1px solid #fbfbfb; background-color : #afafaf; border-top: none; }
+
+	.index .header { color: #dddddd; font-weight: bold; }
+
+	.exxperience .header table { background-color: #6699CC; }
+	.exxperience .header span { background-color: #a8a8a8; }
+	.exxperience .body { background-color : #FFFFFF; }
+
+	.index .tree .selected-node { font-weight: bold; background-color: #cfcfcf; }

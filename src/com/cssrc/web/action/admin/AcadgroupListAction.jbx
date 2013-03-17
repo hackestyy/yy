@@ -1,0 +1,8 @@
+[PropertyInfo]
+acadgroupDAO,com.cssrc.dao.admin.IAcadgroupDAO,false,false, , ,false,<default>
+acadmybaseinfoDAO,com.cssrc.dao.admin.IAcademybaseinfoDAO,false,false, , ,true,<default>
+[IconNames]
+
+
+
+

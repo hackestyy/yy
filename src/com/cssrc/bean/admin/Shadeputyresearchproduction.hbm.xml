@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Shadeputyresearchproduction" table="T_SHADEPUTYRESEARCHPRODUCTION">
+    <id name="shadrp_id" type="java.lang.Integer" column="SHADRP_ID" unsaved-value = "null">
+         <generator class="native"/>
+         </id>
+    <property name="shadbi_id" type="java.lang.Integer" update="true" insert="true" column="SHADBI_ID"/>
+    <property name="prodname" type="java.lang.String" update="true" insert="true" column="PRODNAME"/>
+    <property name="proddate" type="java.util.Date" update="true" insert="true" column="PRODDATE"/>
+    <property name="prodrewards" type="java.lang.String" update="true" insert="true" column="PRODREWARDS"/>
+    <property name="prodapplication" type="java.lang.String" update="true" insert="true" column="PRODAPPLICATION"/>
+    </class>
+</hibernate-mapping>

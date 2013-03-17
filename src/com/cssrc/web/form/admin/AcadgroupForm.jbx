@@ -1,0 +1,11 @@
+[PropertyInfo]
+assoname,String,false,false, , ,false,<default>
+belongcount,Integer,false,false, , ,false,<default>
+contactperson,String,false,false, , ,false,<default>
+contacttelephone,String,false,false, , ,false,<default>
+shai_id,Integer,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

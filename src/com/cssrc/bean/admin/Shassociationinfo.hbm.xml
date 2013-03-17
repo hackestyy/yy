@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+<class name="com.cssrc.bean.admin.Shassociationinfo" table="T_SHASSOCIATIONINFO">
+    <id name="shai_id" type="java.lang.Integer" column="SHAI_ID" unsaved-value = "null">
+         <generator class="native"/>
+    </id>
+    
+    <property name="assoname" type="java.lang.String" update="true" insert="true" column="ASSONAME"/>
+    <property name="contactperson" type="java.lang.String" update="true" insert="true" column="CONTACTPERSON"/>
+    <property name="contacttelephone" type="java.lang.String" update="true" insert="true" column="CONTACTTELEPHONE"/>
+    <property name="belongcount" type="java.lang.Integer" update="true" insert="true" column="BELONGCOUNT"/>
+
+</class>
+</hibernate-mapping>    
